@@ -50,15 +50,25 @@ export const getServiceBySlug = cache(async (slug: string, locale: Locale = 'en'
   return service
 })
 
-export const getAllProjects = cache(async () => {
+export const getAllProjects = cache(async (locale: Locale = 'en') => {
   const payload = await getPayloadClient()
-  const res = await payload.find({ collection: 'projects', sort: 'sortOrder', depth: 1, limit: 200, pagination: false })
+  const res = await payload.find({
+    collection: 'projects',
+    sort: 'sortOrder',
+    depth: 1,
+    limit: 200,
+    pagination: false,
+    locale,
+    fallbackLocale: false,
+  })
   return res.docs
 })
 
-export const getProjectBySlug = cache(async (slug: string): Promise<Project | null> => {
-  const projects = await getAllProjects()
-  return projects.find((p) => p.slug === slug) ?? null
+/** A project page; in Arabic only when it has an Arabic layout. */
+export const getProjectBySlug = cache(async (slug: string, locale: Locale = 'en'): Promise<Project | null> => {
+  const project = (await getAllProjects(locale)).find((p) => p.slug === slug) ?? null
+  if (project && locale !== 'en' && !project.customLayout?.length) return null
+  return project
 })
 
 /** Published pages that editors placed in the main menu (Pages → "Show in menu"). */
@@ -106,6 +116,9 @@ export const getGlobals = cache(async (locale: Locale = getRequestLocale()) => {
   return { header, footer, settings }
 })
 
+/** Slugs that exist in a language (cached per request; used by the language switch). */
+export const getLocaleSlugs = cache((locale: Locale) => getStaticSlugs(locale))
+
 /** Slugs to pre-render at build time. */
 export const getStaticSlugs = async (locale: Locale = 'en') => {
   try {
@@ -126,7 +139,12 @@ export const getStaticSlugs = async (locale: Locale = 'en') => {
         if (d.slug && d.slug !== 'home' && hasContent) slugs.push(d.slug)
       }
     }
-    if (locale === 'en') slugs.push(...(await getAllProjects()).map((p) => p.slug).filter(Boolean))
+    slugs.push(
+      ...(await getAllProjects(locale))
+        .filter((p) => locale === 'en' || p.customLayout?.length)
+        .map((p) => p.slug)
+        .filter(Boolean),
+    )
     return [...new Set(slugs)]
   } catch {
     return []

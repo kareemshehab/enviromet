@@ -1,0 +1,5 @@
+{
+  "services": ["engineering-advisory", "diligence", "feasibility", "meteorology", "maintenance", "air", "emissions", "water", "compliance", "power", "grid", "construction", "testing", "power-curve", "performance", "data", "dispersion", "decommissioning", "lender"],
+  "projects": ["project-kingdom-wind", "project-three-lidars", "project-performance-masts", "project-mast-solar-maintenance", "project-desert-wind-resource", "project-airport-monitoring", "project-solar-network", "project-electricity-weather", "project-international-airport"],
+  "pages": ["projects"]
+}

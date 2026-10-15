@@ -5,6 +5,7 @@
  *      and those pages place it by reference (their own text is not changed).
  *   2. Solution pages (shared): default section order + the text every solution repeats.
  *   3. Page templates: the three most common page types.
+ *   4. Arabic: every page that only exists in English gets its translated Arabic version.
  * Every step is skipped when it has already been done, so the script is safe to run again.
  *
  *   npm run upgrade            (local SQLite)
@@ -16,6 +17,7 @@ import { getPayload, type Payload } from 'payload'
 import config from '@payload-config'
 import { findSharedSections, pageTemplates, placeShared, solutionShared, stripSharedText, withoutIds, type LayoutSource } from './shared'
 import { solutionParts } from '../globals/solutionParts'
+import { addArabic } from './arabic'
 
 const ctx = { disableRevalidate: true }
 type Locale = 'en' | 'ar'
@@ -144,6 +146,7 @@ try {
   await upgradeSharedSections(payload)
   await upgradeSolutionTemplate(payload)
   await upgradeTemplates(payload)
+  await addArabic(payload) // Arabic version of every page that only exists in English
   // Local SQLite: run the schema push until it reports no work left (see settle.ts).
   if (!process.env.DATABASE_URI?.startsWith('postgres'))
     for (let i = 0; i < 3; i++) {

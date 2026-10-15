@@ -18,10 +18,8 @@ export async function resolveSlug(slug: string, locale: Locale): Promise<Resolve
   if (page) return { kind: 'page', doc: page }
   const service = await getServiceBySlug(slug, locale)
   if (service) return { kind: 'service', doc: service }
-  if (locale === 'en') {
-    const project = await getProjectBySlug(slug)
-    if (project) return { kind: 'project', doc: project }
-  }
+  const project = await getProjectBySlug(slug, locale)
+  if (project) return { kind: 'project', doc: project }
   return null
 }
 
@@ -41,6 +39,11 @@ export function PageRenderer({ resolved }: { resolved: Resolved }) {
         <ServiceTemplate service={resolved.doc} />
       )
     case 'project':
-      return <ProjectDetail project={resolved.doc} />
+      // Arabic project pages are built from sections; English uses the project template.
+      return resolved.doc.customLayout?.length ? (
+        <RenderBlocks blocks={resolved.doc.customLayout} />
+      ) : (
+        <ProjectDetail project={resolved.doc} />
+      )
   }
 }

@@ -69,3 +69,8 @@ deploy-result.txt
 
 # local one-time upgrade marker
 upgrade.done
+
+# translation work files (scripts/arabic/extract_strings.py)
+src/seed/translations/work/
+
+__pycache__/

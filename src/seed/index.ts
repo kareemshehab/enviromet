@@ -24,6 +24,7 @@ import { headerData, footerData, settingsData } from './globals'
 import type { MediaMap } from './helpers'
 import { findSharedSections, pageTemplates, placeShared, solutionShared, stripSharedText, withoutIds } from './shared'
 import { solutionParts } from '../globals/solutionParts'
+import { addArabic } from './arabic'
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -309,6 +310,9 @@ async function seed() {
       await payload.update({ collection: 'page-templates', id: template.id, locale: 'ar', data: { layout: withoutIds(layout.ar) as any }, context: { ...ctx } })
   }
   payload.logger.info(`  page templates: ${pageTemplates.length}`)
+
+  /* 8b. Arabic version of every page that only exists in English --------------- */
+  await addArabic(payload)
 
   /* 9. First admin user (only if none exists) -------------------------------- */
   const users = await payload.count({ collection: 'users' })

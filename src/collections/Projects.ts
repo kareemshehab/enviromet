@@ -1,6 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { anyone, authenticated } from '@/access'
 import { metaFields, slugField } from '@/fields/common'
+import { pageBlocks } from '@/blocks'
 import { linkArray } from '@/fields/link'
 import { revalidateEverything, revalidateEverythingDelete } from '@/hooks/revalidate'
 
@@ -99,6 +100,12 @@ export const Projects: CollectionConfig = {
             { name: 'sourceNote', type: 'textarea', admin: { rows: 2 } },
             linkArray('relatedSolutions', { appearances: ['plain'] }),
           ],
+        },
+        {
+          label: 'Arabic page',
+          description:
+            'The Arabic version of this project page (/ar/<slug>), built from sections. Switch the Locale to العربية to edit it.',
+          fields: [{ name: 'customLayout', label: 'Arabic layout', type: 'blocks', localized: true, blocks: pageBlocks, admin: { initCollapsed: true } }],
         },
         { label: 'SEO', fields: [metaFields] },
       ],

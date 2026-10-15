@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 const sources: Record<string, string> = {
   calculator: '/cro-621f08a8ed.js',
   b2b: '/b2b-ac92110ef3.js',
+  filters: '/filters-5d2a91c4.js',
 }
 
 /**

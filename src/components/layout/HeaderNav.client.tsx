@@ -15,6 +15,8 @@ type Props = {
   items: NavItem[]
   cta?: NavLink | null
   language?: NavLink | null
+  /** Pages that exist in the other language: the switch then opens the same page there. */
+  otherLanguageSlugs?: string[]
   showSearch?: boolean
   locale?: 'en' | 'ar'
 }
@@ -45,13 +47,27 @@ const normalise = (p: string) => legacyToRoute(p).split(/[?#]/)[0] || '/'
 // The search dialog (and its index) is only downloaded when someone opens it.
 const SearchDialog = dynamic(() => import('./SearchDialog.client').then((m) => m.SearchDialog), { ssr: false })
 
-export function HeaderNav({ logo, items, cta, language, showSearch, locale = 'en' }: Props) {
+export function HeaderNav({ logo, items, cta, language, otherLanguageSlugs = [], showSearch, locale = 'en' }: Props) {
   const t = strings[locale]
   const pathname = usePathname() || '/'
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openMenu, setOpenMenu] = useState<string | null>(null)
   const [searchOpen, setSearchOpen] = useState(false)
   const toggleRef = useRef<HTMLButtonElement>(null)
+
+  // Language switch: the same page in the other language when it exists, else the home page there.
+  const slug = pathname.replace(/^\/(ar(\/|$))?/, '').replace(/\/$/, '')
+  const languageHref = !language
+    ? null
+    : !slug
+      ? locale === 'ar'
+        ? '/'
+        : '/ar'
+      : otherLanguageSlugs.includes(slug)
+        ? locale === 'ar'
+          ? `/${slug}`
+          : `/ar/${slug}`
+        : language.href
 
   const isCurrent = (href: string) => normalise(href) === pathname
   // A page can be linked from several menus (e.g. /about): highlight only the first one.
@@ -176,7 +192,7 @@ export function HeaderNav({ logo, items, cta, language, showSearch, locale = 'en
                 {language && (
                   <a
                     className="sh-lang"
-                    href={language.href}
+                    href={languageHref ?? language.href}
                     lang={locale === 'ar' ? 'en' : 'ar'}
                     dir={locale === 'ar' ? 'ltr' : 'rtl'}
                   >

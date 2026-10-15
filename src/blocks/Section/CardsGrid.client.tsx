@@ -20,15 +20,41 @@ type Props = {
   cardClass: string
   arrowSpan?: boolean
   hideImageLink?: boolean
+  locale?: 'en' | 'ar'
+}
+
+/** Interface texts of the filter bar (the cards themselves come from the CMS). */
+const T = {
+  en: {
+    all: (cases: boolean) => (cases ? 'All applications' : 'All services'),
+    group: (cases: boolean) => (cases ? 'Filter use cases' : 'Filter services'),
+    count: (n: number, cases: boolean) => `${n} ${cases ? 'use case' : 'service'}${n === 1 ? '' : 's'}`,
+  },
+  ar: {
+    all: (cases: boolean) => (cases ? 'جميع التطبيقات' : 'جميع الخدمات'),
+    group: (cases: boolean) => (cases ? 'تصفية حالات الاستخدام' : 'تصفية الخدمات'),
+    count: (n: number, cases: boolean) => `${cases ? 'عدد حالات الاستخدام' : 'عدد الخدمات'}: ${n}`,
+  },
 }
 
 /** Service / use-case cards with the original filter buttons and live count. */
-export function CardsGridClient({ cards, linkLabel, filter, filters, gridClass, cardClass, arrowSpan, hideImageLink }: Props) {
-  const all = filter === 'cases' ? 'All applications' : 'All services'
+export function CardsGridClient({
+  cards,
+  linkLabel,
+  filter,
+  filters,
+  gridClass,
+  cardClass,
+  arrowSpan,
+  hideImageLink,
+  locale = 'en',
+}: Props) {
+  const t = T[locale]
+  const cases = filter === 'cases'
+  const all = t.all(cases)
   const [active, setActive] = useState(all)
   const visible = (c: Card) => filter === 'none' || active === all || c.category === active
   const count = cards.filter(visible).length
-  const noun = filter === 'cases' ? 'use case' : 'service'
   const dataAttr = (c: Card) =>
     c.category ? (filter === 'cases' ? { 'data-case-category': c.category } : { 'data-category': c.category }) : {}
 
@@ -36,7 +62,7 @@ export function CardsGridClient({ cards, linkLabel, filter, filters, gridClass, 
     <>
       {filter !== 'none' && (
         <>
-          <div className="filters" role="group" aria-label={filter === 'cases' ? 'Filter use cases' : 'Filter services'}>
+          <div className="filters" role="group" aria-label={t.group(cases)}>
             {[all, ...filters].map((f) => (
               <button
                 key={f}
@@ -49,8 +75,7 @@ export function CardsGridClient({ cards, linkLabel, filter, filters, gridClass, 
             ))}
           </div>
           <p id={filter === 'cases' ? 'case-count' : 'filter-status'} className="small-note" aria-live="polite">
-            {count} {noun}
-            {count === 1 ? '' : 's'}
+            {t.count(count, cases)}
           </p>
         </>
       )}

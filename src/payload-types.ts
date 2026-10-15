@@ -168,7 +168,7 @@ export interface Page {
   /**
    * Original site scripts this page needs
    */
-  scripts?: ('calculator' | 'b2b')[] | null;
+  scripts?: ('calculator' | 'b2b' | 'filters')[] | null;
   layout?:
     | (
         | {
@@ -6463,6 +6463,1960 @@ export interface Project {
         url?: string | null;
         id?: string | null;
       }[]
+    | null;
+  customLayout?:
+    | (
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            background?: ('none' | 'pale') | null;
+            layout?:
+              ('wrap' | 'wrap narrow' | 'wrap split' | 'wrap solution-layout' | 'wrap seo-article-layout') | null;
+            anchorId?: string | null;
+            items?:
+              | (
+                  | {
+                      heading?: string | null;
+                      help?: string | null;
+                      serviceOptions?:
+                        | {
+                            label: string;
+                            /**
+                             * Stored value (default: label)
+                             */
+                            value?: string | null;
+                            /**
+                             * ?service=
+                             */
+                            key?: string | null;
+                            id?: string | null;
+                          }[]
+                        | null;
+                      stageOptions?:
+                        | {
+                            label: string;
+                            id?: string | null;
+                          }[]
+                        | null;
+                      note?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemEnquiryForm';
+                    }
+                  | {
+                      level?: ('h1' | 'h2' | 'h3' | 'h4') | null;
+                      text: string;
+                      className?: string | null;
+                      elementId?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemHeading';
+                    }
+                  | {
+                      /**
+                       * Inline HTML allowed (links, <strong>). Enter = line break.
+                       */
+                      text?: string | null;
+                      tag?: ('p' | 'span' | 'strong' | 'small' | 'b' | 'em' | 'div' | 'label') | null;
+                      /**
+                       * Common styles
+                       */
+                      style?: ('eyebrow' | 'lede' | 'small-note' | 'large-copy') | null;
+                      /**
+                       * Overrides the style above when set
+                       */
+                      className?: string | null;
+                      elementId?: string | null;
+                      /**
+                       * e.g. {"data-print": "", "role": "status"}
+                       */
+                      attrs?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemText';
+                    }
+                  | {
+                      label: string;
+                      url: string;
+                      style?: ('button' | 'button secondary' | 'button white' | 'text-link') | null;
+                      newTab?: boolean | null;
+                      /**
+                       * Overrides the style above when set
+                       */
+                      className?: string | null;
+                      elementId?: string | null;
+                      /**
+                       * e.g. {"data-print": "", "role": "status"}
+                       */
+                      attrs?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemLink';
+                    }
+                  | {
+                      ordered?: boolean | null;
+                      style?: ('check-list' | 'steps') | null;
+                      items?:
+                        | {
+                            /**
+                             * Inline HTML allowed (links, <strong>). Enter = line break.
+                             */
+                            text: string;
+                            id?: string | null;
+                          }[]
+                        | null;
+                      /**
+                       * Overrides the style above when set
+                       */
+                      className?: string | null;
+                      elementId?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemList';
+                    }
+                  | {
+                      image: number | Media;
+                      /**
+                       * Defaults to the media alt text
+                       */
+                      alt?: string | null;
+                      /**
+                       * Shown under the image (figure)
+                       */
+                      caption?: string | null;
+                      rounded?: boolean | null;
+                      figure?: boolean | null;
+                      url?: string | null;
+                      /**
+                       * CSS class of the <img>
+                       */
+                      className?: string | null;
+                      /**
+                       * CSS class of the <figure>
+                       */
+                      figureClass?: string | null;
+                      /**
+                       * CSS class of the wrapping <a>
+                       */
+                      linkClass?: string | null;
+                      elementId?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemImage';
+                    }
+                  | {
+                      video: number | Media;
+                      poster?: (number | null) | Media;
+                      caption?: string | null;
+                      /**
+                       * CSS class of the <figure>
+                       */
+                      figureClass?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemVideo';
+                    }
+                  | {
+                      caption?: string | null;
+                      header?:
+                        | {
+                            text: string;
+                            id?: string | null;
+                          }[]
+                        | null;
+                      rows?:
+                        | {
+                            /**
+                             * The first cell is the row heading
+                             */
+                            cells?:
+                              | {
+                                  /**
+                                   * Inline HTML allowed (links, <strong>). Enter = line break.
+                                   */
+                                  text?: string | null;
+                                  id?: string | null;
+                                }[]
+                              | null;
+                            id?: string | null;
+                          }[]
+                        | null;
+                      firstCellIsHeading?: boolean | null;
+                      /**
+                       * Wrapper <div> class, e.g. b2b-table (empty = no wrapper)
+                       */
+                      wrapperClass?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemTable';
+                    }
+                  | {
+                      question: string;
+                      /**
+                       * Separate paragraphs with an empty line. Inline HTML allowed.
+                       */
+                      answer: string;
+                      /**
+                       * e.g. seo-faq
+                       */
+                      className?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemFaq';
+                    }
+                  | {
+                      source?: ('services' | 'manual') | null;
+                      /**
+                       * Leave empty to show all services
+                       */
+                      services?: (number | Service)[] | null;
+                      cards?:
+                        | {
+                            title: string;
+                            eyebrow?: string | null;
+                            /**
+                             * Used by filters
+                             */
+                            category?: string | null;
+                            image?: (number | null) | Media;
+                            imageAlt?: string | null;
+                            text?: string | null;
+                            url: string;
+                            id?: string | null;
+                          }[]
+                        | null;
+                      linkLabel?: string | null;
+                      filter?: ('none' | 'services' | 'cases') | null;
+                      filters?:
+                        | {
+                            label: string;
+                            id?: string | null;
+                          }[]
+                        | null;
+                      /**
+                       * e.g. cards / cards service-grid / cards field-cards
+                       */
+                      gridClass?: string | null;
+                      /**
+                       * e.g. service-card / service-card application-card
+                       */
+                      cardClass?: string | null;
+                      arrowSpan?: boolean | null;
+                      hideImageLink?: boolean | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemCards';
+                    }
+                  | {
+                      tag: string;
+                      className?: string | null;
+                      /**
+                       * Used for interactive widgets (e.g. the cost calculator form).
+                       */
+                      html?: string | null;
+                      elementId?: string | null;
+                      /**
+                       * e.g. {"data-print": "", "role": "status"}
+                       */
+                      attrs?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemHtml';
+                    }
+                  | {
+                      tag?:
+                        | ('div' | 'article' | 'aside' | 'section' | 'figure' | 'a' | 'ol' | 'ul' | 'li' | 'details')
+                        | null;
+                      className?: string | null;
+                      url?: string | null;
+                      items?:
+                        | (
+                            | {
+                                heading?: string | null;
+                                help?: string | null;
+                                serviceOptions?:
+                                  | {
+                                      label: string;
+                                      /**
+                                       * Stored value (default: label)
+                                       */
+                                      value?: string | null;
+                                      /**
+                                       * ?service=
+                                       */
+                                      key?: string | null;
+                                      id?: string | null;
+                                    }[]
+                                  | null;
+                                stageOptions?:
+                                  | {
+                                      label: string;
+                                      id?: string | null;
+                                    }[]
+                                  | null;
+                                note?: string | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemEnquiryForm';
+                              }
+                            | {
+                                level?: ('h1' | 'h2' | 'h3' | 'h4') | null;
+                                text: string;
+                                className?: string | null;
+                                elementId?: string | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemHeading';
+                              }
+                            | {
+                                /**
+                                 * Inline HTML allowed (links, <strong>). Enter = line break.
+                                 */
+                                text?: string | null;
+                                tag?: ('p' | 'span' | 'strong' | 'small' | 'b' | 'em' | 'div' | 'label') | null;
+                                /**
+                                 * Common styles
+                                 */
+                                style?: ('eyebrow' | 'lede' | 'small-note' | 'large-copy') | null;
+                                /**
+                                 * Overrides the style above when set
+                                 */
+                                className?: string | null;
+                                elementId?: string | null;
+                                /**
+                                 * e.g. {"data-print": "", "role": "status"}
+                                 */
+                                attrs?:
+                                  | {
+                                      [k: string]: unknown;
+                                    }
+                                  | unknown[]
+                                  | string
+                                  | number
+                                  | boolean
+                                  | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemText';
+                              }
+                            | {
+                                label: string;
+                                url: string;
+                                style?: ('button' | 'button secondary' | 'button white' | 'text-link') | null;
+                                newTab?: boolean | null;
+                                /**
+                                 * Overrides the style above when set
+                                 */
+                                className?: string | null;
+                                elementId?: string | null;
+                                /**
+                                 * e.g. {"data-print": "", "role": "status"}
+                                 */
+                                attrs?:
+                                  | {
+                                      [k: string]: unknown;
+                                    }
+                                  | unknown[]
+                                  | string
+                                  | number
+                                  | boolean
+                                  | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemLink';
+                              }
+                            | {
+                                ordered?: boolean | null;
+                                style?: ('check-list' | 'steps') | null;
+                                items?:
+                                  | {
+                                      /**
+                                       * Inline HTML allowed (links, <strong>). Enter = line break.
+                                       */
+                                      text: string;
+                                      id?: string | null;
+                                    }[]
+                                  | null;
+                                /**
+                                 * Overrides the style above when set
+                                 */
+                                className?: string | null;
+                                elementId?: string | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemList';
+                              }
+                            | {
+                                image: number | Media;
+                                /**
+                                 * Defaults to the media alt text
+                                 */
+                                alt?: string | null;
+                                /**
+                                 * Shown under the image (figure)
+                                 */
+                                caption?: string | null;
+                                rounded?: boolean | null;
+                                figure?: boolean | null;
+                                url?: string | null;
+                                /**
+                                 * CSS class of the <img>
+                                 */
+                                className?: string | null;
+                                /**
+                                 * CSS class of the <figure>
+                                 */
+                                figureClass?: string | null;
+                                /**
+                                 * CSS class of the wrapping <a>
+                                 */
+                                linkClass?: string | null;
+                                elementId?: string | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemImage';
+                              }
+                            | {
+                                video: number | Media;
+                                poster?: (number | null) | Media;
+                                caption?: string | null;
+                                /**
+                                 * CSS class of the <figure>
+                                 */
+                                figureClass?: string | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemVideo';
+                              }
+                            | {
+                                caption?: string | null;
+                                header?:
+                                  | {
+                                      text: string;
+                                      id?: string | null;
+                                    }[]
+                                  | null;
+                                rows?:
+                                  | {
+                                      /**
+                                       * The first cell is the row heading
+                                       */
+                                      cells?:
+                                        | {
+                                            /**
+                                             * Inline HTML allowed (links, <strong>). Enter = line break.
+                                             */
+                                            text?: string | null;
+                                            id?: string | null;
+                                          }[]
+                                        | null;
+                                      id?: string | null;
+                                    }[]
+                                  | null;
+                                firstCellIsHeading?: boolean | null;
+                                /**
+                                 * Wrapper <div> class, e.g. b2b-table (empty = no wrapper)
+                                 */
+                                wrapperClass?: string | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemTable';
+                              }
+                            | {
+                                question: string;
+                                /**
+                                 * Separate paragraphs with an empty line. Inline HTML allowed.
+                                 */
+                                answer: string;
+                                /**
+                                 * e.g. seo-faq
+                                 */
+                                className?: string | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemFaq';
+                              }
+                            | {
+                                source?: ('services' | 'manual') | null;
+                                /**
+                                 * Leave empty to show all services
+                                 */
+                                services?: (number | Service)[] | null;
+                                cards?:
+                                  | {
+                                      title: string;
+                                      eyebrow?: string | null;
+                                      /**
+                                       * Used by filters
+                                       */
+                                      category?: string | null;
+                                      image?: (number | null) | Media;
+                                      imageAlt?: string | null;
+                                      text?: string | null;
+                                      url: string;
+                                      id?: string | null;
+                                    }[]
+                                  | null;
+                                linkLabel?: string | null;
+                                filter?: ('none' | 'services' | 'cases') | null;
+                                filters?:
+                                  | {
+                                      label: string;
+                                      id?: string | null;
+                                    }[]
+                                  | null;
+                                /**
+                                 * e.g. cards / cards service-grid / cards field-cards
+                                 */
+                                gridClass?: string | null;
+                                /**
+                                 * e.g. service-card / service-card application-card
+                                 */
+                                cardClass?: string | null;
+                                arrowSpan?: boolean | null;
+                                hideImageLink?: boolean | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemCards';
+                              }
+                            | {
+                                tag: string;
+                                className?: string | null;
+                                /**
+                                 * Used for interactive widgets (e.g. the cost calculator form).
+                                 */
+                                html?: string | null;
+                                elementId?: string | null;
+                                /**
+                                 * e.g. {"data-print": "", "role": "status"}
+                                 */
+                                attrs?:
+                                  | {
+                                      [k: string]: unknown;
+                                    }
+                                  | unknown[]
+                                  | string
+                                  | number
+                                  | boolean
+                                  | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemHtml';
+                              }
+                            | {
+                                tag?:
+                                  | (
+                                      | 'div'
+                                      | 'article'
+                                      | 'aside'
+                                      | 'section'
+                                      | 'figure'
+                                      | 'a'
+                                      | 'ol'
+                                      | 'ul'
+                                      | 'li'
+                                      | 'details'
+                                    )
+                                  | null;
+                                className?: string | null;
+                                url?: string | null;
+                                items?:
+                                  | (
+                                      | {
+                                          heading?: string | null;
+                                          help?: string | null;
+                                          serviceOptions?:
+                                            | {
+                                                label: string;
+                                                /**
+                                                 * Stored value (default: label)
+                                                 */
+                                                value?: string | null;
+                                                /**
+                                                 * ?service=
+                                                 */
+                                                key?: string | null;
+                                                id?: string | null;
+                                              }[]
+                                            | null;
+                                          stageOptions?:
+                                            | {
+                                                label: string;
+                                                id?: string | null;
+                                              }[]
+                                            | null;
+                                          note?: string | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemEnquiryForm';
+                                        }
+                                      | {
+                                          level?: ('h1' | 'h2' | 'h3' | 'h4') | null;
+                                          text: string;
+                                          className?: string | null;
+                                          elementId?: string | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemHeading';
+                                        }
+                                      | {
+                                          /**
+                                           * Inline HTML allowed (links, <strong>). Enter = line break.
+                                           */
+                                          text?: string | null;
+                                          tag?:
+                                            ('p' | 'span' | 'strong' | 'small' | 'b' | 'em' | 'div' | 'label') | null;
+                                          /**
+                                           * Common styles
+                                           */
+                                          style?: ('eyebrow' | 'lede' | 'small-note' | 'large-copy') | null;
+                                          /**
+                                           * Overrides the style above when set
+                                           */
+                                          className?: string | null;
+                                          elementId?: string | null;
+                                          /**
+                                           * e.g. {"data-print": "", "role": "status"}
+                                           */
+                                          attrs?:
+                                            | {
+                                                [k: string]: unknown;
+                                              }
+                                            | unknown[]
+                                            | string
+                                            | number
+                                            | boolean
+                                            | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemText';
+                                        }
+                                      | {
+                                          label: string;
+                                          url: string;
+                                          style?: ('button' | 'button secondary' | 'button white' | 'text-link') | null;
+                                          newTab?: boolean | null;
+                                          /**
+                                           * Overrides the style above when set
+                                           */
+                                          className?: string | null;
+                                          elementId?: string | null;
+                                          /**
+                                           * e.g. {"data-print": "", "role": "status"}
+                                           */
+                                          attrs?:
+                                            | {
+                                                [k: string]: unknown;
+                                              }
+                                            | unknown[]
+                                            | string
+                                            | number
+                                            | boolean
+                                            | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemLink';
+                                        }
+                                      | {
+                                          ordered?: boolean | null;
+                                          style?: ('check-list' | 'steps') | null;
+                                          items?:
+                                            | {
+                                                /**
+                                                 * Inline HTML allowed (links, <strong>). Enter = line break.
+                                                 */
+                                                text: string;
+                                                id?: string | null;
+                                              }[]
+                                            | null;
+                                          /**
+                                           * Overrides the style above when set
+                                           */
+                                          className?: string | null;
+                                          elementId?: string | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemList';
+                                        }
+                                      | {
+                                          image: number | Media;
+                                          /**
+                                           * Defaults to the media alt text
+                                           */
+                                          alt?: string | null;
+                                          /**
+                                           * Shown under the image (figure)
+                                           */
+                                          caption?: string | null;
+                                          rounded?: boolean | null;
+                                          figure?: boolean | null;
+                                          url?: string | null;
+                                          /**
+                                           * CSS class of the <img>
+                                           */
+                                          className?: string | null;
+                                          /**
+                                           * CSS class of the <figure>
+                                           */
+                                          figureClass?: string | null;
+                                          /**
+                                           * CSS class of the wrapping <a>
+                                           */
+                                          linkClass?: string | null;
+                                          elementId?: string | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemImage';
+                                        }
+                                      | {
+                                          video: number | Media;
+                                          poster?: (number | null) | Media;
+                                          caption?: string | null;
+                                          /**
+                                           * CSS class of the <figure>
+                                           */
+                                          figureClass?: string | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemVideo';
+                                        }
+                                      | {
+                                          caption?: string | null;
+                                          header?:
+                                            | {
+                                                text: string;
+                                                id?: string | null;
+                                              }[]
+                                            | null;
+                                          rows?:
+                                            | {
+                                                /**
+                                                 * The first cell is the row heading
+                                                 */
+                                                cells?:
+                                                  | {
+                                                      /**
+                                                       * Inline HTML allowed (links, <strong>). Enter = line break.
+                                                       */
+                                                      text?: string | null;
+                                                      id?: string | null;
+                                                    }[]
+                                                  | null;
+                                                id?: string | null;
+                                              }[]
+                                            | null;
+                                          firstCellIsHeading?: boolean | null;
+                                          /**
+                                           * Wrapper <div> class, e.g. b2b-table (empty = no wrapper)
+                                           */
+                                          wrapperClass?: string | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemTable';
+                                        }
+                                      | {
+                                          question: string;
+                                          /**
+                                           * Separate paragraphs with an empty line. Inline HTML allowed.
+                                           */
+                                          answer: string;
+                                          /**
+                                           * e.g. seo-faq
+                                           */
+                                          className?: string | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemFaq';
+                                        }
+                                      | {
+                                          source?: ('services' | 'manual') | null;
+                                          /**
+                                           * Leave empty to show all services
+                                           */
+                                          services?: (number | Service)[] | null;
+                                          cards?:
+                                            | {
+                                                title: string;
+                                                eyebrow?: string | null;
+                                                /**
+                                                 * Used by filters
+                                                 */
+                                                category?: string | null;
+                                                image?: (number | null) | Media;
+                                                imageAlt?: string | null;
+                                                text?: string | null;
+                                                url: string;
+                                                id?: string | null;
+                                              }[]
+                                            | null;
+                                          linkLabel?: string | null;
+                                          filter?: ('none' | 'services' | 'cases') | null;
+                                          filters?:
+                                            | {
+                                                label: string;
+                                                id?: string | null;
+                                              }[]
+                                            | null;
+                                          /**
+                                           * e.g. cards / cards service-grid / cards field-cards
+                                           */
+                                          gridClass?: string | null;
+                                          /**
+                                           * e.g. service-card / service-card application-card
+                                           */
+                                          cardClass?: string | null;
+                                          arrowSpan?: boolean | null;
+                                          hideImageLink?: boolean | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemCards';
+                                        }
+                                      | {
+                                          tag: string;
+                                          className?: string | null;
+                                          /**
+                                           * Used for interactive widgets (e.g. the cost calculator form).
+                                           */
+                                          html?: string | null;
+                                          elementId?: string | null;
+                                          /**
+                                           * e.g. {"data-print": "", "role": "status"}
+                                           */
+                                          attrs?:
+                                            | {
+                                                [k: string]: unknown;
+                                              }
+                                            | unknown[]
+                                            | string
+                                            | number
+                                            | boolean
+                                            | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemHtml';
+                                        }
+                                      | {
+                                          tag?:
+                                            | (
+                                                | 'div'
+                                                | 'article'
+                                                | 'aside'
+                                                | 'section'
+                                                | 'figure'
+                                                | 'a'
+                                                | 'ol'
+                                                | 'ul'
+                                                | 'li'
+                                                | 'details'
+                                              )
+                                            | null;
+                                          className?: string | null;
+                                          url?: string | null;
+                                          items?:
+                                            | (
+                                                | {
+                                                    heading?: string | null;
+                                                    help?: string | null;
+                                                    serviceOptions?:
+                                                      | {
+                                                          label: string;
+                                                          /**
+                                                           * Stored value (default: label)
+                                                           */
+                                                          value?: string | null;
+                                                          /**
+                                                           * ?service=
+                                                           */
+                                                          key?: string | null;
+                                                          id?: string | null;
+                                                        }[]
+                                                      | null;
+                                                    stageOptions?:
+                                                      | {
+                                                          label: string;
+                                                          id?: string | null;
+                                                        }[]
+                                                      | null;
+                                                    note?: string | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemEnquiryForm';
+                                                  }
+                                                | {
+                                                    level?: ('h1' | 'h2' | 'h3' | 'h4') | null;
+                                                    text: string;
+                                                    className?: string | null;
+                                                    elementId?: string | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemHeading';
+                                                  }
+                                                | {
+                                                    /**
+                                                     * Inline HTML allowed (links, <strong>). Enter = line break.
+                                                     */
+                                                    text?: string | null;
+                                                    tag?:
+                                                      | (
+                                                          | 'p'
+                                                          | 'span'
+                                                          | 'strong'
+                                                          | 'small'
+                                                          | 'b'
+                                                          | 'em'
+                                                          | 'div'
+                                                          | 'label'
+                                                        )
+                                                      | null;
+                                                    /**
+                                                     * Common styles
+                                                     */
+                                                    style?: ('eyebrow' | 'lede' | 'small-note' | 'large-copy') | null;
+                                                    /**
+                                                     * Overrides the style above when set
+                                                     */
+                                                    className?: string | null;
+                                                    elementId?: string | null;
+                                                    /**
+                                                     * e.g. {"data-print": "", "role": "status"}
+                                                     */
+                                                    attrs?:
+                                                      | {
+                                                          [k: string]: unknown;
+                                                        }
+                                                      | unknown[]
+                                                      | string
+                                                      | number
+                                                      | boolean
+                                                      | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemText';
+                                                  }
+                                                | {
+                                                    label: string;
+                                                    url: string;
+                                                    style?:
+                                                      | ('button' | 'button secondary' | 'button white' | 'text-link')
+                                                      | null;
+                                                    newTab?: boolean | null;
+                                                    /**
+                                                     * Overrides the style above when set
+                                                     */
+                                                    className?: string | null;
+                                                    elementId?: string | null;
+                                                    /**
+                                                     * e.g. {"data-print": "", "role": "status"}
+                                                     */
+                                                    attrs?:
+                                                      | {
+                                                          [k: string]: unknown;
+                                                        }
+                                                      | unknown[]
+                                                      | string
+                                                      | number
+                                                      | boolean
+                                                      | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemLink';
+                                                  }
+                                                | {
+                                                    ordered?: boolean | null;
+                                                    style?: ('check-list' | 'steps') | null;
+                                                    items?:
+                                                      | {
+                                                          /**
+                                                           * Inline HTML allowed (links, <strong>). Enter = line break.
+                                                           */
+                                                          text: string;
+                                                          id?: string | null;
+                                                        }[]
+                                                      | null;
+                                                    /**
+                                                     * Overrides the style above when set
+                                                     */
+                                                    className?: string | null;
+                                                    elementId?: string | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemList';
+                                                  }
+                                                | {
+                                                    image: number | Media;
+                                                    /**
+                                                     * Defaults to the media alt text
+                                                     */
+                                                    alt?: string | null;
+                                                    /**
+                                                     * Shown under the image (figure)
+                                                     */
+                                                    caption?: string | null;
+                                                    rounded?: boolean | null;
+                                                    figure?: boolean | null;
+                                                    url?: string | null;
+                                                    /**
+                                                     * CSS class of the <img>
+                                                     */
+                                                    className?: string | null;
+                                                    /**
+                                                     * CSS class of the <figure>
+                                                     */
+                                                    figureClass?: string | null;
+                                                    /**
+                                                     * CSS class of the wrapping <a>
+                                                     */
+                                                    linkClass?: string | null;
+                                                    elementId?: string | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemImage';
+                                                  }
+                                                | {
+                                                    video: number | Media;
+                                                    poster?: (number | null) | Media;
+                                                    caption?: string | null;
+                                                    /**
+                                                     * CSS class of the <figure>
+                                                     */
+                                                    figureClass?: string | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemVideo';
+                                                  }
+                                                | {
+                                                    caption?: string | null;
+                                                    header?:
+                                                      | {
+                                                          text: string;
+                                                          id?: string | null;
+                                                        }[]
+                                                      | null;
+                                                    rows?:
+                                                      | {
+                                                          /**
+                                                           * The first cell is the row heading
+                                                           */
+                                                          cells?:
+                                                            | {
+                                                                /**
+                                                                 * Inline HTML allowed (links, <strong>). Enter = line break.
+                                                                 */
+                                                                text?: string | null;
+                                                                id?: string | null;
+                                                              }[]
+                                                            | null;
+                                                          id?: string | null;
+                                                        }[]
+                                                      | null;
+                                                    firstCellIsHeading?: boolean | null;
+                                                    /**
+                                                     * Wrapper <div> class, e.g. b2b-table (empty = no wrapper)
+                                                     */
+                                                    wrapperClass?: string | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemTable';
+                                                  }
+                                                | {
+                                                    question: string;
+                                                    /**
+                                                     * Separate paragraphs with an empty line. Inline HTML allowed.
+                                                     */
+                                                    answer: string;
+                                                    /**
+                                                     * e.g. seo-faq
+                                                     */
+                                                    className?: string | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemFaq';
+                                                  }
+                                                | {
+                                                    source?: ('services' | 'manual') | null;
+                                                    /**
+                                                     * Leave empty to show all services
+                                                     */
+                                                    services?: (number | Service)[] | null;
+                                                    cards?:
+                                                      | {
+                                                          title: string;
+                                                          eyebrow?: string | null;
+                                                          /**
+                                                           * Used by filters
+                                                           */
+                                                          category?: string | null;
+                                                          image?: (number | null) | Media;
+                                                          imageAlt?: string | null;
+                                                          text?: string | null;
+                                                          url: string;
+                                                          id?: string | null;
+                                                        }[]
+                                                      | null;
+                                                    linkLabel?: string | null;
+                                                    filter?: ('none' | 'services' | 'cases') | null;
+                                                    filters?:
+                                                      | {
+                                                          label: string;
+                                                          id?: string | null;
+                                                        }[]
+                                                      | null;
+                                                    /**
+                                                     * e.g. cards / cards service-grid / cards field-cards
+                                                     */
+                                                    gridClass?: string | null;
+                                                    /**
+                                                     * e.g. service-card / service-card application-card
+                                                     */
+                                                    cardClass?: string | null;
+                                                    arrowSpan?: boolean | null;
+                                                    hideImageLink?: boolean | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemCards';
+                                                  }
+                                                | {
+                                                    tag: string;
+                                                    className?: string | null;
+                                                    /**
+                                                     * Used for interactive widgets (e.g. the cost calculator form).
+                                                     */
+                                                    html?: string | null;
+                                                    elementId?: string | null;
+                                                    /**
+                                                     * e.g. {"data-print": "", "role": "status"}
+                                                     */
+                                                    attrs?:
+                                                      | {
+                                                          [k: string]: unknown;
+                                                        }
+                                                      | unknown[]
+                                                      | string
+                                                      | number
+                                                      | boolean
+                                                      | null;
+                                                    id?: string | null;
+                                                    blockName?: string | null;
+                                                    blockType: 'itemHtml';
+                                                  }
+                                              )[]
+                                            | null;
+                                          elementId?: string | null;
+                                          /**
+                                           * e.g. {"data-print": "", "role": "status"}
+                                           */
+                                          attrs?:
+                                            | {
+                                                [k: string]: unknown;
+                                              }
+                                            | unknown[]
+                                            | string
+                                            | number
+                                            | boolean
+                                            | null;
+                                          id?: string | null;
+                                          blockName?: string | null;
+                                          blockType: 'itemGroup3';
+                                        }
+                                    )[]
+                                  | null;
+                                elementId?: string | null;
+                                /**
+                                 * e.g. {"data-print": "", "role": "status"}
+                                 */
+                                attrs?:
+                                  | {
+                                      [k: string]: unknown;
+                                    }
+                                  | unknown[]
+                                  | string
+                                  | number
+                                  | boolean
+                                  | null;
+                                id?: string | null;
+                                blockName?: string | null;
+                                blockType: 'itemGroup2';
+                              }
+                          )[]
+                        | null;
+                      elementId?: string | null;
+                      /**
+                       * e.g. {"data-print": "", "role": "status"}
+                       */
+                      attrs?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 'itemGroup1';
+                    }
+                )[]
+              | null;
+            /**
+             * Full class of <section> (overrides background), e.g. "section pale cro-next"
+             */
+            sectionClass?: string | null;
+            /**
+             * Full class of the inner wrapper (overrides layout)
+             */
+            wrapClass?: string | null;
+            /**
+             * Default: section
+             */
+            sectionTag?: string | null;
+            /**
+             * e.g. {"data-print": "", "role": "status"}
+             */
+            attrs?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'section';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            slides?:
+              | {
+                  image: number | Media;
+                  /**
+                   * Small uppercase label above the heading
+                   */
+                  eyebrow?: string | null;
+                  /**
+                   * Caption shown bottom-right
+                   */
+                  mediaNote?: string | null;
+                  title: string;
+                  highlight?: string | null;
+                  description?: string | null;
+                  cta?: {
+                    type?: ('reference' | 'custom') | null;
+                    newTab?: boolean | null;
+                    label?: string | null;
+                    reference?:
+                      | ({
+                          relationTo: 'pages';
+                          value: number | Page;
+                        } | null)
+                      | ({
+                          relationTo: 'services';
+                          value: number | Service;
+                        } | null);
+                    /**
+                     * e.g. /contact, /solar.html, #scope, mailto:…
+                     */
+                    url?: string | null;
+                  };
+                  imageFit?: ('cover' | 'dual') | null;
+                  id?: string | null;
+                }[]
+              | null;
+            secondaryLink?: {
+              type?: ('reference' | 'custom') | null;
+              newTab?: boolean | null;
+              label?: string | null;
+              reference?:
+                | ({
+                    relationTo: 'pages';
+                    value: number | Page;
+                  } | null)
+                | ({
+                    relationTo: 'services';
+                    value: number | Service;
+                  } | null);
+              /**
+               * e.g. /contact, /solar.html, #scope, mailto:…
+               */
+              url?: string | null;
+            };
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'heroSlider';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading: string;
+            lede?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'pageIntro';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            items?:
+              | {
+                  value: string;
+                  unit?: string | null;
+                  label: string;
+                  sublabel?: string | null;
+                  url?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'statsBar';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading?: string | null;
+            headerLink?: {
+              type?: ('reference' | 'custom') | null;
+              newTab?: boolean | null;
+              label?: string | null;
+              reference?:
+                | ({
+                    relationTo: 'pages';
+                    value: number | Page;
+                  } | null)
+                | ({
+                    relationTo: 'services';
+                    value: number | Service;
+                  } | null);
+              /**
+               * e.g. /contact, /solar.html, #scope, mailto:…
+               */
+              url?: string | null;
+            };
+            cards?:
+              | {
+                  image: number | Media;
+                  title: string;
+                  text?: string | null;
+                  url: string;
+                  linkLabel?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            /**
+             * Small print under the section
+             */
+            note?: string | null;
+            supportLinks?:
+              | {
+                  title: string;
+                  text?: string | null;
+                  url: string;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'capabilityCards';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            /**
+             * Visual variant matching the original design
+             */
+            style?: ('default' | 'profileIntro' | 'fieldTeam' | 'quality' | 'planning') | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading?: string | null;
+            /**
+             * Separate paragraphs with an empty line.
+             */
+            body?: string | null;
+            checklist?:
+              | {
+                  /**
+                   * Optional bold lead-in, e.g. "Field delivery:"
+                   */
+                  lead?: string | null;
+                  text: string;
+                  id?: string | null;
+                }[]
+              | null;
+            links?:
+              | {
+                  type?: ('reference' | 'custom') | null;
+                  newTab?: boolean | null;
+                  label?: string | null;
+                  reference?:
+                    | ({
+                        relationTo: 'pages';
+                        value: number | Page;
+                      } | null)
+                    | ({
+                        relationTo: 'services';
+                        value: number | Service;
+                      } | null);
+                  /**
+                   * e.g. /contact, /solar.html, #scope, mailto:…
+                   */
+                  url?: string | null;
+                  appearance?: ('button' | 'secondary' | 'white' | 'text' | 'plain') | null;
+                  id?: string | null;
+                }[]
+              | null;
+            secondary?: {
+              kind?: ('image' | 'text' | 'aside' | 'standards') | null;
+              image?: (number | null) | Media;
+              caption?: string | null;
+              rounded?: boolean | null;
+              eyebrow?: string | null;
+              heading?: string | null;
+              body?: string | null;
+              items?:
+                | {
+                    /**
+                     * Optional bold lead-in, e.g. "Field delivery:"
+                     */
+                    lead?: string | null;
+                    text: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              standards?:
+                | {
+                    title: string;
+                    text?: string | null;
+                    url?: string | null;
+                    id?: string | null;
+                  }[]
+                | null;
+              links?:
+                | {
+                    type?: ('reference' | 'custom') | null;
+                    newTab?: boolean | null;
+                    label?: string | null;
+                    reference?:
+                      | ({
+                          relationTo: 'pages';
+                          value: number | Page;
+                        } | null)
+                      | ({
+                          relationTo: 'services';
+                          value: number | Service;
+                        } | null);
+                    /**
+                     * e.g. /contact, /solar.html, #scope, mailto:…
+                     */
+                    url?: string | null;
+                    id?: string | null;
+                  }[]
+                | null;
+              note?: string | null;
+            };
+            background?: ('none' | 'pale') | null;
+            /**
+             * Optional, for links like /about#field-team
+             */
+            anchorId?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'split';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading?: string | null;
+            headerLink?: {
+              type?: ('reference' | 'custom') | null;
+              newTab?: boolean | null;
+              label?: string | null;
+              reference?:
+                | ({
+                    relationTo: 'pages';
+                    value: number | Page;
+                  } | null)
+                | ({
+                    relationTo: 'services';
+                    value: number | Service;
+                  } | null);
+              /**
+               * e.g. /contact, /solar.html, #scope, mailto:…
+               */
+              url?: string | null;
+            };
+            source?: ('selected' | 'all') | null;
+            projects?: (number | Project)[] | null;
+            showFilters?: boolean | null;
+            /**
+             * Small print under the section
+             */
+            note?: string | null;
+            background?: ('none' | 'pale') | null;
+            /**
+             * Optional, for links like /about#field-team
+             */
+            anchorId?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'projectsGrid';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading?: string | null;
+            intro?: string | null;
+            steps?:
+              | {
+                  title: string;
+                  text?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            links?:
+              | {
+                  type?: ('reference' | 'custom') | null;
+                  newTab?: boolean | null;
+                  label?: string | null;
+                  reference?:
+                    | ({
+                        relationTo: 'pages';
+                        value: number | Page;
+                      } | null)
+                    | ({
+                        relationTo: 'services';
+                        value: number | Service;
+                      } | null);
+                  /**
+                   * e.g. /contact, /solar.html, #scope, mailto:…
+                   */
+                  url?: string | null;
+                  appearance?: ('button' | 'secondary' | 'white' | 'text' | 'plain') | null;
+                  id?: string | null;
+                }[]
+              | null;
+            footnote?: string | null;
+            footLinks?:
+              | {
+                  type?: ('reference' | 'custom') | null;
+                  newTab?: boolean | null;
+                  label?: string | null;
+                  reference?:
+                    | ({
+                        relationTo: 'pages';
+                        value: number | Page;
+                      } | null)
+                    | ({
+                        relationTo: 'services';
+                        value: number | Service;
+                      } | null);
+                  /**
+                   * e.g. /contact, /solar.html, #scope, mailto:…
+                   */
+                  url?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            /**
+             * Optional video or image shown beside the steps
+             */
+            media?: (number | null) | Media;
+            /**
+             * Poster image for a video
+             */
+            mediaPoster?: (number | null) | Media;
+            mediaCaption?: string | null;
+            background?: ('none' | 'pale') | null;
+            /**
+             * Optional, for links like /about#field-team
+             */
+            anchorId?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'process';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            variant?: ('lifecycle' | 'pillars' | 'certificates') | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading?: string | null;
+            items?:
+              | {
+                  title: string;
+                  text?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            /**
+             * Small print under the section
+             */
+            note?: string | null;
+            background?: ('none' | 'pale') | null;
+            /**
+             * Optional, for links like /about#field-team
+             */
+            anchorId?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'cardGrid';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            variant?: ('customers' | 'partners') | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading?: string | null;
+            intro?: string | null;
+            logos?:
+              | {
+                  label: string;
+                  image: number | Media;
+                  /**
+                   * Optional joint logo
+                   */
+                  secondImage?: (number | null) | Media;
+                  url?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            /**
+             * Small print under the section
+             */
+            note?: string | null;
+            footerLink?: {
+              type?: ('reference' | 'custom') | null;
+              newTab?: boolean | null;
+              label?: string | null;
+              reference?:
+                | ({
+                    relationTo: 'pages';
+                    value: number | Page;
+                  } | null)
+                | ({
+                    relationTo: 'services';
+                    value: number | Service;
+                  } | null);
+              /**
+               * e.g. /contact, /solar.html, #scope, mailto:…
+               */
+              url?: string | null;
+            };
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'logoGrid';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading?: string | null;
+            items?:
+              | {
+                  value: string;
+                  label: string;
+                  id?: string | null;
+                }[]
+              | null;
+            /**
+             * Small print under the section
+             */
+            note?: string | null;
+            background?: ('none' | 'pale') | null;
+            /**
+             * Optional, for links like /about#field-team
+             */
+            anchorId?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'numbersGrid';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading?: string | null;
+            links?:
+              | {
+                  type?: ('reference' | 'custom') | null;
+                  newTab?: boolean | null;
+                  label?: string | null;
+                  reference?:
+                    | ({
+                        relationTo: 'pages';
+                        value: number | Page;
+                      } | null)
+                    | ({
+                        relationTo: 'services';
+                        value: number | Service;
+                      } | null);
+                  /**
+                   * e.g. /contact, /solar.html, #scope, mailto:…
+                   */
+                  url?: string | null;
+                  appearance?: ('button' | 'secondary' | 'white' | 'text' | 'plain') | null;
+                  id?: string | null;
+                }[]
+              | null;
+            background?: ('none' | 'pale') | null;
+            /**
+             * Optional, for links like /about#field-team
+             */
+            anchorId?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'actions';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            useDefault?: boolean | null;
+            custom?: {
+              /**
+               * Small uppercase label above the heading
+               */
+              eyebrow?: string | null;
+              /**
+               * Each new line becomes a line break on the website.
+               */
+              heading?: string | null;
+              text?: string | null;
+              link?: {
+                type?: ('reference' | 'custom') | null;
+                newTab?: boolean | null;
+                label?: string | null;
+                reference?:
+                  | ({
+                      relationTo: 'pages';
+                      value: number | Page;
+                    } | null)
+                  | ({
+                      relationTo: 'services';
+                      value: number | Service;
+                    } | null);
+                /**
+                 * e.g. /contact, /solar.html, #scope, mailto:…
+                 */
+                url?: string | null;
+              };
+            };
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'cta';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            evidenceTitle?: string | null;
+            evidenceLinks?:
+              | {
+                  type?: ('reference' | 'custom') | null;
+                  newTab?: boolean | null;
+                  label?: string | null;
+                  reference?:
+                    | ({
+                        relationTo: 'pages';
+                        value: number | Page;
+                      } | null)
+                    | ({
+                        relationTo: 'services';
+                        value: number | Service;
+                      } | null);
+                  /**
+                   * e.g. /contact, /solar.html, #scope, mailto:…
+                   */
+                  url?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            /**
+             * Small uppercase label above the heading
+             */
+            eyebrow?: string | null;
+            /**
+             * Each new line becomes a line break on the website.
+             */
+            heading?: string | null;
+            intro?: string | null;
+            briefTitle?: string | null;
+            briefText?: string | null;
+            /**
+             * Offices come from Site Settings
+             */
+            showOffices?: boolean | null;
+            processHeading?: string | null;
+            processSteps?:
+              | {
+                  text: string;
+                  id?: string | null;
+                }[]
+              | null;
+            processLink?: {
+              type?: ('reference' | 'custom') | null;
+              newTab?: boolean | null;
+              label?: string | null;
+              reference?:
+                | ({
+                    relationTo: 'pages';
+                    value: number | Page;
+                  } | null)
+                | ({
+                    relationTo: 'services';
+                    value: number | Service;
+                  } | null);
+              /**
+               * e.g. /contact, /solar.html, #scope, mailto:…
+               */
+              url?: string | null;
+            };
+            formHeading?: string | null;
+            formHelp?: string | null;
+            serviceOptions?:
+              | {
+                  label: string;
+                  /**
+                   * Matches ?service= in links
+                   */
+                  key?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            stageOptions?:
+              | {
+                  label: string;
+                  id?: string | null;
+                }[]
+              | null;
+            formNote?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'contactSection';
+          }
+        | {
+            /**
+             * The section stays saved here and can be shown again at any time.
+             */
+            hidden?: boolean | null;
+            /**
+             * Edit the content in Content → Shared sections. Changes appear on every page that uses it.
+             */
+            section: number | SharedSection;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'sharedSection';
+          }
+      )[]
     | null;
   meta?: {
     /**
@@ -14463,6 +16417,1201 @@ export interface ProjectsSelect<T extends boolean = true> {
         reference?: T;
         url?: T;
         id?: T;
+      };
+  customLayout?:
+    | T
+    | {
+        section?:
+          | T
+          | {
+              hidden?: T;
+              background?: T;
+              layout?: T;
+              anchorId?: T;
+              items?:
+                | T
+                | {
+                    itemEnquiryForm?:
+                      | T
+                      | {
+                          heading?: T;
+                          help?: T;
+                          serviceOptions?:
+                            | T
+                            | {
+                                label?: T;
+                                value?: T;
+                                key?: T;
+                                id?: T;
+                              };
+                          stageOptions?:
+                            | T
+                            | {
+                                label?: T;
+                                id?: T;
+                              };
+                          note?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemHeading?:
+                      | T
+                      | {
+                          level?: T;
+                          text?: T;
+                          className?: T;
+                          elementId?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemText?:
+                      | T
+                      | {
+                          text?: T;
+                          tag?: T;
+                          style?: T;
+                          className?: T;
+                          elementId?: T;
+                          attrs?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemLink?:
+                      | T
+                      | {
+                          label?: T;
+                          url?: T;
+                          style?: T;
+                          newTab?: T;
+                          className?: T;
+                          elementId?: T;
+                          attrs?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemList?:
+                      | T
+                      | {
+                          ordered?: T;
+                          style?: T;
+                          items?:
+                            | T
+                            | {
+                                text?: T;
+                                id?: T;
+                              };
+                          className?: T;
+                          elementId?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemImage?:
+                      | T
+                      | {
+                          image?: T;
+                          alt?: T;
+                          caption?: T;
+                          rounded?: T;
+                          figure?: T;
+                          url?: T;
+                          className?: T;
+                          figureClass?: T;
+                          linkClass?: T;
+                          elementId?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemVideo?:
+                      | T
+                      | {
+                          video?: T;
+                          poster?: T;
+                          caption?: T;
+                          figureClass?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemTable?:
+                      | T
+                      | {
+                          caption?: T;
+                          header?:
+                            | T
+                            | {
+                                text?: T;
+                                id?: T;
+                              };
+                          rows?:
+                            | T
+                            | {
+                                cells?:
+                                  | T
+                                  | {
+                                      text?: T;
+                                      id?: T;
+                                    };
+                                id?: T;
+                              };
+                          firstCellIsHeading?: T;
+                          wrapperClass?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemFaq?:
+                      | T
+                      | {
+                          question?: T;
+                          answer?: T;
+                          className?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemCards?:
+                      | T
+                      | {
+                          source?: T;
+                          services?: T;
+                          cards?:
+                            | T
+                            | {
+                                title?: T;
+                                eyebrow?: T;
+                                category?: T;
+                                image?: T;
+                                imageAlt?: T;
+                                text?: T;
+                                url?: T;
+                                id?: T;
+                              };
+                          linkLabel?: T;
+                          filter?: T;
+                          filters?:
+                            | T
+                            | {
+                                label?: T;
+                                id?: T;
+                              };
+                          gridClass?: T;
+                          cardClass?: T;
+                          arrowSpan?: T;
+                          hideImageLink?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemHtml?:
+                      | T
+                      | {
+                          tag?: T;
+                          className?: T;
+                          html?: T;
+                          elementId?: T;
+                          attrs?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    itemGroup1?:
+                      | T
+                      | {
+                          tag?: T;
+                          className?: T;
+                          url?: T;
+                          items?:
+                            | T
+                            | {
+                                itemEnquiryForm?:
+                                  | T
+                                  | {
+                                      heading?: T;
+                                      help?: T;
+                                      serviceOptions?:
+                                        | T
+                                        | {
+                                            label?: T;
+                                            value?: T;
+                                            key?: T;
+                                            id?: T;
+                                          };
+                                      stageOptions?:
+                                        | T
+                                        | {
+                                            label?: T;
+                                            id?: T;
+                                          };
+                                      note?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemHeading?:
+                                  | T
+                                  | {
+                                      level?: T;
+                                      text?: T;
+                                      className?: T;
+                                      elementId?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemText?:
+                                  | T
+                                  | {
+                                      text?: T;
+                                      tag?: T;
+                                      style?: T;
+                                      className?: T;
+                                      elementId?: T;
+                                      attrs?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemLink?:
+                                  | T
+                                  | {
+                                      label?: T;
+                                      url?: T;
+                                      style?: T;
+                                      newTab?: T;
+                                      className?: T;
+                                      elementId?: T;
+                                      attrs?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemList?:
+                                  | T
+                                  | {
+                                      ordered?: T;
+                                      style?: T;
+                                      items?:
+                                        | T
+                                        | {
+                                            text?: T;
+                                            id?: T;
+                                          };
+                                      className?: T;
+                                      elementId?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemImage?:
+                                  | T
+                                  | {
+                                      image?: T;
+                                      alt?: T;
+                                      caption?: T;
+                                      rounded?: T;
+                                      figure?: T;
+                                      url?: T;
+                                      className?: T;
+                                      figureClass?: T;
+                                      linkClass?: T;
+                                      elementId?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemVideo?:
+                                  | T
+                                  | {
+                                      video?: T;
+                                      poster?: T;
+                                      caption?: T;
+                                      figureClass?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemTable?:
+                                  | T
+                                  | {
+                                      caption?: T;
+                                      header?:
+                                        | T
+                                        | {
+                                            text?: T;
+                                            id?: T;
+                                          };
+                                      rows?:
+                                        | T
+                                        | {
+                                            cells?:
+                                              | T
+                                              | {
+                                                  text?: T;
+                                                  id?: T;
+                                                };
+                                            id?: T;
+                                          };
+                                      firstCellIsHeading?: T;
+                                      wrapperClass?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemFaq?:
+                                  | T
+                                  | {
+                                      question?: T;
+                                      answer?: T;
+                                      className?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemCards?:
+                                  | T
+                                  | {
+                                      source?: T;
+                                      services?: T;
+                                      cards?:
+                                        | T
+                                        | {
+                                            title?: T;
+                                            eyebrow?: T;
+                                            category?: T;
+                                            image?: T;
+                                            imageAlt?: T;
+                                            text?: T;
+                                            url?: T;
+                                            id?: T;
+                                          };
+                                      linkLabel?: T;
+                                      filter?: T;
+                                      filters?:
+                                        | T
+                                        | {
+                                            label?: T;
+                                            id?: T;
+                                          };
+                                      gridClass?: T;
+                                      cardClass?: T;
+                                      arrowSpan?: T;
+                                      hideImageLink?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemHtml?:
+                                  | T
+                                  | {
+                                      tag?: T;
+                                      className?: T;
+                                      html?: T;
+                                      elementId?: T;
+                                      attrs?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                                itemGroup2?:
+                                  | T
+                                  | {
+                                      tag?: T;
+                                      className?: T;
+                                      url?: T;
+                                      items?:
+                                        | T
+                                        | {
+                                            itemEnquiryForm?:
+                                              | T
+                                              | {
+                                                  heading?: T;
+                                                  help?: T;
+                                                  serviceOptions?:
+                                                    | T
+                                                    | {
+                                                        label?: T;
+                                                        value?: T;
+                                                        key?: T;
+                                                        id?: T;
+                                                      };
+                                                  stageOptions?:
+                                                    | T
+                                                    | {
+                                                        label?: T;
+                                                        id?: T;
+                                                      };
+                                                  note?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemHeading?:
+                                              | T
+                                              | {
+                                                  level?: T;
+                                                  text?: T;
+                                                  className?: T;
+                                                  elementId?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemText?:
+                                              | T
+                                              | {
+                                                  text?: T;
+                                                  tag?: T;
+                                                  style?: T;
+                                                  className?: T;
+                                                  elementId?: T;
+                                                  attrs?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemLink?:
+                                              | T
+                                              | {
+                                                  label?: T;
+                                                  url?: T;
+                                                  style?: T;
+                                                  newTab?: T;
+                                                  className?: T;
+                                                  elementId?: T;
+                                                  attrs?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemList?:
+                                              | T
+                                              | {
+                                                  ordered?: T;
+                                                  style?: T;
+                                                  items?:
+                                                    | T
+                                                    | {
+                                                        text?: T;
+                                                        id?: T;
+                                                      };
+                                                  className?: T;
+                                                  elementId?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemImage?:
+                                              | T
+                                              | {
+                                                  image?: T;
+                                                  alt?: T;
+                                                  caption?: T;
+                                                  rounded?: T;
+                                                  figure?: T;
+                                                  url?: T;
+                                                  className?: T;
+                                                  figureClass?: T;
+                                                  linkClass?: T;
+                                                  elementId?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemVideo?:
+                                              | T
+                                              | {
+                                                  video?: T;
+                                                  poster?: T;
+                                                  caption?: T;
+                                                  figureClass?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemTable?:
+                                              | T
+                                              | {
+                                                  caption?: T;
+                                                  header?:
+                                                    | T
+                                                    | {
+                                                        text?: T;
+                                                        id?: T;
+                                                      };
+                                                  rows?:
+                                                    | T
+                                                    | {
+                                                        cells?:
+                                                          | T
+                                                          | {
+                                                              text?: T;
+                                                              id?: T;
+                                                            };
+                                                        id?: T;
+                                                      };
+                                                  firstCellIsHeading?: T;
+                                                  wrapperClass?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemFaq?:
+                                              | T
+                                              | {
+                                                  question?: T;
+                                                  answer?: T;
+                                                  className?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemCards?:
+                                              | T
+                                              | {
+                                                  source?: T;
+                                                  services?: T;
+                                                  cards?:
+                                                    | T
+                                                    | {
+                                                        title?: T;
+                                                        eyebrow?: T;
+                                                        category?: T;
+                                                        image?: T;
+                                                        imageAlt?: T;
+                                                        text?: T;
+                                                        url?: T;
+                                                        id?: T;
+                                                      };
+                                                  linkLabel?: T;
+                                                  filter?: T;
+                                                  filters?:
+                                                    | T
+                                                    | {
+                                                        label?: T;
+                                                        id?: T;
+                                                      };
+                                                  gridClass?: T;
+                                                  cardClass?: T;
+                                                  arrowSpan?: T;
+                                                  hideImageLink?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemHtml?:
+                                              | T
+                                              | {
+                                                  tag?: T;
+                                                  className?: T;
+                                                  html?: T;
+                                                  elementId?: T;
+                                                  attrs?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                            itemGroup3?:
+                                              | T
+                                              | {
+                                                  tag?: T;
+                                                  className?: T;
+                                                  url?: T;
+                                                  items?:
+                                                    | T
+                                                    | {
+                                                        itemEnquiryForm?:
+                                                          | T
+                                                          | {
+                                                              heading?: T;
+                                                              help?: T;
+                                                              serviceOptions?:
+                                                                | T
+                                                                | {
+                                                                    label?: T;
+                                                                    value?: T;
+                                                                    key?: T;
+                                                                    id?: T;
+                                                                  };
+                                                              stageOptions?:
+                                                                | T
+                                                                | {
+                                                                    label?: T;
+                                                                    id?: T;
+                                                                  };
+                                                              note?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemHeading?:
+                                                          | T
+                                                          | {
+                                                              level?: T;
+                                                              text?: T;
+                                                              className?: T;
+                                                              elementId?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemText?:
+                                                          | T
+                                                          | {
+                                                              text?: T;
+                                                              tag?: T;
+                                                              style?: T;
+                                                              className?: T;
+                                                              elementId?: T;
+                                                              attrs?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemLink?:
+                                                          | T
+                                                          | {
+                                                              label?: T;
+                                                              url?: T;
+                                                              style?: T;
+                                                              newTab?: T;
+                                                              className?: T;
+                                                              elementId?: T;
+                                                              attrs?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemList?:
+                                                          | T
+                                                          | {
+                                                              ordered?: T;
+                                                              style?: T;
+                                                              items?:
+                                                                | T
+                                                                | {
+                                                                    text?: T;
+                                                                    id?: T;
+                                                                  };
+                                                              className?: T;
+                                                              elementId?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemImage?:
+                                                          | T
+                                                          | {
+                                                              image?: T;
+                                                              alt?: T;
+                                                              caption?: T;
+                                                              rounded?: T;
+                                                              figure?: T;
+                                                              url?: T;
+                                                              className?: T;
+                                                              figureClass?: T;
+                                                              linkClass?: T;
+                                                              elementId?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemVideo?:
+                                                          | T
+                                                          | {
+                                                              video?: T;
+                                                              poster?: T;
+                                                              caption?: T;
+                                                              figureClass?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemTable?:
+                                                          | T
+                                                          | {
+                                                              caption?: T;
+                                                              header?:
+                                                                | T
+                                                                | {
+                                                                    text?: T;
+                                                                    id?: T;
+                                                                  };
+                                                              rows?:
+                                                                | T
+                                                                | {
+                                                                    cells?:
+                                                                      | T
+                                                                      | {
+                                                                          text?: T;
+                                                                          id?: T;
+                                                                        };
+                                                                    id?: T;
+                                                                  };
+                                                              firstCellIsHeading?: T;
+                                                              wrapperClass?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemFaq?:
+                                                          | T
+                                                          | {
+                                                              question?: T;
+                                                              answer?: T;
+                                                              className?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemCards?:
+                                                          | T
+                                                          | {
+                                                              source?: T;
+                                                              services?: T;
+                                                              cards?:
+                                                                | T
+                                                                | {
+                                                                    title?: T;
+                                                                    eyebrow?: T;
+                                                                    category?: T;
+                                                                    image?: T;
+                                                                    imageAlt?: T;
+                                                                    text?: T;
+                                                                    url?: T;
+                                                                    id?: T;
+                                                                  };
+                                                              linkLabel?: T;
+                                                              filter?: T;
+                                                              filters?:
+                                                                | T
+                                                                | {
+                                                                    label?: T;
+                                                                    id?: T;
+                                                                  };
+                                                              gridClass?: T;
+                                                              cardClass?: T;
+                                                              arrowSpan?: T;
+                                                              hideImageLink?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                        itemHtml?:
+                                                          | T
+                                                          | {
+                                                              tag?: T;
+                                                              className?: T;
+                                                              html?: T;
+                                                              elementId?: T;
+                                                              attrs?: T;
+                                                              id?: T;
+                                                              blockName?: T;
+                                                            };
+                                                      };
+                                                  elementId?: T;
+                                                  attrs?: T;
+                                                  id?: T;
+                                                  blockName?: T;
+                                                };
+                                          };
+                                      elementId?: T;
+                                      attrs?: T;
+                                      id?: T;
+                                      blockName?: T;
+                                    };
+                              };
+                          elementId?: T;
+                          attrs?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              sectionClass?: T;
+              wrapClass?: T;
+              sectionTag?: T;
+              attrs?: T;
+              id?: T;
+              blockName?: T;
+            };
+        heroSlider?:
+          | T
+          | {
+              hidden?: T;
+              slides?:
+                | T
+                | {
+                    image?: T;
+                    eyebrow?: T;
+                    mediaNote?: T;
+                    title?: T;
+                    highlight?: T;
+                    description?: T;
+                    cta?:
+                      | T
+                      | {
+                          type?: T;
+                          newTab?: T;
+                          label?: T;
+                          reference?: T;
+                          url?: T;
+                        };
+                    imageFit?: T;
+                    id?: T;
+                  };
+              secondaryLink?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        pageIntro?:
+          | T
+          | {
+              hidden?: T;
+              eyebrow?: T;
+              heading?: T;
+              lede?: T;
+              id?: T;
+              blockName?: T;
+            };
+        statsBar?:
+          | T
+          | {
+              hidden?: T;
+              items?:
+                | T
+                | {
+                    value?: T;
+                    unit?: T;
+                    label?: T;
+                    sublabel?: T;
+                    url?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        capabilityCards?:
+          | T
+          | {
+              hidden?: T;
+              eyebrow?: T;
+              heading?: T;
+              headerLink?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                  };
+              cards?:
+                | T
+                | {
+                    image?: T;
+                    title?: T;
+                    text?: T;
+                    url?: T;
+                    linkLabel?: T;
+                    id?: T;
+                  };
+              note?: T;
+              supportLinks?:
+                | T
+                | {
+                    title?: T;
+                    text?: T;
+                    url?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        split?:
+          | T
+          | {
+              hidden?: T;
+              style?: T;
+              eyebrow?: T;
+              heading?: T;
+              body?: T;
+              checklist?:
+                | T
+                | {
+                    lead?: T;
+                    text?: T;
+                    id?: T;
+                  };
+              links?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                    appearance?: T;
+                    id?: T;
+                  };
+              secondary?:
+                | T
+                | {
+                    kind?: T;
+                    image?: T;
+                    caption?: T;
+                    rounded?: T;
+                    eyebrow?: T;
+                    heading?: T;
+                    body?: T;
+                    items?:
+                      | T
+                      | {
+                          lead?: T;
+                          text?: T;
+                          id?: T;
+                        };
+                    standards?:
+                      | T
+                      | {
+                          title?: T;
+                          text?: T;
+                          url?: T;
+                          id?: T;
+                        };
+                    links?:
+                      | T
+                      | {
+                          type?: T;
+                          newTab?: T;
+                          label?: T;
+                          reference?: T;
+                          url?: T;
+                          id?: T;
+                        };
+                    note?: T;
+                  };
+              background?: T;
+              anchorId?: T;
+              id?: T;
+              blockName?: T;
+            };
+        projectsGrid?:
+          | T
+          | {
+              hidden?: T;
+              eyebrow?: T;
+              heading?: T;
+              headerLink?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                  };
+              source?: T;
+              projects?: T;
+              showFilters?: T;
+              note?: T;
+              background?: T;
+              anchorId?: T;
+              id?: T;
+              blockName?: T;
+            };
+        process?:
+          | T
+          | {
+              hidden?: T;
+              eyebrow?: T;
+              heading?: T;
+              intro?: T;
+              steps?:
+                | T
+                | {
+                    title?: T;
+                    text?: T;
+                    id?: T;
+                  };
+              links?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                    appearance?: T;
+                    id?: T;
+                  };
+              footnote?: T;
+              footLinks?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                    id?: T;
+                  };
+              media?: T;
+              mediaPoster?: T;
+              mediaCaption?: T;
+              background?: T;
+              anchorId?: T;
+              id?: T;
+              blockName?: T;
+            };
+        cardGrid?:
+          | T
+          | {
+              hidden?: T;
+              variant?: T;
+              eyebrow?: T;
+              heading?: T;
+              items?:
+                | T
+                | {
+                    title?: T;
+                    text?: T;
+                    id?: T;
+                  };
+              note?: T;
+              background?: T;
+              anchorId?: T;
+              id?: T;
+              blockName?: T;
+            };
+        logoGrid?:
+          | T
+          | {
+              hidden?: T;
+              variant?: T;
+              eyebrow?: T;
+              heading?: T;
+              intro?: T;
+              logos?:
+                | T
+                | {
+                    label?: T;
+                    image?: T;
+                    secondImage?: T;
+                    url?: T;
+                    id?: T;
+                  };
+              note?: T;
+              footerLink?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        numbersGrid?:
+          | T
+          | {
+              hidden?: T;
+              eyebrow?: T;
+              heading?: T;
+              items?:
+                | T
+                | {
+                    value?: T;
+                    label?: T;
+                    id?: T;
+                  };
+              note?: T;
+              background?: T;
+              anchorId?: T;
+              id?: T;
+              blockName?: T;
+            };
+        actions?:
+          | T
+          | {
+              hidden?: T;
+              eyebrow?: T;
+              heading?: T;
+              links?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                    appearance?: T;
+                    id?: T;
+                  };
+              background?: T;
+              anchorId?: T;
+              id?: T;
+              blockName?: T;
+            };
+        cta?:
+          | T
+          | {
+              hidden?: T;
+              useDefault?: T;
+              custom?:
+                | T
+                | {
+                    eyebrow?: T;
+                    heading?: T;
+                    text?: T;
+                    link?:
+                      | T
+                      | {
+                          type?: T;
+                          newTab?: T;
+                          label?: T;
+                          reference?: T;
+                          url?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        contactSection?:
+          | T
+          | {
+              hidden?: T;
+              evidenceTitle?: T;
+              evidenceLinks?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                    id?: T;
+                  };
+              eyebrow?: T;
+              heading?: T;
+              intro?: T;
+              briefTitle?: T;
+              briefText?: T;
+              showOffices?: T;
+              processHeading?: T;
+              processSteps?:
+                | T
+                | {
+                    text?: T;
+                    id?: T;
+                  };
+              processLink?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    label?: T;
+                    reference?: T;
+                    url?: T;
+                  };
+              formHeading?: T;
+              formHelp?: T;
+              serviceOptions?:
+                | T
+                | {
+                    label?: T;
+                    key?: T;
+                    id?: T;
+                  };
+              stageOptions?:
+                | T
+                | {
+                    label?: T;
+                    id?: T;
+                  };
+              formNote?: T;
+              id?: T;
+              blockName?: T;
+            };
+        sharedSection?:
+          | T
+          | {
+              hidden?: T;
+              section?: T;
+              id?: T;
+              blockName?: T;
+            };
       };
   meta?:
     | T

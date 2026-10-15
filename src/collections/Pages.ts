@@ -74,6 +74,7 @@ export const Pages: CollectionConfig = {
       options: [
         { label: 'Cost calculator', value: 'calculator' },
         { label: 'Print button & guide search', value: 'b2b' },
+        { label: 'Filter buttons (projects)', value: 'filters' },
       ],
     },
     {

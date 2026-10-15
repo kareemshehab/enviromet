@@ -1,5 +1,5 @@
 import React from 'react'
-import { getGlobals, getMenuPages, getRequestLocale } from '@/lib/data'
+import { getGlobals, getLocaleSlugs, getMenuPages, getRequestLocale } from '@/lib/data'
 import { asMedia, resolveHref, type LinkData } from '@/lib/links'
 import { formatSlug } from '@/lib/slug'
 import { HeaderNav, type NavItem } from './HeaderNav.client'
@@ -12,7 +12,11 @@ const toNavLink = (l?: LinkData | null) => {
 /** Server component: loads the menu from the CMS; HeaderNav (client) adds the interactive behaviour. */
 export async function SiteHeader() {
   const locale = getRequestLocale()
-  const [{ header, settings }, menuPages] = await Promise.all([getGlobals(locale), getMenuPages(locale)])
+  const [{ header, settings }, menuPages, otherSlugs] = await Promise.all([
+    getGlobals(locale),
+    getMenuPages(locale),
+    getLocaleSlugs(locale === 'ar' ? 'en' : 'ar'),
+  ])
   const logo = asMedia(settings.logo)
   let items: NavItem[] = (header.navItems ?? []).map((item) =>
     item.kind === 'link'
@@ -77,6 +81,7 @@ export async function SiteHeader() {
         items={items}
         cta={cta}
         language={language}
+        otherLanguageSlugs={otherSlugs}
         showSearch={header.showSearch ?? true}
       />
     </>

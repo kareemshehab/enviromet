@@ -15,6 +15,7 @@ const cls = (...c: (string | null | undefined | false)[]) => c.filter(Boolean).j
 const hasTags = (s?: string | null) => !!s && /<[a-z]/i.test(s)
 
 async function CardsItem({ item }: { item: Item }) {
+  const locale = getRequestLocale()
   let cards: Card[] = []
   if (item.source === 'manual') {
     cards = (item.cards ?? []).map((c: any) => {
@@ -68,13 +69,14 @@ async function CardsItem({ item }: { item: Item }) {
   return (
     <CardsGridClient
       cards={cards}
-      linkLabel={item.linkLabel || 'Explore the service'}
+      linkLabel={item.linkLabel || (locale === 'ar' ? 'استكشف الخدمة' : 'Explore the service')}
       filter={item.filter ?? 'none'}
       filters={(item.filters ?? []).map((f: any) => f.label)}
       gridClass={item.gridClass || 'cards'}
       cardClass={item.cardClass || 'service-card'}
       arrowSpan={item.arrowSpan}
       hideImageLink={item.hideImageLink}
+      locale={locale}
     />
   )
 }
