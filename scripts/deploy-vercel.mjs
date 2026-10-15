@@ -7,7 +7,7 @@
  *   2. Checks the database connection.
  *   3. Signs in to Vercel (opens the browser the first time) and links/creates the "enviromet-cms" project.
  *   4. Creates a Vercel Blob store for images (first run only) and reads its token.
- *   5. Saves DATABASE_URI, PAYLOAD_SECRET and PREVIEW_SECRET in the Vercel project.
+ *   5. Saves DATABASE_URI, PAYLOAD_SECRET, PREVIEW_SECRET and CRON_SECRET in the Vercel project.
  *   6. Imports all content into the empty database (skipped when the database already has pages).
  *   7. Deploys to production and writes the link + admin login to deploy-result.txt.
  *
@@ -174,6 +174,7 @@ say(hasContent ? 'Connected. The database already has content.' : 'Connected. Th
 step(2, 'Production settings')
 env.PAYLOAD_SECRET ||= secret()
 env.PREVIEW_SECRET ||= secret(24)
+env.CRON_SECRET ||= secret(24) // lets only Vercel's daily cron call /api/keep-alive
 env.ADMIN_EMAIL ||= 'admin@enviromet.local'
 env.ADMIN_PASSWORD ||= adminPassword()
 writeEnvFile(env)
@@ -218,6 +219,7 @@ for (const [name, value] of [
   ['DATABASE_URI', env.DATABASE_URI],
   ['PAYLOAD_SECRET', env.PAYLOAD_SECRET],
   ['PREVIEW_SECRET', env.PREVIEW_SECRET],
+  ['CRON_SECRET', env.CRON_SECRET],
 ]) {
   if (remote[name] === value) continue
   const r = vercel(['env', 'add', name, 'production', '--value', value, '--force', '--yes'])
