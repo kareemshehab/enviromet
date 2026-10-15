@@ -188,8 +188,6 @@ any warnings.
 
 ## 6. Before going live
 
-- **Database:** SQLite is fine on one server. For cloud or serverless hosting, switch to Postgres
-  (`@payloadcms/db-postgres`) and use migrations (`npm run payload migrate:create` / `migrate`) instead of `push: true`.
 - **Media storage:** for cloud hosting, add `@payloadcms/storage-s3` (or Azure / GCS).
 - **Secrets:** set long random `PAYLOAD_SECRET` and `PREVIEW_SECRET`, and set `NEXT_PUBLIC_SERVER_URL` to the real domain.
 - **Enquiry alerts:** add an email adapter (e.g. `@payloadcms/email-nodemailer`) and an `afterChange`
@@ -204,6 +202,7 @@ any warnings.
 | `npm run dev` | Development server |
 | `npm run build` / `npm start` | Production build / server |
 | `npm run seed` | Re-import all content (wipes Pages, Services, Projects, Shared sections, Templates, Media) |
+| `npm run migrate` | Live Postgres only (needs `DATABASE_URI`): creates a migration for schema changes and applies pending migrations (see §8). Does nothing on local SQLite |
 | `npm run upgrade` | Adds shared sections, solution settings and page templates to an existing database without deleting anything (safe to repeat; the deploy script runs it on the live database) |
 | `npm run typecheck` / `npm run lint` | TypeScript and ESLint checks |
 | `npm run generate:types` | Regenerate `src/payload-types.ts` after schema changes |
@@ -217,10 +216,27 @@ any warnings.
    in the browser, creates the `enviromet-cms` project and an image store (Vercel Blob), imports all
    content into Supabase and deploys. The link and admin login are written to `deploy-result.txt`.
 3. Later deploys: run `deploy-vercel.bat` again. Content is never re-imported over existing data:
-   the script updates the database schema and runs `src/seed/upgrade.ts` (adds new features such as
+   the script applies database migrations (§8) and runs `src/seed/upgrade.ts` (adds new features such as
    shared sections and page templates, keeps every edit). `deploy-vercel.bat --reseed` wipes and
    re-imports on purpose.
 
 How production differs from local: Postgres instead of SQLite (`DATABASE_URI`, blocks stored as JSON),
 images in Vercel Blob instead of `/media` (`BLOB_READ_WRITE_TOKEN`), functions in Frankfurt (`vercel.json`).
 Secrets live in `deploy.env` on your PC and in the Vercel project settings, never in the code.
+
+## 8. Database changes: migrations (live) and push (local)
+
+- **Local (SQLite):** schema changes are applied automatically when the server starts (`push`). Nothing to do.
+- **Live (Supabase Postgres):** changes go through **migrations** in `src/migrations`, like EF Core migrations
+  in .NET. Every deploy runs `src/seed/migrate.ts`, which:
+  1. compares the collections in the code with the last migration snapshot (`*.json`) and, if they differ,
+     writes a new migration (`<date>_schema_change.ts` + `.json`). **Commit it** (push-to-github.bat);
+  2. stops the deploy if a change can delete data (drop a table or column, change a column type, rename).
+     Check it, then run `deploy-vercel.bat --allow-data-loss` if it is intended;
+  3. applies every migration the database has not run yet (recorded in the `payload_migrations` table).
+- `20261015_123043_initial` is the starting point (the schema as it was when migrations were introduced).
+  The live database already had these tables (it was built by push), so it was recorded as applied
+  without running it. A new, empty database is built by running it.
+- If a deploy shows a question about renamed columns, answer it in the window: it asks whether a column was
+  renamed or is a new one.
+

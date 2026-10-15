@@ -8,11 +8,13 @@
  *   3. Signs in to Vercel (opens the browser the first time) and links/creates the "enviromet-cms" project.
  *   4. Creates a Vercel Blob store for images (first run only) and reads its token.
  *   5. Saves DATABASE_URI, PAYLOAD_SECRET, PREVIEW_SECRET and CRON_SECRET in the Vercel project.
- *   6. Imports all content into the empty database (skipped when the database already has pages).
+ *   6. Database: creates/applies migrations (src/seed/migrate.ts), then imports all content into an
+ *      empty database, or applies the non-destructive content update (upgrade.ts) to an existing one.
  *   7. Deploys to production and writes the link + admin login to deploy-result.txt.
  *
  * Re-running is safe: finished steps are skipped and content is never re-imported over existing data
- * (pass --reseed to wipe and re-import on purpose).
+ * (pass --reseed to wipe and re-import on purpose). A schema change that can delete data stops the
+ * deploy until you run it again with --allow-data-loss.
  */
 import { spawn, spawnSync } from 'node:child_process'
 import { randomBytes } from 'node:crypto'
@@ -28,6 +30,7 @@ const ENV_FILE = path.join(root, 'deploy.env')
 const RESULT_FILE = path.join(root, 'deploy-result.txt')
 const PROJECT = 'enviromet-cms'
 const RESEED = process.argv.includes('--reseed')
+const ALLOW_DATA_LOSS = process.argv.includes('--allow-data-loss')
 const isWin = process.platform === 'win32'
 
 const say = (msg = '') => console.log(msg)
@@ -262,7 +265,7 @@ if (hasContent && !reseed) {
   }
 }
 /** Runs a TypeScript script from src/seed against the production database (tsx directly: on Windows
- *  `payload run` can exit silently). Tables are created/updated by the schema push. */
+ *  `payload run` can exit silently). Tables are created and changed only by migrations (migrate.ts). */
 const runSeedScript = (file) =>
   new Promise((resolve) => {
     const child = spawn(process.execPath, ['--no-deprecation', '--import', 'tsx', file], {
@@ -273,7 +276,7 @@ const runSeedScript = (file) =>
         DATABASE_URI: env.DATABASE_URI,
         PAYLOAD_SECRET: env.PAYLOAD_SECRET,
         BLOB_READ_WRITE_TOKEN: remote.BLOB_READ_WRITE_TOKEN,
-        PAYLOAD_DB_PUSH: 'true',
+        ALLOW_DATA_LOSS: ALLOW_DATA_LOSS ? 'true' : 'false',
         PAYLOAD_USE_BLOB: 'true',
         SEED_ADMIN_EMAIL: env.ADMIN_EMAIL,
         SEED_ADMIN_PASSWORD: env.ADMIN_PASSWORD,
@@ -282,6 +285,15 @@ const runSeedScript = (file) =>
     child.on('exit', resolve)
   })
 
+// Schema first: new migrations for code changes, then apply them (see src/seed/migrate.ts).
+say('Updating the database structure (migrations)…')
+const migrated = await runSeedScript('src/seed/migrate.ts')
+if (migrated === 2)
+  fail('Deploy stopped: a database change in the code would delete data (see above). If that is intended, run: deploy-vercel.bat --allow-data-loss')
+if (migrated !== 0) fail('The database migration failed (see the messages above). Nothing was deployed.')
+if (spawnSync('git', ['status', '--porcelain', 'src/migrations'], { cwd: root, encoding: 'utf8' }).stdout?.trim())
+  say('New migration files in src/migrations: commit them to GitHub (push-to-github.bat).')
+
 if (hasContent && !reseed) {
   // Keep the live content; only add what newer versions of the site need (new tables,
   // shared sections, solution settings, page templates). Safe to run on every deploy.
@@ -289,7 +301,7 @@ if (hasContent && !reseed) {
   if ((await runSeedScript('src/seed/upgrade.ts')) !== 0) fail('The database update failed (see the messages above).')
   say('Database up to date.')
 } else {
-  say('Creating the tables and importing 85 pages and all images. This takes a few minutes…')
+  say('Importing 85 pages and all images. This takes a few minutes…')
   if ((await runSeedScript('src/seed/index.ts')) !== 0)
     fail('The content import failed (see the messages above). Fix the cause and run again.')
   const after = await tryConnect(env.DATABASE_URI)

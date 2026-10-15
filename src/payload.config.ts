@@ -59,14 +59,16 @@ export default buildConfig({
   typescript: { outputFile: path.resolve(dirname, 'payload-types.ts') },
   /*
    * Database:
-   * - Local (default): SQLite file enviromet.db.
+   * - Local (default): SQLite file enviromet.db. Schema changes are applied automatically (push).
    * - Production (Vercel): Postgres when DATABASE_URI is a postgres:// URL (Supabase).
-   *   The schema is created by the seed run (PAYLOAD_DB_PUSH=true); the live site never pushes.
+   *   Schema changes go through migrations in src/migrations, created and applied by
+   *   src/seed/migrate.ts when deploy-vercel runs. Never pushed.
    */
   db: process.env.DATABASE_URI?.startsWith('postgres')
     ? postgresAdapter({
         pool: { connectionString: process.env.DATABASE_URI, max: 5 },
-        push: process.env.PAYLOAD_DB_PUSH === 'true',
+        push: false,
+        migrationDir: path.resolve(dirname, 'migrations'),
         // Page layouts are deeply nested blocks; as JSON they are one column instead of ~500 tables.
         blocksAsJSON: true,
       })
