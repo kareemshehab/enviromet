@@ -141,6 +141,13 @@ async function upgradeTemplates(payload: Payload) {
 }
 
 try {
+  // Local SQLite: when new fields were added, the first schema push can stop half-way
+  // ("index … already exists"). Let it finish in separate runs before starting here.
+  if (!process.env.DATABASE_URI?.startsWith('postgres'))
+    for (let i = 0; i < 4; i++) {
+      const run = spawnSync(process.execPath, ['--no-deprecation', '--import', 'tsx', 'src/seed/settle.ts'], { stdio: 'ignore' })
+      if (run.status === 0) break
+    }
   const payload = await getPayload({ config })
   payload.logger.info('Adding shared sections, solution settings and page templates…')
   await upgradeSharedSections(payload)
