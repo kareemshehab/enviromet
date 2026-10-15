@@ -38,7 +38,56 @@ export const arabicUrl = (u: string) => {
   return u === '/' ? '/ar' : `/ar${u}`
 }
 
-const normaliseMediaName = (name: string) => name.replace(/-\d+(?=(-\d+x\d+)?\.[a-z0-9]+$)/i, '')
+type DraftCollection = 'pages' | 'services'
+const hasDrafts = (c: string): c is DraftCollection => c === 'pages' || c === 'services'
+
+/** The two newest saved versions of a document (newest first). */
+const newestVersions = async (payload: Payload, collection: DraftCollection, id: number | string) =>
+  (await payload.findVersions({ collection, where: { parent: { equals: id } }, sort: '-updatedAt', limit: 2, depth: 0, pagination: false }))
+    .docs as Json[]
+const wasPublished = async (payload: Payload, collection: DraftCollection, id: number | string) =>
+  (await payload.countVersions({ collection, where: { and: [{ parent: { equals: id } }, { 'version._status': { equals: 'published' } }] } }))
+    .totalDocs > 0
+
+/**
+ * Saves Arabic content on a page or solution.
+ * When an editor left unsaved-to-live changes (a draft) on a published page, a normal save would
+ * build on that draft and publish nothing / unpublish the page. Instead only the Arabic content
+ * goes live (English stays as published) and the editor's draft is kept as the latest draft.
+ */
+export async function saveArabic(payload: Payload, collection: string, id: number | string, data: Json) {
+  const context = { disableRevalidate: true }
+  if (hasDrafts(collection)) {
+    const [main] = (await payload.find({ collection, where: { id: { equals: id } }, depth: 0, limit: 1, pagination: false, select: { _status: true } } as Json)).docs as Json[]
+    const [latest] = await newestVersions(payload, collection, id)
+    if (main?._status === 'published' && latest?.version?._status === 'draft')
+      return payload.update({ collection, id, locale: 'ar', publishSpecificLocale: 'ar', data: { ...data, _status: 'published' }, context } as Json)
+  }
+  return payload.update({ collection, id, locale: 'ar', data, context } as Json)
+}
+
+/**
+ * Repairs pages that an earlier Arabic update saved on top of an editor's draft (the page then
+ * showed "page not found"): the published English comes back, the Arabic stays, the draft is kept.
+ * Recognised by: not live, was live before, and the newest version was saved right after a draft.
+ */
+export async function repairArabicDrafts(payload: Payload) {
+  const repaired: string[] = []
+  for (const collection of ['pages', 'services'] as const) {
+    const docs = (await payload.find({ collection, where: { _status: { equals: 'draft' } }, depth: 0, limit: 1000, pagination: false })).docs as Json[]
+    for (const d of docs) {
+      const [latest, previous] = await newestVersions(payload, collection, d.id)
+      const afterDraft = latest && !latest.autosave && latest.version?._status === 'draft' && previous?.version?._status === 'draft' && previous.autosave
+      if (!afterDraft || !(await wasPublished(payload, collection, d.id))) continue
+      await payload.update({ collection, id: d.id, locale: 'ar', publishSpecificLocale: 'ar', data: { _status: 'published' }, context: { disableRevalidate: true } } as Json)
+      repaired.push(`${collection}: ${d.slug}`)
+    }
+  }
+  if (repaired.length) payload.logger.info(`  arabic: put back online ${repaired.join(', ')}`)
+  return repaired
+}
+
+const normaliseMediaName =(name: string) => name.replace(/-\d+(?=(-\d+x\d+)?\.[a-z0-9]+$)/i, '')
 
 export async function addArabic(payload: Payload) {
   const dict: Record<string, string> = read('ar.json')
@@ -138,7 +187,7 @@ export async function addArabic(payload: Payload) {
   const toArabic = (layout: Json[]) => translate(materialiseCards(layout))
   const metaAr = (meta: Json) =>
     meta ? { ...translate({ title: meta.title, description: meta.description }), image: meta.image ?? undefined } : undefined
-  const done: string[] = []
+  const done: string[] = await repairArabicDrafts(payload)
 
   /* 1. Shared sections (pages reference them, so they come first) */
   const shared = (await payload.find({ collection: 'shared-sections', locale: 'all', depth: 0, limit: 200, pagination: false })).docs as Json[]
@@ -158,7 +207,7 @@ export async function addArabic(payload: Payload) {
     const data: Json = { title: tr(p.title.en), layout, meta: metaAr(p.meta?.en) }
     // Section-built pages with filter buttons (the projects hub) need the filter behaviour.
     if (JSON.stringify(layout).includes('"data-filter"')) data.scripts = [...new Set([...(p.scripts ?? []), 'filters'])]
-    await payload.update({ collection: 'pages', id: p.id, locale: 'ar', data, context: ctx })
+    await saveArabic(payload, 'pages', p.id, data)
     done.push(`page: /ar/${p.slug === 'home' ? '' : p.slug}`)
   }
 
@@ -172,7 +221,7 @@ export async function addArabic(payload: Payload) {
       const title = typeof d.title === 'object' ? d.title.en : d.title
       const data: Json = { customLayout: toArabic(blocks), meta: metaAr(d.meta?.en ?? d.meta) }
       if (collection === 'services') data.title = tr(title)
-      await payload.update({ collection, id: d.id, locale: 'ar', data, context: ctx })
+      await saveArabic(payload, collection, d.id, data)
       done.push(`${collection === 'services' ? 'solution' : 'project'}: /ar/${d.slug}`)
     }
   }
@@ -265,7 +314,7 @@ export async function linkToArabicPages(payload: Payload) {
   for (const p of pages) {
     const layout = p.layout?.length && fixed(p.layout)
     if (layout) {
-      await payload.update({ collection: 'pages', id: p.id, locale: 'ar', data: { layout }, context: ctx })
+      await saveArabic(payload, 'pages', p.id, { layout })
       done.push(`links: /ar/${p.slug === 'home' ? '' : p.slug}`)
     }
   }
@@ -273,7 +322,7 @@ export async function linkToArabicPages(payload: Payload) {
     for (const d of docs) {
       const customLayout = d.customLayout?.length && fixed(d.customLayout)
       if (customLayout) {
-        await payload.update({ collection, id: d.id, locale: 'ar', data: { customLayout }, context: ctx })
+        await saveArabic(payload, collection, d.id, { customLayout })
         done.push(`links: /ar/${d.slug}`)
       }
     }
