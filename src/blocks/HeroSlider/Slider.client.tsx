@@ -124,7 +124,12 @@ export function HeroSlider({ slides, secondary }: { slides: Slide[]; secondary?:
             <button
               id="slide-pause"
               aria-label={paused ? 'Start automatic slide rotation' : 'Pause automatic slide rotation'}
-              onClick={() => setPaused((p) => !p)}
+              onClick={() => {
+                // Pressing Play starts the rotation even though the pointer is over the slider
+                // (as on the original site: hovering only holds it once the pointer enters again).
+                hovering.current = false
+                setPaused((p) => !p)
+              }}
             >
               {paused ? 'Play' : 'Pause'}
             </button>
