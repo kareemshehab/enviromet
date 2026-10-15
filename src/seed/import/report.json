@@ -1,0 +1,382 @@
+{
+ "pages": [
+  {
+   "file": "air-expertise.html",
+   "to": "pages/air-expertise"
+  },
+  {
+   "file": "braced-towers.html",
+   "to": "pages/braced-towers"
+  },
+  {
+   "file": "campaign-brief.html",
+   "to": "pages/campaign-brief"
+  },
+  {
+   "file": "campaign-cost-calculator.html",
+   "to": "pages/campaign-cost-calculator"
+  },
+  {
+   "file": "campaign-maintenance-guide.html",
+   "to": "pages/campaign-maintenance-guide"
+  },
+  {
+   "file": "careers.html",
+   "to": "pages/careers"
+  },
+  {
+   "file": "compliance-expertise.html",
+   "to": "pages/compliance-expertise"
+  },
+  {
+   "file": "customers.html",
+   "to": "pages/customers"
+  },
+  {
+   "file": "engineering.html",
+   "to": "pages/engineering"
+  },
+  {
+   "file": "environment.html",
+   "to": "pages/environment"
+  },
+  {
+   "file": "environmental-monitoring-guide.html",
+   "to": "pages/environmental-monitoring-guide"
+  },
+  {
+   "file": "expertise.html",
+   "to": "pages/expertise"
+  },
+  {
+   "file": "for-developers.html",
+   "to": "pages/for-developers"
+  },
+  {
+   "file": "for-engineers.html",
+   "to": "pages/for-engineers"
+  },
+  {
+   "file": "for-investors.html",
+   "to": "pages/for-investors"
+  },
+  {
+   "file": "for-operators.html",
+   "to": "pages/for-operators"
+  },
+  {
+   "file": "for-procurement.html",
+   "to": "pages/for-procurement"
+  },
+  {
+   "file": "insights.html",
+   "to": "pages/insights"
+  },
+  {
+   "file": "lidar.html",
+   "to": "pages/lidar"
+  },
+  {
+   "file": "lidar-deployment-guide.html",
+   "to": "pages/lidar-deployment-guide"
+  },
+  {
+   "file": "measurement-expertise.html",
+   "to": "pages/measurement-expertise"
+  },
+  {
+   "file": "met-masts.html",
+   "to": "pages/met-masts"
+  },
+  {
+   "file": "partners.html",
+   "to": "pages/partners"
+  },
+  {
+   "file": "privacy.html",
+   "to": "pages/privacy"
+  },
+  {
+   "file": "quality.html",
+   "to": "pages/quality"
+  },
+  {
+   "file": "renewable-energy.html",
+   "to": "pages/renewable-energy"
+  },
+  {
+   "file": "self-supporting-towers.html",
+   "to": "pages/self-supporting-towers"
+  },
+  {
+   "file": "services.html",
+   "to": "pages/services"
+  },
+  {
+   "file": "sitemap.html",
+   "to": "pages/sitemap"
+  },
+  {
+   "file": "solar-measurement-guide.html",
+   "to": "pages/solar-measurement-guide"
+  },
+  {
+   "file": "solar-stations.html",
+   "to": "pages/solar-stations"
+  },
+  {
+   "file": "technologies.html",
+   "to": "pages/technologies"
+  },
+  {
+   "file": "use-case-environmental-campaign.html",
+   "to": "pages/use-case-environmental-campaign"
+  },
+  {
+   "file": "use-case-remote-network.html",
+   "to": "pages/use-case-remote-network"
+  },
+  {
+   "file": "use-case-solar-campaign.html",
+   "to": "pages/use-case-solar-campaign"
+  },
+  {
+   "file": "use-case-technical-review.html",
+   "to": "pages/use-case-technical-review"
+  },
+  {
+   "file": "use-case-water-assessment.html",
+   "to": "pages/use-case-water-assessment"
+  },
+  {
+   "file": "use-case-wind-campaign.html",
+   "to": "pages/use-case-wind-campaign"
+  },
+  {
+   "file": "use-cases.html",
+   "to": "pages/use-cases"
+  },
+  {
+   "file": "water-expertise.html",
+   "to": "pages/water-expertise"
+  },
+  {
+   "file": "wind-lidar.html",
+   "to": "pages/wind-lidar"
+  },
+  {
+   "file": "wind-measurement-campaign-guide.html",
+   "to": "pages/wind-measurement-campaign-guide"
+  },
+  {
+   "file": "air.html",
+   "to": "services/air"
+  },
+  {
+   "file": "compliance.html",
+   "to": "services/compliance"
+  },
+  {
+   "file": "construction.html",
+   "to": "services/construction"
+  },
+  {
+   "file": "decommissioning.html",
+   "to": "services/decommissioning"
+  },
+  {
+   "file": "diligence.html",
+   "to": "services/diligence"
+  },
+  {
+   "file": "dispersion.html",
+   "to": "services/dispersion"
+  },
+  {
+   "file": "emissions.html",
+   "to": "services/emissions"
+  },
+  {
+   "file": "engineering-advisory.html",
+   "to": "services/engineering-advisory"
+  },
+  {
+   "file": "feasibility.html",
+   "to": "services/feasibility"
+  },
+  {
+   "file": "grid.html",
+   "to": "services/grid"
+  },
+  {
+   "file": "lender.html",
+   "to": "services/lender"
+  },
+  {
+   "file": "performance.html",
+   "to": "services/performance"
+  },
+  {
+   "file": "power.html",
+   "to": "services/power"
+  },
+  {
+   "file": "water.html",
+   "to": "services/water"
+  },
+  {
+   "file": "meteorology.html",
+   "to": "services/meteorology"
+  },
+  {
+   "file": "power-curve.html",
+   "to": "services/power-curve"
+  },
+  {
+   "file": "testing.html",
+   "to": "services/testing"
+  },
+  {
+   "file": "data.html",
+   "to": "services/data"
+  },
+  {
+   "file": "solar.html",
+   "to": "services/solar"
+  },
+  {
+   "file": "maintenance.html",
+   "to": "services/maintenance"
+  },
+  {
+   "file": "project-kingdom-wind.html",
+   "to": "projects/project-kingdom-wind"
+  },
+  {
+   "file": "project-three-lidars.html",
+   "to": "projects/project-three-lidars"
+  },
+  {
+   "file": "project-performance-masts.html",
+   "to": "projects/project-performance-masts"
+  },
+  {
+   "file": "project-mast-solar-maintenance.html",
+   "to": "projects/project-mast-solar-maintenance"
+  },
+  {
+   "file": "project-desert-wind-resource.html",
+   "to": "projects/project-desert-wind-resource"
+  },
+  {
+   "file": "project-airport-monitoring.html",
+   "to": "projects/project-airport-monitoring"
+  },
+  {
+   "file": "project-solar-network.html",
+   "to": "projects/project-solar-network"
+  },
+  {
+   "file": "project-electricity-weather.html",
+   "to": "projects/project-electricity-weather"
+  },
+  {
+   "file": "project-international-airport.html",
+   "to": "projects/project-international-airport"
+  },
+  {
+   "file": "ar-index.html",
+   "to": "pages/home (ar)"
+  },
+  {
+   "file": "ar-about.html",
+   "to": "pages/about (ar)"
+  },
+  {
+   "file": "ar-services.html",
+   "to": "pages/services (ar)"
+  },
+  {
+   "file": "ar-contact.html",
+   "to": "pages/contact (ar)"
+  },
+  {
+   "file": "ar-lidar.html",
+   "to": "pages/lidar (ar)"
+  },
+  {
+   "file": "ar-quality.html",
+   "to": "pages/quality (ar)"
+  },
+  {
+   "file": "ar-procurement.html",
+   "to": "pages/for-procurement (ar)"
+  },
+  {
+   "file": "ar-wind.html",
+   "to": "services/wind (ar)"
+  },
+  {
+   "file": "ar-solar.html",
+   "to": "services/solar (ar)"
+  }
+ ],
+ "htmlFallbacks": [
+  {
+   "page": "campaign-brief",
+   "element": "button.button secondary",
+   "reason": "<button> element"
+  },
+  {
+   "page": "campaign-cost-calculator",
+   "element": "form.",
+   "reason": "<form> element"
+  },
+  {
+   "page": "campaign-cost-calculator",
+   "element": "article.",
+   "reason": "nesting deeper than 3 groups"
+  },
+  {
+   "page": "campaign-cost-calculator",
+   "element": "article.",
+   "reason": "nesting deeper than 3 groups"
+  },
+  {
+   "page": "campaign-cost-calculator",
+   "element": "article.",
+   "reason": "nesting deeper than 3 groups"
+  },
+  {
+   "page": "campaign-cost-calculator",
+   "element": "div.b2b-table",
+   "reason": "table with element ids (used by a script)"
+  },
+  {
+   "page": "campaign-cost-calculator",
+   "element": "button.button secondary",
+   "reason": "<button> element"
+  },
+  {
+   "page": "campaign-cost-calculator",
+   "element": "button.button secondary",
+   "reason": "<button> element"
+  },
+  {
+   "page": "campaign-cost-calculator",
+   "element": "noscript.",
+   "reason": "<noscript> element"
+  },
+  {
+   "page": "insights",
+   "element": "label.",
+   "reason": "form control"
+  },
+  {
+   "page": "insights",
+   "element": "label.",
+   "reason": "form control"
+  }
+ ],
+ "warnings": []
+}

@@ -1,0 +1,428 @@
+[
+ {
+  "slug": "project-kingdom-wind",
+  "sortOrder": 10,
+  "title": "Kingdom-wide wind resource assessment",
+  "category": "Wind resource assessment",
+  "badge": "410 met masts",
+  "imageNote": "Representative imagery",
+  "image": {
+   "$media": "assets/mast.jpg",
+   "alt": "Kingdom-wide wind resource assessment"
+  },
+  "challenge": "Characterise site wind conditions across a measurement network.",
+  "delivery": "Mast delivery, instrument integration and assessment data support.",
+  "scope": "410 met masts",
+  "lede": "Anonymized use case",
+  "mediaCaption": "Representative measurement imagery for this anonymized use case.",
+  "summaryValue": "410 met masts",
+  "summaryNote": "120 m each",
+  "scopeItems": [
+   {
+    "text": "Supply and installation of 410 meteorological masts, each 120 m high"
+   },
+   {
+    "text": "Wind site assessment data delivery"
+   },
+   {
+    "text": "IEC 61400-50-1 and MEASNET are referenced in the supplied profile."
+   }
+  ],
+  "sourceNote": "Source: use case profile, page 14. Customer identities are omitted. This use case describes the measurement scope and application.",
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Wind resource assessment ↗",
+    "url": "/wind",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Measurement data & campaign reporting ↗",
+    "url": "/data",
+    "appearance": "plain"
+   }
+  ],
+  "meta": {
+   "title": "Kingdom-wide wind resource assessment | EnviroMET",
+   "description": "EnviroMET reference: Kingdom-wide wind resource assessment — Anonymized use case"
+  }
+ },
+ {
+  "slug": "project-three-lidars",
+  "sortOrder": 20,
+  "title": "LiDAR deployment across three Saudi sites",
+  "category": "Remote sensing",
+  "badge": "3 ZX300 LiDARs",
+  "imageNote": "Representative imagery",
+  "image": {
+   "$media": "assets/lidar.webp",
+   "alt": "LiDAR deployment across three Saudi sites"
+  },
+  "challenge": "Obtain wind profiles across multiple remote sites.",
+  "delivery": "LiDAR deployment, operating support and measurement records.",
+  "scope": "3 ZX300 LiDARs",
+  "lede": "Anonymized use case",
+  "mediaCaption": "Representative measurement imagery for this anonymized use case.",
+  "summaryValue": "3 ZX300 LiDARs",
+  "summaryNote": "3 sites",
+  "scopeItems": [
+   {
+    "text": "Installation and operation of three ZX300 LiDAR systems"
+   },
+   {
+    "text": "Wind site assessment data delivery"
+   },
+   {
+    "text": "IEC 61400-50-2 is referenced in the supplied profile."
+   }
+  ],
+  "sourceNote": "Source: use case profile, page 15. Customer identities are omitted. This use case describes the measurement scope and application.",
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Wind resource assessment ↗",
+    "url": "/wind",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   }
+  ],
+  "meta": {
+   "title": "LiDAR deployment across three Saudi sites | EnviroMET",
+   "description": "EnviroMET reference: LiDAR deployment across three Saudi sites — Anonymized use case"
+  }
+ },
+ {
+  "slug": "project-performance-masts",
+  "sortOrder": 30,
+  "title": "Standalone masts for power-performance measurement",
+  "category": "Power performance",
+  "badge": "2 met masts",
+  "imageNote": "Profile graphic",
+  "image": {
+   "$media": "assets/mast.jpg",
+   "alt": "Standalone masts for power-performance measurement"
+  },
+  "challenge": "Collect site observations for power-performance measurement.",
+  "delivery": "Standalone mast installation and measurement support.",
+  "scope": "2 met masts",
+  "lede": "Anonymized use case",
+  "mediaCaption": "Representative measurement imagery for this anonymized use case.",
+  "summaryValue": "2 met masts",
+  "summaryNote": "100 m each",
+  "scopeItems": [
+   {
+    "text": "Supply and installation of two standalone 100 m masts"
+   },
+   {
+    "text": "Power-performance measurement support"
+   },
+   {
+    "text": "IEC 61400-50-1 and MEASNET requirements referenced in the profile"
+   }
+  ],
+  "sourceNote": "Source: use case profile, page 16. Customer identities are omitted. This use case describes the measurement scope and application.",
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Wind turbine power-curve measurement ↗",
+    "url": "/power-curve",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Plant performance testing ↗",
+    "url": "/testing",
+    "appearance": "plain"
+   }
+  ],
+  "meta": {
+   "title": "Standalone masts for power-performance measurement | EnviroMET",
+   "description": "EnviroMET reference: Standalone masts for power-performance measurement — Anonymized use case"
+  }
+ },
+ {
+  "slug": "project-mast-solar-maintenance",
+  "sortOrder": 40,
+  "title": "Meteorological mast and solar station O&M",
+  "category": "Operation & maintenance",
+  "badge": "2 met masts",
+  "imageNote": "Representative imagery",
+  "image": {
+   "$media": "assets/mast.jpg",
+   "alt": "Meteorological mast and solar station O&M"
+  },
+  "challenge": "Maintain a measurement network through its operating lifecycle.",
+  "delivery": "Field inspections, instrument care and station support.",
+  "scope": "2 met masts",
+  "lede": "Anonymized use case",
+  "mediaCaption": "Representative measurement imagery for this anonymized use case.",
+  "summaryValue": "2 met masts",
+  "summaryNote": "110 m each",
+  "scopeItems": [
+   {
+    "text": "Operation and maintenance of two 110 m meteorological masts"
+   },
+   {
+    "text": "Supply, installation and operation of a solar weather station"
+   },
+   {
+    "text": "Meteorological data monitoring, analysis and verification"
+   }
+  ],
+  "sourceNote": "Source: use case profile, page 17. Customer identities are omitted. This use case describes the measurement scope and application.",
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Solar resource assessment ↗",
+    "url": "/solar",
+    "appearance": "plain"
+   }
+  ],
+  "meta": {
+   "title": "Meteorological mast and solar station O&M | EnviroMET",
+   "description": "EnviroMET reference: Meteorological mast and solar station O&M — Anonymized use case"
+  }
+ },
+ {
+  "slug": "project-desert-wind-resource",
+  "sortOrder": 50,
+  "title": "Desert wind resource assessment",
+  "category": "Wind resource assessment",
+  "badge": "10 met masts",
+  "imageNote": "Representative imagery",
+  "image": {
+   "$media": "assets/mast.jpg",
+   "alt": "Desert wind resource assessment"
+  },
+  "challenge": "Characterise site wind conditions across a measurement network.",
+  "delivery": "Mast delivery, instrument integration and assessment data support.",
+  "scope": "10 met masts",
+  "lede": "Anonymized use case",
+  "mediaCaption": "Representative measurement imagery for this anonymized use case.",
+  "summaryValue": "10 met masts",
+  "summaryNote": "100 m each",
+  "scopeItems": [
+   {
+    "text": "Supply and installation of ten 100 m meteorological masts"
+   },
+   {
+    "text": "LiDAR supply and installation"
+   },
+   {
+    "text": "Wind assessment data delivery; the supplied profile references IEC 61400-50-1, IEC 61400-50-2 and MEASNET."
+   }
+  ],
+  "sourceNote": "Source: use case profile, page 18. Customer identities are omitted. This use case describes the measurement scope and application.",
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Wind resource assessment ↗",
+    "url": "/wind",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Measurement data & campaign reporting ↗",
+    "url": "/data",
+    "appearance": "plain"
+   }
+  ],
+  "meta": {
+   "title": "Desert wind resource assessment | EnviroMET",
+   "description": "EnviroMET reference: Desert wind resource assessment — Anonymized use case"
+  }
+ },
+ {
+  "slug": "project-airport-monitoring",
+  "sortOrder": 60,
+  "title": "Airport meteorological monitoring stations",
+  "category": "Meteorological systems",
+  "badge": "Airport stations",
+  "imageNote": "Profile graphic",
+  "image": {
+   "$media": "assets/mast.jpg",
+   "alt": "Airport meteorological monitoring stations"
+  },
+  "challenge": "Monitor the weather variables required by the site.",
+  "delivery": "Station supply, installation, commissioning and ongoing support.",
+  "scope": "Airport stations",
+  "lede": "Anonymized use case",
+  "mediaCaption": "Representative measurement imagery for this anonymized use case.",
+  "summaryValue": "Airport stations",
+  "summaryNote": "Across the Kingdom",
+  "scopeItems": [
+   {
+    "text": "Supply, installation and commissioning of airport meteorological stations"
+   },
+   {
+    "text": "Solar radiation, wind speed and direction, visibility and supporting weather observations"
+   }
+  ],
+  "sourceNote": "Source: use case profile, page 19. Customer identities are omitted. This use case describes the measurement scope and application.",
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Measurement data & campaign reporting ↗",
+    "url": "/data",
+    "appearance": "plain"
+   }
+  ],
+  "meta": {
+   "title": "Airport meteorological monitoring stations | EnviroMET",
+   "description": "EnviroMET reference: Airport meteorological monitoring stations — Anonymized use case"
+  }
+ },
+ {
+  "slug": "project-solar-network",
+  "sortOrder": 70,
+  "title": "Solar monitoring station network O&M",
+  "category": "Operation & maintenance",
+  "badge": "Solar network",
+  "imageNote": "Representative imagery",
+  "image": {
+   "$media": "assets/solar_station.webp",
+   "alt": "Solar monitoring station network O&M"
+  },
+  "challenge": "Maintain a measurement network through its operating lifecycle.",
+  "delivery": "Field inspections, instrument care and station support.",
+  "scope": "Solar network",
+  "lede": "Anonymized use case",
+  "mediaCaption": "Representative measurement imagery for this anonymized use case.",
+  "summaryValue": "Solar network",
+  "summaryNote": "Instrument O&M",
+  "scopeItems": [
+   {
+    "text": "Operation and maintenance of measuring devices within the Kingdom’s solar monitoring station network"
+   }
+  ],
+  "sourceNote": "Source: use case profile, page 20. Customer identities are omitted. This use case describes the measurement scope and application.",
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Solar resource assessment ↗",
+    "url": "/solar",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   }
+  ],
+  "meta": {
+   "title": "Solar monitoring station network O&M | EnviroMET",
+   "description": "EnviroMET reference: Solar monitoring station network O&M — Anonymized use case"
+  }
+ },
+ {
+  "slug": "project-electricity-weather",
+  "sortOrder": 80,
+  "title": "Weather station installations and monitoring",
+  "category": "Meteorological systems",
+  "badge": "Weather stations",
+  "imageNote": "Representative imagery",
+  "image": {
+   "$media": "assets/mast.jpg",
+   "alt": "Weather station installations and monitoring"
+  },
+  "challenge": "Monitor the weather variables required by the site.",
+  "delivery": "Station supply, installation, commissioning and ongoing support.",
+  "scope": "Weather stations",
+  "lede": "Anonymized use case",
+  "mediaCaption": "Representative measurement imagery for this anonymized use case.",
+  "summaryValue": "Weather stations",
+  "summaryNote": "Installation + O&M",
+  "scopeItems": [
+   {
+    "text": "Supply and installation of weather stations"
+   },
+   {
+    "text": "Station operation and maintenance support"
+   }
+  ],
+  "sourceNote": "Source: use case profile, page 20. Customer identities are omitted. This use case describes the measurement scope and application.",
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   }
+  ],
+  "meta": {
+   "title": "Weather station installations and monitoring | EnviroMET",
+   "description": "EnviroMET reference: Weather station installations and monitoring — Anonymized use case"
+  }
+ },
+ {
+  "slug": "project-international-airport",
+  "sortOrder": 90,
+  "title": "International airport weather stations",
+  "category": "Meteorological systems",
+  "badge": "Airport weather",
+  "imageNote": "Representative imagery",
+  "image": {
+   "$media": "assets/mast.jpg",
+   "alt": "International airport weather stations"
+  },
+  "challenge": "Monitor the weather variables required by the site.",
+  "delivery": "Station supply, installation, commissioning and ongoing support.",
+  "scope": "Airport weather",
+  "lede": "Anonymized use case",
+  "mediaCaption": "Representative measurement imagery for this anonymized use case.",
+  "summaryValue": "Airport weather",
+  "summaryNote": "Station lifecycle",
+  "scopeItems": [
+   {
+    "text": "Supply and installation of weather stations for an international airport"
+   },
+   {
+    "text": "Operation and maintenance of the station systems"
+   }
+  ],
+  "sourceNote": "Source: use case profile, page 20. Customer identities are omitted. This use case describes the measurement scope and application.",
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   }
+  ],
+  "meta": {
+   "title": "International airport weather stations | EnviroMET",
+   "description": "EnviroMET reference: International airport weather stations — Anonymized use case"
+  }
+ }
+]

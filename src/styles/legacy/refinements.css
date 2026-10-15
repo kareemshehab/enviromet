@@ -1,0 +1,379 @@
+/*
+ * Original site: home page refinements (stats bar, capability cards, customers, partners).
+ *
+ * Converted for Tailwind CSS v4: brand colours use the theme tokens (theme.css) and declarations
+ * with an exact Tailwind equivalent are written with @apply. Class names are unchanged because
+ * CMS content uses them. Verified identical in computed style on every page (EN + AR, 3 widths).
+ */
+
+/* Presentation refinements use the retained EnviroMET colours and local fonts. */
+main > .section {
+  @apply py-18;
+}
+.refine-authority {
+  background: var(--color-ink-strong);
+  @apply text-white;
+  border-bottom: 4px solid var(--color-brand-green);
+}
+.refine-authority > .wrap {
+  @apply grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  @apply py-7;
+}
+.refine-authority a {
+  @apply text-white py-2 px-8;
+  border-inline-end: 1px solid #6e8b97;
+  @apply flex flex-col justify-center;
+}
+.refine-authority a:first-child {
+  @apply ps-0;
+}
+.refine-authority a:last-child {
+  border: 0;
+}
+.refine-authority strong {
+  font-size: clamp(28px, 3.5vw, 47px);
+  line-height: 1.2;
+  @apply font-semibold;
+  letter-spacing: -0.035em;
+  @apply whitespace-nowrap;
+}
+.refine-authority strong small {
+  font-size: 0.44em;
+  @apply font-medium;
+}
+.refine-authority span {
+  font-size: 14px;
+  @apply mt-2.5 font-medium;
+}
+.refine-authority a > small {
+  font-size: 12px;
+  color: #d5e6ed;
+  margin-top: 5px;
+}
+.refine-capability-grid {
+  @apply grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  @apply gap-6;
+}
+.refine-capability {
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  @apply overflow-hidden;
+  background: white;
+  @apply flex flex-col text-ink-navy;
+  transition: box-shadow 0.2s;
+}
+.refine-capability figure {
+  @apply m-0;
+  aspect-ratio: 16/10;
+  @apply overflow-hidden;
+}
+.refine-capability img {
+  @apply block w-full h-full object-cover;
+}
+.refine-capability > div {
+  @apply p-6.5 flex flex-col flex-1;
+}
+.refine-capability h3 {
+  font-size: 25px;
+  line-height: 1.25;
+  @apply mt-2 mx-0 mb-4;
+}
+.refine-capability p:not(.eyebrow) {
+  font-size: 14px;
+  @apply text-muted;
+  line-height: 1.75;
+}
+.refine-capability span {
+  font-size: 13px;
+  @apply font-semibold mt-auto pt-3.5 min-h-11 flex items-center text-brand-blue;
+}
+.refine-capability:hover {
+  box-shadow: 0 10px 28px #173b4b18;
+}
+.refine-support {
+  @apply grid;
+  grid-template-columns: 1fr 1fr;
+  @apply gap-6 mt-7;
+  border-top: 1px solid var(--color-border);
+  @apply pt-6;
+}
+.refine-support a {
+  @apply flex flex-col gap-2 p-5;
+  border-inline-start: 3px solid var(--color-brand-green);
+  background: var(--color-pale);
+}
+.refine-support strong {
+  font-size: 20px;
+}
+.refine-support span {
+  font-size: 13px;
+  @apply text-muted;
+}
+.refine-case-facts {
+  @apply mt-6 mx-0 mb-4.5;
+  border-top: 1px solid var(--color-border);
+}
+.refine-case-facts > div {
+  @apply grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  @apply gap-3 py-3 px-0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.refine-case-facts dt {
+  @apply font-semibold text-ink-navy;
+}
+.refine-case-facts dd {
+  @apply m-0 text-muted;
+}
+.project-grid {
+  @apply items-stretch;
+}
+.project-card {
+  border-radius: 5px;
+  @apply overflow-hidden;
+}
+.project-card > a {
+  @apply flex h-full flex-col;
+}
+.project-copy {
+  @apply flex flex-1 flex-col;
+}
+.project-copy > b {
+  @apply mt-auto min-h-11 flex items-center;
+}
+.project-copy h3 {
+  font-size: 23px;
+  line-height: 1.3;
+}
+.project-image {
+  aspect-ratio: 16/10;
+}
+.project-image img {
+  @apply h-full w-full object-cover;
+}
+.refine-case-overview {
+  @apply py-7 px-0;
+  border-bottom: 1px solid var(--color-border);
+  @apply mb-7.5;
+}
+.refine-case-overview h2 {
+  font-size: 28px;
+}
+.refine-case-overview p {
+  font-size: 15px;
+}
+.refine-customers {
+  background: white;
+  @apply text-ink-navy;
+}
+.refine-customers .center-heading h2 {
+  @apply text-ink-navy;
+}
+.customer-logo-grid,
+.refine-partners {
+  @apply grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  @apply gap-5.5;
+}
+.customer-logo-grid .logo-only,
+.refine-partners > a,
+.refine-partners > div {
+  @apply min-h-37.5 p-6;
+  background: white;
+  border: 1px solid var(--color-border);
+  @apply flex items-center justify-center rounded-sm box-border;
+}
+.customer-logo-grid .logo-only img,
+.refine-partners img {
+  max-width: 100%;
+  max-height: 88px;
+  @apply h-auto w-auto object-contain;
+}
+.refine-planning {
+  background: var(--color-pale);
+}
+.refine-planning h2 {
+  font-size: 38px;
+}
+.refine-planning .actions {
+  gap: 14px 24px;
+  @apply flex-wrap;
+}
+.refine-planning-proof {
+  background: white;
+  border-top: 3px solid var(--color-brand-green);
+  @apply p-7;
+}
+.refine-planning-proof h3 {
+  font-size: 22px;
+}
+.refine-planning-proof .text-link {
+  @apply flex min-h-11 items-center;
+}
+.button {
+  @apply rounded-sm min-h-12 inline-flex items-center justify-center;
+}
+.text-link {
+  line-height: 1.5;
+}
+.page-intro h1 {
+  max-width: 1050px;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-brand-blue);
+  outline-offset: 4px;
+}
+.refine-authority a:focus-visible {
+  outline-color: white;
+}
+@media (max-width: 1000px) {
+  .refine-capability h3 {
+    font-size: 22px;
+  }
+  .refine-capability > div {
+    @apply p-5.5;
+  }
+  .refine-authority a {
+    @apply px-5;
+  }
+  .customer-logo-grid,
+  .refine-partners {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  main > .section {
+    @apply py-12;
+  }
+  .refine-capability-grid {
+    grid-template-columns: 1fr;
+    @apply gap-6;
+  }
+  .refine-capability figure {
+    aspect-ratio: 16/9;
+  }
+  .refine-capability h3 {
+    font-size: 27px;
+  }
+  .refine-support {
+    grid-template-columns: 1fr;
+    @apply gap-4;
+  }
+  .refine-authority > .wrap {
+    @apply py-5.5;
+    grid-template-columns: 1fr;
+  }
+  .refine-authority a,
+  .refine-authority a:first-child {
+    @apply py-4.5 px-0;
+    border-inline-end: 0;
+    border-bottom: 1px solid #6e8b97;
+    @apply grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 8px 16px;
+    @apply items-center;
+  }
+  .refine-authority strong {
+    grid-row: 1/3;
+    font-size: 35px;
+    @apply whitespace-normal;
+  }
+  .refine-authority span {
+    font-size: 13px;
+    @apply m-0;
+  }
+  .refine-authority a > small {
+    @apply m-0;
+    font-size: 11px;
+  }
+  .customer-logo-grid,
+  .refine-partners {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    @apply gap-4;
+  }
+  .customer-logo-grid .logo-only,
+  .refine-partners > a,
+  .refine-partners > div {
+    @apply min-h-33 p-4.5;
+  }
+  .refine-planning h2 {
+    font-size: 30px;
+  }
+  .refine-case-facts > div {
+    grid-template-columns: 84px minmax(0, 1fr);
+  }
+  .project-copy h3 {
+    font-size: 25px;
+  }
+  .refine-planning-proof {
+    padding: 23px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .refine-capability {
+    transition: none;
+  }
+}
+@media print {
+  .refine-authority {
+    @apply text-ink-navy;
+    background: white;
+  }
+  .refine-authority a {
+    @apply text-ink-navy;
+  }
+  .refine-capability-grid {
+    @apply block;
+  }
+  .refine-capability {
+    break-inside: avoid;
+    @apply mb-4;
+  }
+}
+
+@media (max-width: 760px) {
+  .reference-hero.dual-logger-hero {
+    background: var(--color-ink-strong);
+  }
+  .reference-hero.dual-logger-hero #slide-photo {
+    @apply object-contain;
+    object-position: center 25%;
+  }
+}
+
+.field-team figure,
+.refine-support article {
+  @apply m-0;
+}
+.field-team figure img,
+#system-integration figure img {
+  @apply w-full h-auto rounded-lg;
+}
+.refine-support article {
+  @apply p-7;
+  border: 1px solid #d4e0e4;
+  background: white;
+  @apply rounded-lg;
+}
+.refine-support article .text-link {
+  @apply block;
+}
+#field-delivery .ux-process li {
+  grid-template-columns: 32px 100px 1fr;
+}
+#safe-field-work .small-note {
+  @apply mt-6;
+}
+@media (max-width: 760px) {
+  #field-delivery .ux-process li {
+    grid-template-columns: 24px 70px 1fr;
+  }
+  .refine-support article {
+    @apply p-5.5;
+  }
+}

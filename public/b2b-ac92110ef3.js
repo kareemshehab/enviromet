@@ -1,0 +1,32 @@
+'use strict';
+(()=>{
+ const arabic=document.documentElement.lang==='ar',tr=(en,ar)=>arabic?ar:en;
+ document.querySelector('[data-print]')?.addEventListener('click',()=>window.print());
+ const form=document.querySelector('[data-b2b-enquiry]');
+ if(form){
+  let step='scope',draft='';const fields=[...form.querySelectorAll('[data-enquiry-step]')],contact=fields.filter(x=>x.dataset.enquiryStep==='contact'),scope=fields.filter(x=>x.dataset.enquiryStep==='scope'),button=form.querySelector('button[type="submit"]'),back=form.querySelector('[data-b2b-back]'),status=form.querySelector('#form-status'),preview=form.querySelector('#email-preview');
+  const params=new URLSearchParams(location.search),roles=['developers','engineers','procurement','investors','operators'];
+  if(roles.includes(params.get('role')))form.elements.role.value=params.get('role');
+  const source=params.get('source');if(source&&/^[a-z0-9-]{1,70}$/.test(source))form.elements.source.value=source;
+
+  if(params.get('source')==='cost-calculator'){
+   let scenario='';try{scenario=sessionStorage.getItem('enviromet-campaign-scenario')||''}catch{}
+   if(scenario&&scenario.length<8000){form.elements.scenario.value=scenario;const box=document.createElement('section');box.className='cro-scenario-context';const heading=document.createElement('h3');heading.textContent=tr('Your campaign comparison','مقارنة تكلفة الحملة');const text=document.createElement('pre');text.textContent=scenario;const remove=document.createElement('button');remove.type='button';remove.className='button secondary';remove.textContent=tr('Remove comparison','إزالة المقارنة');remove.addEventListener('click',()=>{form.elements.scenario.value='';box.remove();try{sessionStorage.removeItem('enviromet-campaign-scenario')}catch{}});box.append(heading,text,remove);form.prepend(box);}
+  }
+  function show(next,focus=true){step=next;fields.forEach(group=>{const hide=group.dataset.enquiryStep!==next;group.hidden=hide;group.querySelectorAll('input,select,textarea').forEach(x=>x.disabled=hide)});back.hidden=next==='scope';button.hidden=next==='review';back.textContent=next==='review'?tr('Edit contact details','تعديل بيانات التواصل'):tr('Back to scope','رجوع إلى النطاق');button.textContent=next==='scope'?tr('Continue to contact details ↗','تابع إلى بيانات التواصل ↗'):tr('Prepare email enquiry ↗','جهز مسودة الاستفسار ↗');form.querySelector('.b2b-step-status').textContent=next==='review'?tr('Step 3 of 3 · Review and send','الخطوة 3 من 3 · المراجعة والإرسال'):next==='scope'?tr('Step 1 of 3 · Project scope','الخطوة 1 من 3 · نطاق المشروع'):tr('Step 2 of 3 · Contact details','الخطوة 2 من 3 · بيانات التواصل');if(focus){fields.find(x=>!x.hidden)?.querySelector('input,select,textarea')?.focus();}}
+  show('scope',false);back.addEventListener('click',()=>{preview.hidden=true;status.textContent='';show(step==='review'?'contact':'scope')});
+  form.addEventListener('submit',event=>{
+   event.preventDefault();event.stopImmediatePropagation();if(!form.reportValidity())return;
+   if(step==='scope'){const recap=form.querySelector('[data-scope-recap]');if(recap){recap.textContent=tr('Your scope: ','نطاقك: ')+form.elements.service.value+' · '+(form.elements.location.value||tr('Site to confirm','الموقع قيد التأكيد'))+' · '+(form.elements.stage.value||tr('Stage to confirm','المرحلة قيد التأكيد'));recap.hidden=false;}show('contact');return;}
+   // Keep both sets in FormData only after their native validity checks pass.
+   scope.forEach(g=>g.querySelectorAll('input,select,textarea').forEach(x=>x.disabled=false));
+   const data=Object.fromEntries(new FormData(form));
+   draft=tr('EnviroMET project enquiry','استفسار مشروع — EnviroMET')+'\n\n'+tr('Name','الاسم')+': '+data.name+'\n'+tr('Email','البريد')+': '+data.email+'\n'+tr('Organisation','الشركة')+': '+(data.company||tr('Not specified','غير محدد'))+'\n'+tr('Site / country','الموقع / الدولة')+': '+(data.location||tr('Not specified','غير محدد'))+'\n'+tr('Project stage','مرحلة المشروع')+': '+(data.stage||tr('Not specified','غير محدد'))+'\n'+tr('Project role','الدور')+': '+(data.role||tr('Not specified','غير محدد'))+'\n'+tr('Service','الخدمة')+': '+data.service+'\n'+tr('Target start date','موعد البدء')+': '+(data.timing||tr('Not specified','غير محدد'))+'\n\n'+tr('Requirements','المتطلبات')+':\n'+data.requirements+'\n\n'+tr('Consent: permission to contact about this enquiry.','الموافقة: التواصل بخصوص الاستفسار.')+(data.source?'\nReference: '+data.source:'')+(data.scenario?'\n\n'+data.scenario:'');
+   scope.forEach(g=>g.querySelectorAll('input,select,textarea').forEach(x=>x.disabled=true));
+   form.querySelector('#draft-text').value=draft;form.querySelector('#email-link').href='mailto:sales@enviromet-sa.com?subject='+encodeURIComponent(tr('Project enquiry — ','استفسار مشروع — ')+data.service)+'&body='+encodeURIComponent(draft);show('review',false);preview.hidden=false;status.textContent=tr('Your draft is ready. Review it, then open your email app to send. Nothing has been sent yet.','المسودة جاهزة. راجعها ثم افتح تطبيق البريد لإرسالها. لم يتم إرسال شيء بعد.');preview.querySelector('h3').tabIndex=-1;preview.querySelector('h3').focus();window.dispatchEvent(new CustomEvent('enviromet:conversion',{detail:{event:'enquiry_draft_prepared',service:data.service}}));
+  },true);
+  form.querySelector('#copy-enquiry').addEventListener('click',async e=>{e.preventDefault();e.stopImmediatePropagation();try{await navigator.clipboard.writeText(draft);status.textContent=tr('Draft copied. Paste it into your email to sales@enviromet-sa.com.','تم نسخ المسودة. ألصقها في رسالة إلى sales@enviromet-sa.com.');}catch{form.querySelector('#draft-text').select();status.textContent=tr('Select and copy the draft in the text box.','حدد المسودة في الحقل وانسخها.');}},true);
+ }
+ const query=document.getElementById('b2b-resource-query'),topic=document.getElementById('b2b-resource-topic');
+ if(query&&topic){const cards=[...document.querySelectorAll('[data-resource]')];function filter(){let count=0;cards.forEach(card=>{card.hidden=!!((topic.value&&topic.value!==card.dataset.resourceTopic)||!card.textContent.toLowerCase().includes(query.value.trim().toLowerCase()));if(!card.hidden)count++;});document.getElementById('b2b-resource-status').textContent=count+' technical guide'+(count===1?'':'s');}query.addEventListener('input',filter);topic.addEventListener('change',filter);}
+})();

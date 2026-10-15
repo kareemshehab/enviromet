@@ -1,0 +1,322 @@
+/*
+ * Original site: guides, FAQs, service briefs and Arabic typography.
+ *
+ * Converted for Tailwind CSS v4: brand colours use the theme tokens (theme.css) and declarations
+ * with an exact Tailwind equivalent are written with @apply. Class names are unchanged because
+ * CMS content uses them. Verified identical in computed style on every page (EN + AR, 3 widths).
+ */
+
+.language-switch {
+  font-size: 13px !important;
+  @apply text-brand-blue py-2.5 px-0 min-h-11 inline-flex items-center whitespace-nowrap;
+}
+.nav-shell {
+  @apply gap-6;
+}
+#nav {
+  gap: 17px;
+}
+.seo-guide-grid {
+  @apply grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  @apply gap-6 mt-7.5 mx-0 mb-11;
+}
+.seo-guide-card,
+.seo-region-card {
+  @apply flex flex-col;
+  border: 1px solid var(--color-border);
+  @apply p-7;
+  border-radius: 5px;
+  background: white;
+  @apply text-grey;
+}
+.seo-guide-card:hover,
+.seo-region-card:hover {
+  @apply border-brand-green;
+  background: var(--color-mist);
+}
+.seo-guide-card span,
+.seo-region-card span {
+  font-size: 11px;
+  @apply font-semibold;
+  letter-spacing: 0.08em;
+  @apply text-brand-green-dark mb-4.5;
+}
+.seo-guide-card h3,
+.seo-region-card h3 {
+  font-size: 23px;
+  line-height: 1.35;
+  @apply mb-4;
+}
+.seo-guide-card p,
+.seo-region-card p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.seo-guide-card b,
+.seo-region-card b {
+  font-size: 13px;
+  @apply mt-auto text-brand-blue;
+}
+.seo-region-grid {
+  @apply grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  @apply gap-5.5;
+}
+.seo-region-card {
+  padding: 25px;
+}
+.seo-region-card h3 {
+  font-size: 24px;
+}
+.seo-article-layout {
+  @apply grid;
+  grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr);
+  gap: 65px;
+  align-items: start;
+}
+.seo-article-layout article > section {
+  @apply mb-11;
+  scroll-margin-top: 130px;
+}
+.seo-article-layout article h2 {
+  font-size: 30px;
+  line-height: 1.25;
+}
+.seo-article-layout article p {
+  font-size: 16px;
+  line-height: 1.85;
+}
+.seo-editorial {
+  font-size: 12px !important;
+  @apply text-muted mb-7;
+}
+.seo-contents {
+  @apply p-6;
+  border: 1px solid var(--color-border);
+  background: var(--color-pale);
+  @apply mb-9;
+}
+.seo-contents strong {
+  @apply block text-ink-strong mb-2.5;
+}
+.seo-contents a {
+  @apply block py-2 px-0;
+  font-size: 14px;
+}
+.seo-guide-aside {
+  background: var(--color-pale);
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  @apply p-6 sticky top-32.5;
+}
+.seo-guide-aside > img {
+  @apply w-full h-52.5 object-cover mb-6;
+}
+.seo-guide-aside h3 {
+  font-size: 23px;
+}
+.seo-guide-aside p {
+  font-size: 14px;
+}
+.seo-guide-aside > .text-link {
+  @apply flex;
+  margin-top: 15px;
+}
+.seo-guide-aside > .button {
+  @apply mb-3;
+}
+.seo-faq {
+  border: 1px solid var(--color-border);
+  @apply my-3 mx-0 rounded-sm;
+  background: white;
+}
+.seo-faq summary {
+  @apply py-4.5 px-5;
+  font-size: 15px;
+  @apply font-semibold text-ink-strong cursor-pointer;
+  line-height: 1.6;
+  @apply min-h-12;
+}
+.seo-faq p {
+  @apply pt-0 px-5 pb-4.5 m-0;
+  font-size: 14px !important;
+}
+.seo-service-brief {
+  background: var(--color-mist);
+}
+.seo-service-brief .split {
+  align-items: start;
+  @apply gap-15;
+}
+.seo-service-brief .button {
+  @apply mt-4.5;
+}
+.seo-service-brief .text-link {
+  @apply flex mt-3.5;
+}
+.seo-phone {
+  @apply block;
+  font-size: 16px;
+  @apply mb-6 font-semibold;
+}
+.seo-enquiry-check {
+  background: var(--color-pale);
+  @apply p-5 my-6 mx-0;
+  border-left: 3px solid var(--color-brand-green);
+}
+.seo-enquiry-check strong,
+.seo-enquiry-check span {
+  @apply block;
+}
+.seo-enquiry-check span {
+  font-size: 13px;
+  @apply mt-2;
+}
+.seo-compat-title {
+  font-size: 28px;
+  padding: 25px 32px;
+}
+.seo-ar-hero {
+  @apply relative;
+  background: var(--color-ink-strong);
+  @apply min-h-140 pt-22.5 px-0 pb-15 text-white overflow-hidden;
+}
+.seo-ar-hero > img {
+  @apply absolute inset-0 w-full h-full object-cover opacity-32;
+}
+.seo-ar-hero > .wrap {
+  @apply relative z-1;
+}
+.seo-ar-hero h1 {
+  @apply text-white;
+  font-size: 58px;
+  line-height: 1.4;
+}
+.seo-ar-hero p {
+  font-size: 19px;
+  max-width: 700px;
+  line-height: 1.9;
+}
+.seo-ar-hero .eyebrow {
+  color: #b5e4be;
+}
+.seo-ar-hero small {
+  @apply block mt-7.5;
+  font-size: 11px;
+}
+html[dir='rtl'] body {
+  font-family: 'Noto Sans Arabic', Poppins, Arial, sans-serif;
+}
+html[dir='rtl'] h1,
+html[dir='rtl'] h2,
+html[dir='rtl'] h3 {
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+html[dir='rtl'] .eyebrow {
+  letter-spacing: 0;
+}
+html[dir='rtl'] .seo-guide-card,
+html[dir='rtl'] .seo-region-card {
+  @apply text-right;
+}
+html[dir='rtl'] .check-list {
+  @apply pr-6 pl-0;
+}
+html[dir='rtl'] .nav-shell {
+  max-width: 1376px;
+}
+html[dir='rtl'] .contact-email {
+  font-size: 17px;
+}
+html[dir='rtl'] .actions {
+  @apply gap-4;
+}
+html[dir='rtl'] .footer-grid p {
+  line-height: 1.9;
+}
+html[dir='rtl'] .seo-article-layout article p {
+  line-height: 2;
+}
+html[dir='rtl'] .split > figure img {
+  max-height: 470px;
+  @apply w-full object-cover;
+}
+html[dir='rtl'] .seo-editorial {
+  @apply mt-0;
+}
+html[dir='rtl'] .seo-guide-grid > section {
+  @apply min-w-0;
+}
+.seo-guide-card p,
+.seo-region-card p {
+  @apply mb-6;
+}
+@media (max-width: 1150px) {
+  #nav {
+    @apply gap-3;
+  }
+  .brand img {
+    @apply w-42.5;
+  }
+  .nav-shell {
+    @apply pl-6 pr-6;
+  }
+  #nav > a,
+  .nav-trigger,
+  .nav-search {
+    font-size: 13px;
+  }
+  .seo-region-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .seo-guide-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .seo-guide-grid,
+  .seo-region-grid,
+  .seo-article-layout {
+    grid-template-columns: 1fr;
+    @apply gap-5.5;
+  }
+  .seo-article-layout article h2 {
+    font-size: 27px;
+  }
+  .seo-article-layout article p {
+    font-size: 15px;
+  }
+  .seo-guide-aside {
+    @apply static;
+  }
+  .seo-service-brief .split {
+    @apply gap-8;
+  }
+  .seo-guide-card,
+  .seo-region-card {
+    padding: 23px;
+  }
+  .seo-ar-hero {
+    @apply min-h-130 pt-15 px-0 pb-10;
+  }
+  .seo-ar-hero h1 {
+    font-size: 42px;
+  }
+  .seo-ar-hero p {
+    font-size: 17px;
+  }
+  html[dir='rtl'] .nav-shell {
+    padding: 13px 20px;
+  }
+  .seo-contents {
+    @apply p-5;
+  }
+  .seo-contents a {
+    @apply min-h-11;
+  }
+  .seo-faq summary {
+    font-size: 14px;
+  }
+}

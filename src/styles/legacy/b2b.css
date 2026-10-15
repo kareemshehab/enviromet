@@ -1,0 +1,263 @@
+/*
+ * Original site: procurement tables, enquiry steps, evidence links.
+ *
+ * Converted for Tailwind CSS v4: brand colours use the theme tokens (theme.css) and declarations
+ * with an exact Tailwind equivalent are written with @apply. Class names are unchanged because
+ * CMS content uses them. Verified identical in computed style on every page (EN + AR, 3 widths).
+ */
+
+/* Focused enterprise layer: preserves version 7 brand, hero and layout. */
+.b2b-team-links {
+  border-top: 1px solid var(--color-line);
+  @apply mt-8 pt-7;
+}
+.b2b-team-links h3 {
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+.b2b-team-links > div {
+  @apply flex flex-wrap;
+  gap: 10px 30px;
+}
+.b2b-team-links a,
+.b2b-role-services a {
+  font-size: 13px;
+  @apply min-h-11 inline-flex items-center font-medium;
+  border-bottom: 1px solid var(--color-line);
+}
+.b2b-role-services {
+  @apply flex flex-col gap-2.5;
+  margin: 25px 0;
+}
+.b2b-spec {
+  margin: 45px 0;
+}
+.b2b-spec h2 {
+  font-size: 30px;
+}
+.b2b-table {
+  @apply overflow-x-auto;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  @apply my-6.5 mx-0;
+}
+.b2b-table table {
+  @apply w-full;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.b2b-table caption {
+  background: var(--color-brand-blue);
+  @apply text-white text-start;
+  padding: 17px 20px;
+  font-size: 13px;
+  @apply font-medium;
+}
+.b2b-table th,
+.b2b-table td {
+  @apply text-start;
+  vertical-align: top;
+  padding: 17px 20px;
+  border-bottom: 1px solid var(--color-border);
+  line-height: 1.8;
+}
+.b2b-table thead th {
+  background: var(--color-pale);
+  @apply text-ink-navy;
+}
+.b2b-table tbody th {
+  width: 28%;
+  @apply font-medium text-ink-navy;
+}
+.b2b-proof-links {
+  border-top: 1px solid var(--color-line-strong);
+  @apply mt-6;
+  padding-top: 23px;
+}
+.b2b-proof-links strong {
+  @apply block;
+  font-size: 13px;
+  @apply text-ink-navy;
+}
+.b2b-proof-links a {
+  font-size: 12px;
+  @apply font-medium flex min-h-11 items-center;
+}
+.detail-box > .text-link {
+  @apply flex mt-5;
+}
+.detail-box > button {
+  @apply mt-5.5;
+}
+.b2b-resource-controls {
+  @apply grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 0 24px;
+  @apply mt-7.5;
+}
+.b2b-resource-controls label {
+  font-size: 13px;
+}
+.b2b-resource-controls input,
+.b2b-resource-controls select {
+  @apply min-h-12;
+  font-size: 14px;
+}
+.b2b-resource-controls > p {
+  grid-column: 1/-1;
+  font-size: 12px;
+  @apply text-muted m-0;
+}
+.b2b-brief-strip {
+  border-inline-start: 3px solid var(--color-brand-green);
+  background: white;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 27px 30px;
+}
+.b2b-brief-strip strong {
+  font-size: 22px;
+  @apply text-ink-navy;
+}
+.b2b-brief-strip p {
+  font-size: 14px;
+  @apply my-3 mx-0;
+}
+.b2b-contact-evidence {
+  border-inline-start: 3px solid var(--color-brand-green);
+  @apply p-6;
+  background: var(--color-pale);
+  @apply mb-8;
+}
+.b2b-contact-evidence strong {
+  font-size: 17px;
+  @apply text-ink-navy;
+  line-height: 1.5;
+  @apply block mb-3;
+}
+.b2b-contact-evidence a {
+  @apply flex items-center min-h-11;
+  font-size: 12px;
+  @apply font-medium;
+}
+.b2b-step-status {
+  font-size: 12px;
+  @apply font-semibold text-brand-blue;
+  border-bottom: 1px solid var(--color-line-strong);
+  @apply pb-4.5 mt-5;
+}
+.b2b-consent {
+  @apply flex flex-row gap-3 items-start;
+  font-size: 12px !important;
+  line-height: 1.8;
+}
+.b2b-consent input {
+  @apply w-5 h-5 mt-1 shrink-0 p-0;
+}
+.b2b-back {
+  @apply me-3;
+}
+.b2b-system-faq .actions {
+  @apply mt-7;
+}
+.b2b-ar-entry {
+  background: var(--color-pale);
+  @apply py-7 px-0;
+}
+.b2b-ar-entry h2 {
+  font-size: 24px;
+}
+.b2b-ar-entry a {
+  font-size: 13px;
+  @apply me-6 min-h-11 inline-flex items-center;
+}
+[hidden] {
+  @apply hidden!;
+}
+.no-script-nav {
+  background: var(--color-pale);
+  @apply flex flex-wrap justify-center gap-4.5 p-3;
+}
+.no-script-nav a {
+  @apply min-h-11 inline-flex items-center;
+  font-size: 12px;
+}
+html[dir='rtl'] .b2b-table th,
+html[dir='rtl'] .b2b-table td {
+  @apply text-start;
+}
+@media (max-width: 760px) {
+  .b2b-team-links > div {
+    gap: 4px 20px;
+  }
+  .b2b-table th,
+  .b2b-table td {
+    @apply p-3.5;
+    font-size: 12px;
+  }
+  .b2b-resource-controls {
+    grid-template-columns: 1fr;
+    @apply gap-0;
+  }
+  .b2b-resource-controls label {
+    @apply my-2.5 mx-0;
+  }
+  .b2b-resource-controls > p {
+    @apply mt-2.5;
+  }
+  .b2b-brief-strip {
+    padding: 23px;
+  }
+  .b2b-back {
+    @apply mb-3;
+  }
+  .b2b-spec h2 {
+    font-size: 27px;
+  }
+  .b2b-team-links h3 {
+    font-size: 18px;
+  }
+  .b2b-team-links {
+    padding-top: 25px;
+  }
+  .b2b-role-services {
+    gap: 7px;
+  }
+}
+@media print {
+  .site-header,
+  footer,
+  .cta,
+  .b2b-back,
+  [data-print],
+  .hero-controls {
+    @apply hidden!;
+  }
+  .section {
+    padding: 25px 0;
+  }
+  .page-intro {
+    padding: 25px 0;
+  }
+  .split,
+  .solution-layout {
+    @apply block;
+  }
+  .b2b-table {
+    @apply overflow-visible;
+  }
+  .b2b-table th,
+  .b2b-table td {
+    @apply p-2.5;
+    font-size: 11px;
+  }
+  .wrap {
+    padding: 0 15px;
+  }
+  .detail-box {
+    break-inside: avoid;
+  }
+  a {
+    @apply text-ink-navy;
+  }
+}

@@ -1,0 +1,173 @@
+{
+ "header": {
+  "navItems": [
+   {
+    "label": "الرئيسية",
+    "kind": "link",
+    "url": "/ar",
+    "className": null,
+    "lang": null
+   },
+   {
+    "label": "عن الشركة",
+    "kind": "link",
+    "url": "/ar/about",
+    "className": null,
+    "lang": null
+   },
+   {
+    "label": "الحلول",
+    "kind": "link",
+    "url": "/ar/services",
+    "className": null,
+    "lang": null
+   },
+   {
+    "label": "ناقش حملتك ↗",
+    "kind": "link",
+    "url": "/ar/contact",
+    "className": null,
+    "lang": null
+   },
+   {
+    "label": "English",
+    "kind": "link",
+    "url": "/",
+    "className": "language-switch",
+    "lang": "en"
+   },
+   {
+    "label": "دعم المشتريات",
+    "kind": "link",
+    "url": "/ar/for-procurement",
+    "className": null,
+    "lang": null
+   }
+  ],
+  "cta": null,
+  "languageLink": null,
+  "showSearch": false
+ },
+ "footer": {
+  "tagline": "بيانات ميدانية موثقة.\nرؤية أوضح للقرار التالي.",
+  "linkedinLabel": null,
+  "columns": [
+   {
+    "heading": "استكشف",
+    "links": [
+     {
+      "type": "custom",
+      "label": "عن الشركة",
+      "url": "/ar/about",
+      "appearance": "plain",
+      "newTab": null
+     },
+     {
+      "type": "custom",
+      "label": "الحلول والخدمات",
+      "url": "/ar/services",
+      "appearance": "plain",
+      "newTab": null
+     },
+     {
+      "type": "custom",
+      "label": "الجودة والمعايير",
+      "url": "/ar/quality",
+      "appearance": "plain",
+      "newTab": null
+     }
+    ]
+   },
+   {
+    "heading": "الخدمات الرئيسية",
+    "links": [
+     {
+      "type": "custom",
+      "label": "قياس موارد الرياح",
+      "url": "/ar/wind",
+      "appearance": "plain",
+      "newTab": null
+     },
+     {
+      "type": "custom",
+      "label": "حلول LiDAR",
+      "url": "/ar/lidar",
+      "appearance": "plain",
+      "newTab": null
+     },
+     {
+      "type": "custom",
+      "label": "قياس الموارد الشمسية",
+      "url": "/ar/solar",
+      "appearance": "plain",
+      "newTab": null
+     },
+     {
+      "type": "custom",
+      "label": "Use cases — English",
+      "url": "/projects",
+      "appearance": "plain",
+      "newTab": null
+     }
+    ]
+   },
+   {
+    "heading": "تواصل معنا",
+    "links": [
+     {
+      "type": "custom",
+      "label": "sales@enviromet-sa.com",
+      "url": "mailto:sales@enviromet-sa.com",
+      "appearance": "plain",
+      "newTab": null
+     },
+     {
+      "type": "custom",
+      "label": "+966 11 245 8536",
+      "url": "tel:+966112458536",
+      "appearance": "plain",
+      "newTab": null
+     },
+     {
+      "type": "custom",
+      "label": "LinkedIn ↗",
+      "url": "https://www.linkedin.com/company/enviromet-company/",
+      "appearance": "plain",
+      "newTab": true
+     }
+    ]
+   }
+  ],
+  "contactColumn": {
+   "heading": null
+  },
+  "bottomLinks": [
+   {
+    "type": "custom",
+    "label": "معلومات الخصوصية — English",
+    "url": "/privacy",
+    "appearance": "plain"
+   }
+  ],
+  "copyrightSuffix": null,
+  "backToTopLabel": null
+ },
+ "settings": {
+  "utilityText": null,
+  "skipLinkText": "انتقل إلى المحتوى",
+  "offices": null,
+  "defaultCta": {
+   "eyebrow": "مشروعك القادم",
+   "heading": "ابدأ بهدف واضح للقياس.",
+   "text": "شارك موقع المشروع ومرحلته والبيانات أو التقييم المطلوب.",
+   "link": {
+    "type": "custom",
+    "label": "ناقش حملتك ↗",
+    "url": "/ar/contact",
+    "appearance": "white"
+   }
+  },
+  "titleSuffix": " | EnviroMET",
+  "defaultDescription": "EnviroMET: قياسات ميدانية وتقييم الموارد واستشارات هندسية من السعودية، مع استقبال استفسارات المشاريع في الخليج والشرق الأوسط وأفريقيا."
+ }
+}

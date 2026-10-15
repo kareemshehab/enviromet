@@ -1,0 +1,43 @@
+/*
+ * Design tokens: the single source of truth for brand colours and type.
+ * Tailwind turns each token into utilities (bg-brand-blue, text-ink, border-line, font-sans…)
+ * and a CSS variable (var(--color-brand-blue)) used throughout the component styles.
+ * `static`: always emitted, because the stylesheets reference them through var().
+ */
+@theme static {
+  /* Brand */
+  --color-brand-blue: #206687;
+  --color-brand-green: #309a47;
+  --color-brand-green-dark: #237c38;
+  --color-brand-green-deep: #1b6a2e;
+  --color-brand-sky: #2190b5;
+
+  /* Text */
+  --color-ink: #16475e;
+  --color-ink-deep: #153645;
+  --color-ink-strong: #163f52;
+  --color-ink-navy: #173b4b;
+  --color-grey: #464647;
+  --color-muted: #52646d;
+  --color-muted-blue: #557685;
+
+  /* Surfaces and lines */
+  --color-pale: #eff6f9;
+  --color-mist: #f7fafb;
+  --color-line: #dce8ed;
+  --color-border: #d8e5e9;
+  --color-line-strong: #c6d9e1;
+
+  /* Type */
+  --font-sans: Poppins, Arial, sans-serif;
+  --font-arabic: 'Noto Sans Arabic', Poppins, Arial, sans-serif;
+}
+
+/*
+ * The site's own breakpoints (desktop-first, inclusive max-width), usable as variants:
+ * `below-tablet:hidden` = @media (max-width: 1100px) { … }
+ */
+@custom-variant below-desktop (@media (max-width: 1280px));
+@custom-variant below-tablet (@media (max-width: 1100px));
+@custom-variant below-mobile (@media (max-width: 760px));
+@custom-variant below-phone (@media (max-width: 560px));

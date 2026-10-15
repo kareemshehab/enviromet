@@ -1,0 +1,3386 @@
+[
+ {
+  "collection": "pages",
+  "slug": "home",
+  "title": "قياس الرياح والطاقة الشمسية والمراقبة البيئية في السعودية",
+  "meta": {
+   "title": "قياس الرياح والطاقة الشمسية والمراقبة البيئية في السعودية | EnviroMET",
+   "description": "EnviroMET: قياسات ميدانية وتقييم الموارد واستشارات هندسية من السعودية، مع استقبال استفسارات المشاريع في الخليج والشرق الأوسط وأفريقيا."
+  },
+  "layout": [
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "sectionClass": "seo-ar-hero",
+    "wrapClass": "-",
+    "items": [
+     {
+      "blockType": "itemImage",
+      "image": {
+       "$media": "assets/energy-hero.webp",
+       "alt": "مشهد توضيحي للطاقة الشمسية وطاقة الرياح"
+      },
+      "alt": "مشهد توضيحي للطاقة الشمسية وطاقة الرياح",
+      "blockName": "مشهد توضيحي للطاقة الشمسية وطاقة الرياح"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": "wrap",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "قياسات ميدانية. رؤية فنية.",
+        "elementId": null,
+        "attrs": null,
+        "style": "eyebrow",
+        "blockName": "قياسات ميدانية. رؤية فنية."
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h1",
+        "text": "بيانات موثقة.\nقرارات أوضح للمشروع.",
+        "className": null,
+        "elementId": null,
+        "blockName": "بيانات موثقة. قرارات أوضح للمشروع."
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "قياس موارد الرياح والطاقة الشمسية، والمراقبة البيئية والاستشارات الهندسية — مع خبرة ميدانية منذ عام 2014.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "قياس موارد الرياح والطاقة الشمسية، والمراقبة البيئية والاستش…"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "div",
+        "className": "actions",
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemLink",
+          "label": "استكشف الحلول ↗",
+          "url": "/ar/services",
+          "newTab": null,
+          "elementId": null,
+          "attrs": null,
+          "style": "button",
+          "blockName": "استكشف الحلول ↗"
+         },
+         {
+          "blockType": "itemLink",
+          "label": "ناقش حملتك ↗",
+          "url": "/ar/contact",
+          "newTab": null,
+          "elementId": null,
+          "attrs": null,
+          "style": "button white",
+          "blockName": "ناقش حملتك ↗"
+         }
+        ],
+        "blockName": "استكشف الحلول ↗ ناقش حملتك ↗"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "small",
+        "text": "مشهد توضيحي للطاقة المتجددة",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "مشهد توضيحي للطاقة المتجددة"
+       }
+      ],
+      "blockName": "بيانات موثقة. قرارات أوضح للمشروع."
+     }
+    ],
+    "blockName": "قياسات ميدانية. رؤية فنية."
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": {
+     "aria-label": "خبرة EnviroMET"
+    },
+    "sectionClass": "refine-authority",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "a",
+      "className": null,
+      "elementId": null,
+      "url": "/ar/services",
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemText",
+        "tag": "strong",
+        "text": "450+",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "450+"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "span",
+        "text": "حملات قياس الموارد",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "حملات قياس الموارد"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "small",
+        "text": "الطاقة الشمسية والرياح",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "الطاقة الشمسية والرياح"
+       }
+      ],
+      "blockName": "450+"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "a",
+      "className": null,
+      "elementId": null,
+      "url": "/ar/wind#wind-coverage",
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemText",
+        "tag": "strong",
+        "text": "850,000 <small>كم²</small>",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "850,000 كم²"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "span",
+        "text": "نطاق تقييم موارد الرياح",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "نطاق تقييم موارد الرياح"
+       }
+      ],
+      "blockName": "850,000 كم²"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "a",
+      "className": null,
+      "elementId": null,
+      "url": "/ar/quality",
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemText",
+        "tag": "strong",
+        "text": "5",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "5"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "span",
+        "text": "أنظمة إدارة معتمدة وفق ISO",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "أنظمة إدارة معتمدة وفق ISO"
+       }
+      ],
+      "blockName": "5"
+     }
+    ],
+    "blockName": null
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "sectionClass": "section refine-capabilities",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": "section-heading",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemGroup2",
+        "tag": "div",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "قدرات مترابطة",
+          "elementId": null,
+          "attrs": null,
+          "style": "eyebrow",
+          "blockName": "قدرات مترابطة"
+         },
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "قياس واضح.\nقرار أفضل.",
+          "className": null,
+          "elementId": null,
+          "blockName": "قياس واضح. قرار أفضل."
+         }
+        ],
+        "blockName": "قياس واضح. قرار أفضل."
+       },
+       {
+        "blockType": "itemLink",
+        "label": "استكشف الحلول ↗",
+        "url": "/ar/services",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "text-link",
+        "blockName": "استكشف الحلول ↗"
+       }
+      ],
+      "blockName": "قياس واضح. قرار أفضل."
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": "refine-capability-grid",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemGroup2",
+        "tag": "a",
+        "className": "refine-capability",
+        "elementId": null,
+        "url": "/ar/wind",
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemImage",
+          "image": {
+           "$media": "assets/mast.jpg",
+           "alt": "تقييم موارد الرياح"
+          },
+          "alt": "تقييم موارد الرياح",
+          "figure": true,
+          "figureClass": null,
+          "elementId": null
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "div",
+          "className": null,
+          "elementId": null,
+          "url": null,
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "01",
+            "elementId": null,
+            "attrs": null,
+            "style": "eyebrow",
+            "blockName": "01"
+           },
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "تقييم موارد الرياح",
+            "className": null,
+            "elementId": null,
+            "blockName": "تقييم موارد الرياح"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "أبراج القياس والاستشعار عن بعد وتقييم موارد الرياح.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "أبراج القياس والاستشعار عن بعد وتقييم موارد الرياح."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "span",
+            "text": "استكشف الدعم ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف الدعم ↗"
+           }
+          ],
+          "blockName": "تقييم موارد الرياح"
+         }
+        ],
+        "blockName": "تقييم موارد الرياح"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "a",
+        "className": "refine-capability",
+        "elementId": null,
+        "url": "/ar/solar",
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemImage",
+          "image": {
+           "$media": "assets/solar_station.webp",
+           "alt": "تقييم الموارد الشمسية"
+          },
+          "alt": "تقييم الموارد الشمسية",
+          "figure": true,
+          "figureClass": null,
+          "elementId": null
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "div",
+          "className": null,
+          "elementId": null,
+          "url": null,
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "02",
+            "elementId": null,
+            "attrs": null,
+            "style": "eyebrow",
+            "blockName": "02"
+           },
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "تقييم الموارد الشمسية",
+            "className": null,
+            "elementId": null,
+            "blockName": "تقييم الموارد الشمسية"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "قياس الإشعاع وتنفيذ المحطات وتقييم الموارد.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "قياس الإشعاع وتنفيذ المحطات وتقييم الموارد."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "span",
+            "text": "استكشف الدعم ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف الدعم ↗"
+           }
+          ],
+          "blockName": "تقييم الموارد الشمسية"
+         }
+        ],
+        "blockName": "تقييم الموارد الشمسية"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "a",
+        "className": "refine-capability",
+        "elementId": null,
+        "url": "/environment",
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemImage",
+          "image": {
+           "$media": "assets/air.webp",
+           "alt": "المراقبة البيئية"
+          },
+          "alt": "المراقبة البيئية",
+          "figure": true,
+          "figureClass": null,
+          "elementId": null
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "div",
+          "className": null,
+          "elementId": null,
+          "url": null,
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "03",
+            "elementId": null,
+            "attrs": null,
+            "style": "eyebrow",
+            "blockName": "03"
+           },
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "المراقبة البيئية",
+            "className": null,
+            "elementId": null,
+            "blockName": "المراقبة البيئية"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "قياسات الهواء والمياه والظروف البيئية — تفاصيل بالإنجليزية.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "قياسات الهواء والمياه والظروف البيئية — تفاصيل بالإنجليزية."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "span",
+            "text": "استكشف الدعم ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف الدعم ↗"
+           }
+          ],
+          "blockName": "المراقبة البيئية"
+         }
+        ],
+        "blockName": "المراقبة البيئية"
+       }
+      ],
+      "blockName": "تقييم موارد الرياح"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "صور الأنظمة الشمسية والمراقبة البيئية توضيحية.",
+      "elementId": null,
+      "attrs": null,
+      "style": "small-note",
+      "blockName": "صور الأنظمة الشمسية والمراقبة البيئية توضيحية."
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": "refine-support",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemGroup2",
+        "tag": "a",
+        "className": null,
+        "elementId": null,
+        "url": "/engineering",
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemText",
+          "tag": "strong",
+          "text": "الدعم الهندسي",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "الدعم الهندسي"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "span",
+          "text": "جدوى ومراجعة فنية — الإنجليزية ↗",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "جدوى ومراجعة فنية — الإنجليزية ↗"
+         }
+        ],
+        "blockName": "الدعم الهندسي"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "a",
+        "className": null,
+        "elementId": null,
+        "url": "/maintenance",
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemText",
+          "tag": "strong",
+          "text": "التشغيل والصيانة",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "التشغيل والصيانة"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "span",
+          "text": "العناية الميدانية واستمرارية القياس — الإنجليزية ↗",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "العناية الميدانية واستمرارية القياس — الإنجليزية ↗"
+         }
+        ],
+        "blockName": "التشغيل والصيانة"
+       }
+      ],
+      "blockName": "الدعم الهندسي"
+     }
+    ],
+    "blockName": "قدرات مترابطة"
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "من الهدف إلى البيانات",
+      "elementId": null,
+      "attrs": null,
+      "style": "eyebrow",
+      "blockName": "من الهدف إلى البيانات"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "ماذا يحتاج مشروعك؟",
+      "className": null,
+      "elementId": null,
+      "blockName": "ماذا يحتاج مشروعك؟"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": "seo-guide-grid",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemGroup2",
+        "tag": "a",
+        "className": "seo-guide-card",
+        "elementId": null,
+        "url": "/ar/wind",
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h3",
+          "text": "موارد الرياح",
+          "className": null,
+          "elementId": null,
+          "blockName": "موارد الرياح"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "أبراج قياس، وأنظمة LiDAR، وتخطيط الحملات وتقييم الموارد.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "أبراج قياس، وأنظمة LiDAR، وتخطيط الحملات وتقييم الموارد."
+         },
+         {
+          "blockType": "itemText",
+          "tag": "b",
+          "text": "استكشف الخدمة ↗",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "استكشف الخدمة ↗"
+         }
+        ],
+        "blockName": "موارد الرياح"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "a",
+        "className": "seo-guide-card",
+        "elementId": null,
+        "url": "/ar/solar",
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h3",
+          "text": "الموارد الشمسية",
+          "className": null,
+          "elementId": null,
+          "blockName": "الموارد الشمسية"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "محطات قياس الإشعاع الشمسي، ورصد ظروف الموقع وتقييم الموارد.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "محطات قياس الإشعاع الشمسي، ورصد ظروف الموقع وتقييم الموارد."
+         },
+         {
+          "blockType": "itemText",
+          "tag": "b",
+          "text": "استكشف الخدمة ↗",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "استكشف الخدمة ↗"
+         }
+        ],
+        "blockName": "الموارد الشمسية"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "a",
+        "className": "seo-guide-card",
+        "elementId": null,
+        "url": "/ar/services#environment",
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h3",
+          "text": "المراقبة البيئية",
+          "className": null,
+          "elementId": null,
+          "blockName": "المراقبة البيئية"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "جودة الهواء والانبعاثات والمياه والدعم البيئي والاجتماعي.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "جودة الهواء والانبعاثات والمياه والدعم البيئي والاجتماعي."
+         },
+         {
+          "blockType": "itemText",
+          "tag": "b",
+          "text": "استكشف الخدمة ↗",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "استكشف الخدمة ↗"
+         }
+        ],
+        "blockName": "المراقبة البيئية"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "a",
+        "className": "seo-guide-card",
+        "elementId": null,
+        "url": "/ar/services#engineering",
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h3",
+          "text": "الاستشارات الهندسية",
+          "className": null,
+          "elementId": null,
+          "blockName": "الاستشارات الهندسية"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "الجدوى والعناية الفنية الواجبة والإشراف ومراجعة أداء المحطات.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "الجدوى والعناية الفنية الواجبة والإشراف ومراجعة أداء المحطات…"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "b",
+          "text": "استكشف الخدمة ↗",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "استكشف الخدمة ↗"
+         }
+        ],
+        "blockName": "الاستشارات الهندسية"
+       }
+      ],
+      "blockName": "موارد الرياح"
+     }
+    ],
+    "blockName": "من الهدف إلى البيانات"
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "pale",
+    "layout": "wrap split",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": null,
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "خبرة موثقة في الملفات التعريفية",
+        "elementId": null,
+        "attrs": null,
+        "style": "eyebrow",
+        "blockName": "خبرة موثقة في الملفات التعريفية"
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "قدرة ميدانية يمكنك مراجعتها.",
+        "className": null,
+        "elementId": null,
+        "blockName": "قدرة ميدانية يمكنك مراجعتها."
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "يوثق أحد المراجع توريد وتركيب 410 أبراج قياس بارتفاع 120 متراً ضمن برنامج لتقييم موارد الرياح في المملكة. كما تشمل المراجع ثلاثة أجهزة ZX300 في ثلاثة مواقع، وبرامج لأبراج القياس وصيانة المحطات.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "يوثق أحد المراجع توريد وتركيب 410 أبراج قياس بارتفاع 120 متر…"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "تشير الملفات إلى استعادة بيانات تتجاوز 95% في الحملات المعتادة؛ وهذا بيان خبرة وليس ضماناً لكل مشروع.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "تشير الملفات إلى استعادة بيانات تتجاوز 95% في الحملات المعتا…"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "راجع نطاق المشاريع — English ↗",
+        "url": "/projects",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "text-link",
+        "blockName": "راجع نطاق المشاريع — English ↗"
+       }
+      ],
+      "blockName": "قدرة ميدانية يمكنك مراجعتها."
+     },
+     {
+      "blockType": "itemImage",
+      "image": {
+       "$media": "assets/references/wind-410.webp",
+       "alt": "صورة برج قياس من الملف المرجعي للشركة"
+      },
+      "alt": "صورة برج قياس من الملف المرجعي للشركة",
+      "figure": true,
+      "figureClass": null,
+      "elementId": null,
+      "caption": "صورة ميدانية من الملف المرجعي لـ EnviroMET",
+      "blockName": "صورة ميدانية من الملف المرجعي لـ EnviroMET"
+     }
+    ],
+    "blockName": "خبرة موثقة في الملفات التعريفية"
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap split",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": null,
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "حملة مترابطة من البداية للنهاية.",
+        "className": null,
+        "elementId": null,
+        "blockName": "حملة مترابطة من البداية للنهاية."
+       },
+       {
+        "blockType": "itemList",
+        "ordered": null,
+        "items": [
+         {
+          "text": "تحديد الهدف ونطاق القياس ومتطلبات الموقع"
+         },
+         {
+          "text": "تجهيز وتركيب الأجهزة والطاقة والاتصالات"
+         },
+         {
+          "text": "المراقبة والصيانة وتوثيق الأنشطة الميدانية"
+         },
+         {
+          "text": "مراجعة جودة البيانات وتسليم السجلات والتقارير المتفق عليها"
+         }
+        ],
+        "elementId": null,
+        "style": "check-list",
+        "blockName": "تحديد الهدف ونطاق القياس ومتطلبات الموقع تجهيز وتركيب الأجهز…"
+       }
+      ],
+      "blockName": "حملة مترابطة من البداية للنهاية."
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": null,
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "المعايير في سياقها الصحيح.",
+        "className": null,
+        "elementId": null,
+        "blockName": "المعايير في سياقها الصحيح."
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "<bdi>IEC 61400-50-1</bdi> للقياسات المثبتة على الأبراج، و<bdi>IEC 61400-50-2</bdi> للاستشعار عن بعد من الأرض. تحدد الحملة المتطلبات المنطبقة والتحقق المطلوب.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "IEC 61400-50-1 للقياسات المثبتة على الأبراج، و IEC 61400-50-…"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "تغطي أنظمة الإدارة الخمسة الجودة والبيئة والسلامة وأمن المعلومات والطاقة. وهي تخص الممارسات المؤسسية ولا تعتمد كل جهاز أو نتيجة قياس.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "تغطي أنظمة الإدارة الخمسة الجودة والبيئة والسلامة وأمن المعل…"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "الجودة والمعايير ↗",
+        "url": "/ar/quality",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "text-link",
+        "blockName": "الجودة والمعايير ↗"
+       }
+      ],
+      "blockName": "المعايير في سياقها الصحيح."
+     }
+    ],
+    "blockName": "حملة مترابطة من البداية للنهاية."
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "pale",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "السعودية والخليج والشرق الأوسط وأفريقيا.",
+      "className": null,
+      "elementId": null,
+      "blockName": "السعودية والخليج والشرق الأوسط وأفريقيا."
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "تنطلق خبرتنا الموثقة من السعودية. نستقبل الاستفسارات الإقليمية ونحدد قابلية التنفيذ ومتطلبات البلد والشركاء المحليين والترتيبات الميدانية لكل فرصة. لا تعني هذه التغطية وجود مكاتب أو مشاريع سابقة في كل بلد.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "تنطلق خبرتنا الموثقة من السعودية. نستقبل الاستفسارات الإقليم…"
+     }
+    ],
+    "blockName": "السعودية والخليج والشرق الأوسط وأفريقيا."
+   },
+   {
+    "blockType": "cta",
+    "useDefault": true
+   }
+  ]
+ },
+ {
+  "collection": "pages",
+  "slug": "about",
+  "title": "عن EnviroMET",
+  "meta": {
+   "title": "عن EnviroMET | EnviroMET",
+   "description": "نربط القياسات الجوية والبيئية بالتقييم الفني لدعم قرارات المشاريع."
+  },
+  "layout": [
+   {
+    "blockType": "pageIntro",
+    "eyebrow": "EnviroMET",
+    "heading": "خبرة ميدانية.\nرؤية فنية متكاملة.",
+    "lede": "منذ عام 2014، تجمع EnviroMET بين القياس وتقييم الموارد والمراقبة البيئية والاستشارات الهندسية."
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap narrow",
+    "items": [
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "مجالات خبرتنا",
+      "className": null,
+      "elementId": null,
+      "blockName": "مجالات خبرتنا"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "تشمل الملفات التعريفية الاستشارات لمشاريع الطاقة، والأرصاد وقياس الموارد، والالتزام البيئي والاجتماعي، والهيدرولوجيا وجودة المياه، وجودة الهواء.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "تشمل الملفات التعريفية الاستشارات لمشاريع الطاقة، والأرصاد و…"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "نهجنا في التنفيذ",
+      "className": null,
+      "elementId": null,
+      "blockName": "نهجنا في التنفيذ"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "نحدد هدف المشروع ونطاق العمل، ثم نربط الأجهزة بالتكامل الميداني والطاقة والاتصالات والصيانة ومراجعة البيانات. ويحدد الاتفاق السجلات والتقارير ومسؤوليات الأطراف.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "نحدد هدف المشروع ونطاق العمل، ثم نربط الأجهزة بالتكامل الميد…"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "رؤيتنا ورسالتنا",
+      "className": null,
+      "elementId": null,
+      "blockName": "رؤيتنا ورسالتنا"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "تقديم معلومات بيئية موثوقة تدعم التنمية المستدامة، وتطوير حلول الأرصاد والهيدرولوجيا والبيئة التي تمنح أصحاب المصلحة قياسات دقيقة وبيانات قابلة للمراجعة.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "تقديم معلومات بيئية موثوقة تدعم التنمية المستدامة، وتطوير حل…"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "مراجع الشركة",
+      "className": null,
+      "elementId": null,
+      "blockName": "مراجع الشركة"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "تتضمن الملفات مراجع لأبراج قياس الرياح، وأنظمة LiDAR، ومحطات الأرصاد وبرامج الصيانة. تعكس الأرقام نطاق المشاريع الموثق، ولا تمثل ضماناً لنتائج كل حملة جديدة.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "تتضمن الملفات مراجع لأبراج قياس الرياح، وأنظمة LiDAR، ومحطات…"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": "actions",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemLink",
+        "label": "نبذة الشركة ↗",
+        "url": "/ar/about",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "button",
+        "blockName": "نبذة الشركة ↗"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "استعرض حالات الاستخدام — English ↗",
+        "url": "/projects",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "button secondary",
+        "blockName": "استعرض حالات الاستخدام — English ↗"
+       }
+      ],
+      "blockName": "نبذة الشركة ↗ استعرض حالات الاستخدام — English ↗"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "مكاتبنا في السعودية",
+      "className": null,
+      "elementId": null,
+      "blockName": "مكاتبنا في السعودية"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "المقر الرئيسي: مركز العليا، الوحدة 11، شارع العليا، حي الملك فهد، الرياض 12271.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "المقر الرئيسي: مركز العليا، الوحدة 11، شارع العليا، حي الملك…"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "فرع جدة: مكتب 909B، أبراج بن حمران، شارع الأمير محمد بن عبدالعزيز الفرعي.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "فرع جدة: مكتب 909B، أبراج بن حمران، شارع الأمير محمد بن عبدا…"
+     }
+    ],
+    "blockName": "مجالات خبرتنا"
+   },
+   {
+    "blockType": "section",
+    "anchorId": "field-team",
+    "attrs": null,
+    "background": "pale",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "التنفيذ الميداني والتنسيق الفني",
+      "elementId": null,
+      "attrs": null,
+      "style": "eyebrow",
+      "blockName": "التنفيذ الميداني والتنسيق الفني"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "من تخطيط الموقع إلى التسليم.",
+      "className": null,
+      "elementId": null,
+      "blockName": "من تخطيط الموقع إلى التسليم."
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "تربط EnviroMET تجهيز الأجهزة والتركيب الميداني وتشغيل الحملات والمراجعة الفنية بنطاق عمل متفق عليه. تشمل خطة التنفيذ الوصول إلى الموقع والنقل والطاقة والاتصالات والتصاريح ومسؤوليات الأطراف.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "تربط EnviroMET تجهيز الأجهزة والتركيب الميداني وتشغيل الحملا…"
+     },
+     {
+      "blockType": "itemList",
+      "ordered": true,
+      "items": [
+       {
+        "text": "تحديد الهدف والمتغيرات والمدة والمتطلبات الفنية."
+       },
+       {
+        "text": "تنسيق التجهيز والنقل وجاهزية الموقع."
+       },
+       {
+        "text": "التركيب والتكامل وتوثيق فحوص التشغيل التجريبي."
+       },
+       {
+        "text": "المراقبة والصيانة وتوثيق التدخلات والإعدادات."
+       },
+       {
+        "text": "تسليم البيانات وسجلات الجودة والأعمال الميدانية المتفق عليها."
+       }
+      ],
+      "elementId": null,
+      "blockName": "تحديد الهدف والمتغيرات والمدة والمتطلبات الفنية. تنسيق التجه…"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "تخطيط السلامة قبل التنفيذ.",
+      "className": null,
+      "elementId": null,
+      "blockName": "تخطيط السلامة قبل التنفيذ."
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "يحدد المشروع تقييم المخاطر وطريقة العمل والتصاريح وكفاءة العاملين ومعدات الوقاية وخطة الإنقاذ والاتصالات للطوارئ. يتعلق ISO 45001 بنظام إدارة الصحة والسلامة المهنية؛ ولا يغني عن إثبات التأهيل وضوابط كل مهمة.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "يحدد المشروع تقييم المخاطر وطريقة العمل والتصاريح وكفاءة الع…"
+     },
+     {
+      "blockType": "itemLink",
+      "label": "ناقش حملتك ↗",
+      "url": "/ar/contact",
+      "newTab": null,
+      "elementId": null,
+      "attrs": null,
+      "style": "text-link",
+      "blockName": "ناقش حملتك ↗"
+     }
+    ],
+    "blockName": "التنفيذ الميداني والتنسيق الفني"
+   },
+   {
+    "blockType": "cta",
+    "useDefault": true
+   }
+  ]
+ },
+ {
+  "collection": "pages",
+  "slug": "services",
+  "title": "حلول القياس والمراقبة والاستشارات الهندسية",
+  "meta": {
+   "title": "حلول القياس والمراقبة والاستشارات الهندسية | EnviroMET",
+   "description": "استكشف 21 حلاً من EnviroMET في الطاقة والقياس والبيئة والاستشارات."
+  },
+  "layout": [
+   {
+    "blockType": "pageIntro",
+    "eyebrow": "EnviroMET",
+    "heading": "حلول مترابطة.\nنطاق واضح للمشروع.",
+    "lede": "قياس الموارد والأرصاد، والمراقبة البيئية، والاستشارات والتشغيل والصيانة."
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "صفحات التفاصيل الفنية بالإنجليزية، مع صفحات عربية للخدمات الرئيسية.",
+      "elementId": null,
+      "attrs": null,
+      "className": "seo-editorial",
+      "blockName": "صفحات التفاصيل الفنية بالإنجليزية، مع صفحات عربية للخدمات ال…"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "section",
+      "className": null,
+      "elementId": "renewables",
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "الطاقة المتجددة",
+        "className": null,
+        "elementId": null,
+        "blockName": "الطاقة المتجددة"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "div",
+        "className": "seo-guide-grid",
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/ar/wind",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "تقييم موارد الرياح",
+            "className": null,
+            "elementId": null,
+            "blockName": "تقييم موارد الرياح"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "تقييم موارد الرياح"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/ar/solar",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "تقييم الموارد الشمسية",
+            "className": null,
+            "elementId": null,
+            "blockName": "تقييم الموارد الشمسية"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "تقييم الموارد الشمسية"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/power-curve",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "قياس منحنى قدرة توربينات الرياح",
+            "className": null,
+            "elementId": null,
+            "blockName": "قياس منحنى قدرة توربينات الرياح"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "قياس منحنى قدرة توربينات الرياح"
+         }
+        ],
+        "blockName": "تقييم موارد الرياح"
+       }
+      ],
+      "blockName": "الطاقة المتجددة"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "section",
+      "className": null,
+      "elementId": "engineering",
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "الاستشارات الهندسية",
+        "className": null,
+        "elementId": null,
+        "blockName": "الاستشارات الهندسية"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "div",
+        "className": "seo-guide-grid",
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/engineering-advisory",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "هندسة المالك",
+            "className": null,
+            "elementId": null,
+            "blockName": "هندسة المالك"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "هندسة المالك"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/diligence",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "الهندسة المستقلة والعناية الفنية الواجبة",
+            "className": null,
+            "elementId": null,
+            "blockName": "الهندسة المستقلة والعناية الفنية الواجبة"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "الهندسة المستقلة والعناية الفنية الواجبة"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/feasibility",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "فحص المواقع ودراسات الجدوى",
+            "className": null,
+            "elementId": null,
+            "blockName": "فحص المواقع ودراسات الجدوى"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "فحص المواقع ودراسات الجدوى"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/grid",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "ربط الشبكة الكهربائية",
+            "className": null,
+            "elementId": null,
+            "blockName": "ربط الشبكة الكهربائية"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "ربط الشبكة الكهربائية"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/construction",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "الإشراف على الإنشاء والتشغيل التجريبي",
+            "className": null,
+            "elementId": null,
+            "blockName": "الإشراف على الإنشاء والتشغيل التجريبي"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "الإشراف على الإنشاء والتشغيل التجريبي"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/testing",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "اختبارات أداء المحطات",
+            "className": null,
+            "elementId": null,
+            "blockName": "اختبارات أداء المحطات"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "اختبارات أداء المحطات"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/lender",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "الاستشارات الهندسية للممولين",
+            "className": null,
+            "elementId": null,
+            "blockName": "الاستشارات الهندسية للممولين"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "الاستشارات الهندسية للممولين"
+         }
+        ],
+        "blockName": "هندسة المالك"
+       }
+      ],
+      "blockName": "الاستشارات الهندسية"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "section",
+      "className": null,
+      "elementId": "measurement",
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "القياس والتشغيل",
+        "className": null,
+        "elementId": null,
+        "blockName": "القياس والتشغيل"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "div",
+        "className": "seo-guide-grid",
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/meteorology",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "القياسات الجوية",
+            "className": null,
+            "elementId": null,
+            "blockName": "القياسات الجوية"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "القياسات الجوية"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/maintenance",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "التشغيل والصيانة",
+            "className": null,
+            "elementId": null,
+            "blockName": "التشغيل والصيانة"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "التشغيل والصيانة"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/power",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "الطاقة والأنظمة للمواقع النائية",
+            "className": null,
+            "elementId": null,
+            "blockName": "الطاقة والأنظمة للمواقع النائية"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "الطاقة والأنظمة للمواقع النائية"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/performance",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "مراقبة أداء الأصول",
+            "className": null,
+            "elementId": null,
+            "blockName": "مراقبة أداء الأصول"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "مراقبة أداء الأصول"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/data",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "بيانات القياس وتقارير الحملات",
+            "className": null,
+            "elementId": null,
+            "blockName": "بيانات القياس وتقارير الحملات"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "بيانات القياس وتقارير الحملات"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/decommissioning",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "إزالة المحطات عند انتهاء الحملات",
+            "className": null,
+            "elementId": null,
+            "blockName": "إزالة المحطات عند انتهاء الحملات"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "إزالة المحطات عند انتهاء الحملات"
+         }
+        ],
+        "blockName": "القياسات الجوية"
+       }
+      ],
+      "blockName": "القياس والتشغيل"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "section",
+      "className": null,
+      "elementId": "environment",
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "الخدمات البيئية",
+        "className": null,
+        "elementId": null,
+        "blockName": "الخدمات البيئية"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "div",
+        "className": "seo-guide-grid",
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/air",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "مراقبة جودة الهواء",
+            "className": null,
+            "elementId": null,
+            "blockName": "مراقبة جودة الهواء"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "مراقبة جودة الهواء"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/emissions",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "الانبعاثات والضوضاء عند حدود المنشأة",
+            "className": null,
+            "elementId": null,
+            "blockName": "الانبعاثات والضوضاء عند حدود المنشأة"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "الانبعاثات والضوضاء عند حدود المنشأة"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/water",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "الهيدرولوجيا وجودة المياه",
+            "className": null,
+            "elementId": null,
+            "blockName": "الهيدرولوجيا وجودة المياه"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "الهيدرولوجيا وجودة المياه"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/compliance",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "الدعم البيئي والاجتماعي",
+            "className": null,
+            "elementId": null,
+            "blockName": "الدعم البيئي والاجتماعي"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "الدعم البيئي والاجتماعي"
+         },
+         {
+          "blockType": "itemGroup3",
+          "tag": "a",
+          "className": "seo-guide-card",
+          "elementId": null,
+          "url": "/dispersion",
+          "attrs": null,
+          "items": [
+           {
+            "blockType": "itemHeading",
+            "level": "h3",
+            "text": "دراسات انتشار ملوثات الهواء",
+            "className": null,
+            "elementId": null,
+            "blockName": "دراسات انتشار ملوثات الهواء"
+           },
+           {
+            "blockType": "itemText",
+            "tag": "p",
+            "text": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني.",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف نطاق الخدمة ومتطلبات المشروع والنهج الفني."
+           },
+           {
+            "blockType": "itemText",
+            "tag": "b",
+            "text": "استكشف التفاصيل ↗",
+            "elementId": null,
+            "attrs": null,
+            "blockName": "استكشف التفاصيل ↗"
+           }
+          ],
+          "blockName": "دراسات انتشار ملوثات الهواء"
+         }
+        ],
+        "blockName": "مراقبة جودة الهواء"
+       }
+      ],
+      "blockName": "الخدمات البيئية"
+     }
+    ],
+    "blockName": "الطاقة المتجددة"
+   },
+   {
+    "blockType": "cta",
+    "useDefault": true
+   }
+  ]
+ },
+ {
+  "collection": "pages",
+  "slug": "contact",
+  "title": "تواصل مع EnviroMET لمتطلبات مشروعك",
+  "meta": {
+   "title": "تواصل مع EnviroMET لمتطلبات مشروعك | EnviroMET",
+   "description": "ناقش موقع المشروع والقياسات أو التقييم الفني المطلوب مع فريق EnviroMET."
+  },
+  "layout": [
+   {
+    "blockType": "pageIntro",
+    "eyebrow": "EnviroMET",
+    "heading": "ناقش متطلبات مشروعك.",
+    "lede": "ابدأ بالمعلومات المتاحة. يمكنك تجهيز مسودة رسالة ومراجعتها قبل إرسالها."
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "wrapClass": "wrap contact-layout",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "aside",
+      "className": null,
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemGroup2",
+        "tag": "div",
+        "className": "b2b-contact-evidence",
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemText",
+          "tag": "strong",
+          "text": "متطلبات واضحة. أدلة قابلة للمراجعة.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "متطلبات واضحة. أدلة قابلة للمراجعة."
+         },
+         {
+          "blockType": "itemLink",
+          "label": "مراجع المشاريع — الإنجليزية ↗",
+          "url": "/projects",
+          "newTab": null,
+          "elementId": null,
+          "attrs": null,
+          "blockName": "مراجع المشاريع — الإنجليزية ↗"
+         },
+         {
+          "blockType": "itemLink",
+          "label": "الجودة والمعايير ↗",
+          "url": "/ar/quality",
+          "newTab": null,
+          "elementId": null,
+          "attrs": null,
+          "blockName": "الجودة والمعايير ↗"
+         },
+         {
+          "blockType": "itemLink",
+          "label": "نبذة الشركة ↗",
+          "url": "/ar/about",
+          "newTab": null,
+          "elementId": null,
+          "attrs": null,
+          "blockName": "نبذة الشركة ↗"
+         }
+        ],
+        "blockName": "متطلبات واضحة. أدلة قابلة للمراجعة."
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "تواصل مع الفريق",
+        "className": null,
+        "elementId": null,
+        "blockName": "تواصل مع الفريق"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "sales@enviromet-sa.com ↗",
+        "url": "mailto:sales@enviromet-sa.com",
+        "newTab": null,
+        "elementId": null,
+        "attrs": {
+         "dir": "ltr"
+        },
+        "className": "contact-email",
+        "blockName": "sales@enviromet-sa.com ↗"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "+966 11 245 8536",
+        "url": "tel:+966112458536",
+        "newTab": null,
+        "elementId": null,
+        "attrs": {
+         "dir": "ltr"
+        },
+        "style": "text-link",
+        "blockName": "+966 11 245 8536"
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h3",
+        "text": "الرياض",
+        "className": null,
+        "elementId": null,
+        "blockName": "الرياض"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "مركز العليا، الوحدة 11، شارع العليا، حي الملك فهد، الرياض 12271، السعودية.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "مركز العليا، الوحدة 11، شارع العليا، حي الملك فهد، الرياض 12…"
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h3",
+        "text": "جدة",
+        "className": null,
+        "elementId": null,
+        "blockName": "جدة"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "مكتب 909B، أبراج بن حمران، شارع الأمير محمد بن عبدالعزيز الفرعي.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "مكتب 909B، أبراج بن حمران، شارع الأمير محمد بن عبدالعزيز الف…"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": "cro-process",
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "خطوتك التالية",
+          "className": null,
+          "elementId": null,
+          "blockName": "خطوتك التالية"
+         },
+         {
+          "blockType": "itemList",
+          "ordered": true,
+          "items": [
+           {
+            "text": "حدد نطاق المشروع."
+           },
+           {
+            "text": "راجع المسودة وأرسلها بالبريد."
+           },
+           {
+            "text": "ناقش المتطلبات وخيارات التنفيذ مع الفريق."
+           }
+          ],
+          "elementId": null,
+          "blockName": "حدد نطاق المشروع. راجع المسودة وأرسلها بالبريد. ناقش المتطلب…"
+         },
+         {
+          "blockType": "itemLink",
+          "label": "حاسبة تكلفة الحملة — الإنجليزية ↗",
+          "url": "/campaign-cost-calculator",
+          "newTab": null,
+          "elementId": null,
+          "attrs": {
+           "lang": "en"
+          },
+          "style": "text-link",
+          "blockName": "حاسبة تكلفة الحملة — الإنجليزية ↗"
+         }
+        ],
+        "blockName": "خطوتك التالية"
+       }
+      ],
+      "blockName": "متطلبات واضحة. أدلة قابلة للمراجعة."
+     },
+     {
+      "blockType": "itemEnquiryForm",
+      "heading": "موجز المشروع",
+      "help": "ابدأ بنطاق المشروع، ثم أضف بيانات التواصل لتجهيز رسالة قابلة للمراجعة.",
+      "serviceOptions": [
+       {
+        "label": "تقييم موارد الرياح",
+        "value": "Wind resource assessment",
+        "key": "wind"
+       },
+       {
+        "label": "تقييم الموارد الشمسية",
+        "value": "Solar resource assessment",
+        "key": "solar"
+       },
+       {
+        "label": "هندسة المالك",
+        "value": "Owner’s engineering",
+        "key": "engineering"
+       },
+       {
+        "label": "الهندسة المستقلة والعناية الفنية الواجبة",
+        "value": "Independent engineering & due diligence",
+        "key": "diligence"
+       },
+       {
+        "label": "فحص المواقع ودراسات الجدوى",
+        "value": "Site screening & feasibility",
+        "key": "feasibility"
+       },
+       {
+        "label": "القياسات الجوية",
+        "value": "Meteorological measurement",
+        "key": "meteorology"
+       },
+       {
+        "label": "التشغيل والصيانة",
+        "value": "Operation & maintenance",
+        "key": "maintenance"
+       },
+       {
+        "label": "مراقبة جودة الهواء",
+        "value": "Air quality monitoring",
+        "key": "air"
+       },
+       {
+        "label": "الانبعاثات والضوضاء عند حدود المنشأة",
+        "value": "Emissions & boundary noise",
+        "key": "emissions"
+       },
+       {
+        "label": "الهيدرولوجيا وجودة المياه",
+        "value": "Hydrology & water quality",
+        "key": "water"
+       },
+       {
+        "label": "الدعم البيئي والاجتماعي",
+        "value": "Environmental & social support",
+        "key": "compliance"
+       },
+       {
+        "label": "الطاقة والأنظمة للمواقع النائية",
+        "value": "Remote field power & integration",
+        "key": "power"
+       },
+       {
+        "label": "ربط الشبكة الكهربائية",
+        "value": "Grid integration & interconnection",
+        "key": "grid"
+       },
+       {
+        "label": "الإشراف على الإنشاء والتشغيل التجريبي",
+        "value": "Construction & commissioning supervision",
+        "key": "construction"
+       },
+       {
+        "label": "اختبارات أداء المحطات",
+        "value": "Plant performance testing",
+        "key": "testing"
+       },
+       {
+        "label": "قياس منحنى قدرة توربينات الرياح",
+        "value": "Wind turbine power-curve measurement",
+        "key": "power-curve"
+       },
+       {
+        "label": "مراقبة أداء الأصول",
+        "value": "Asset performance monitoring",
+        "key": "performance"
+       },
+       {
+        "label": "بيانات القياس وتقارير الحملات",
+        "value": "Measurement data & campaign reporting",
+        "key": "data"
+       },
+       {
+        "label": "دراسات انتشار ملوثات الهواء",
+        "value": "Air dispersion studies",
+        "key": "dispersion"
+       },
+       {
+        "label": "إزالة المحطات عند انتهاء الحملات",
+        "value": "Decommissioning & station removal",
+        "key": "decommissioning"
+       },
+       {
+        "label": "الاستشارات الهندسية للممولين",
+        "value": "Lender’s engineering",
+        "key": "lender"
+       },
+       {
+        "label": "المساعدة في تحديد النطاق",
+        "value": "Help defining the scope",
+        "key": null
+       }
+      ],
+      "stageOptions": [
+       {
+        "label": "فحص الموقع"
+       },
+       {
+        "label": "تقييم الموارد"
+       },
+       {
+        "label": "التصميم والتطوير"
+       },
+       {
+        "label": "الإنشاء والتشغيل التجريبي"
+       },
+       {
+        "label": "التشغيل والصيانة"
+       },
+       {
+        "label": "المراجعة الفنية"
+       }
+      ],
+      "note": "يُرسل استفسارك مباشرة إلى فريق EnviroMET، وتحصل أيضًا على نسخة يمكنك إرسالها من تطبيق البريد.",
+      "blockName": "موجز المشروع"
+     }
+    ],
+    "blockName": "تواصل مع الفريق"
+   }
+  ]
+ },
+ {
+  "collection": "pages",
+  "slug": "lidar",
+  "title": "حلول قياس الرياح باستخدام LiDAR",
+  "meta": {
+   "title": "حلول قياس الرياح باستخدام LiDAR | EnviroMET",
+   "description": "نشر الأجهزة والطاقة والاتصالات والصيانة ومراجعة بيانات الحملة."
+  },
+  "layout": [
+   {
+    "blockType": "pageIntro",
+    "eyebrow": "EnviroMET",
+    "heading": "حلول قياس الرياح باستخدام LiDAR",
+    "lede": "نشر الأجهزة والطاقة والاتصالات والصيانة ومراجعة بيانات الحملة."
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap seo-article-layout",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "article",
+      "className": null,
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "الجهاز جزء من الحملة",
+          "className": null,
+          "elementId": null,
+          "blockName": "الجهاز جزء من الحملة"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "اختيار LiDAR يعتمد على التضاريس والارتفاعات المطلوبة وهدف التقييم وترتيبات التحقق من الأداء. يجب تأكيد الجهاز والإعدادات ومعايير الجودة في المواصفات.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "اختيار LiDAR يعتمد على التضاريس والارتفاعات المطلوبة وهدف ال…"
+         }
+        ],
+        "blockName": "الجهاز جزء من الحملة"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "العمل في المواقع النائية",
+          "className": null,
+          "elementId": null,
+          "blockName": "العمل في المواقع النائية"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "تحتاج الحملة إلى موازنة أحمال الجهاز والاتصالات والطاقة المتاحة وخطة الصيانة. وتحدد ظروف الموقع متطلبات الطاقة والاستقلالية والتدخل الميداني.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "تحتاج الحملة إلى موازنة أحمال الجهاز والاتصالات والطاقة المت…"
+         }
+        ],
+        "blockName": "العمل في المواقع النائية"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "التحقق والتوثيق",
+          "className": null,
+          "elementId": null,
+          "blockName": "التحقق والتوثيق"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "تدعم سجلات النشر والإعدادات والصيانة ومراجعة البيانات فهم القياسات. يحدد إطار IEC 61400-50-2 المتطلبات المنطبقة للاستشعار عن بعد من الأرض بحسب الحملة.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "تدعم سجلات النشر والإعدادات والصيانة ومراجعة البيانات فهم ال…"
+         }
+        ],
+        "blockName": "التحقق والتوثيق"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "خبرة موثقة",
+          "className": null,
+          "elementId": null,
+          "blockName": "خبرة موثقة"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "يوثق الملف المرجعي ثلاثة أجهزة ZX300 في ثلاثة مواقع. يوضح هذا نطاقاً محدداً ولا يعني أن مدى قياس أو جهازاً واحداً مناسب لكل موقع جديد.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "يوثق الملف المرجعي ثلاثة أجهزة ZX300 في ثلاثة مواقع. يوضح هذ…"
+         }
+        ],
+        "blockName": "خبرة موثقة"
+       }
+      ],
+      "blockName": "الجهاز جزء من الحملة"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "aside",
+      "className": "seo-guide-aside",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemImage",
+        "image": {
+         "$media": "assets/lidar.webp",
+         "alt": "حلول قياس الرياح باستخدام LiDAR — مشهد تطبيقي"
+        },
+        "alt": "حلول قياس الرياح باستخدام LiDAR — مشهد تطبيقي",
+        "blockName": "حلول قياس الرياح باستخدام LiDAR — مشهد تطبيقي"
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h3",
+        "text": "متطلبات الحملة",
+        "className": null,
+        "elementId": null,
+        "blockName": "متطلبات الحملة"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "شارك الدولة والموقع ومرحلة المشروع والارتفاعات أو الملاحظات المطلوبة.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "شارك الدولة والموقع ومرحلة المشروع والارتفاعات أو الملاحظات …"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "ناقش حملتك ↗",
+        "url": "/ar/contact",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "button",
+        "blockName": "ناقش حملتك ↗"
+       }
+      ],
+      "blockName": "متطلبات الحملة"
+     }
+    ],
+    "blockName": "الجهاز جزء من الحملة"
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "pale",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "حدد التطبيق ونطاق التحقق.",
+      "className": null,
+      "elementId": null,
+      "blockName": "حدد التطبيق ونطاق التحقق."
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "يتعلق IEC 61400-50-2 بأجهزة الاستشعار عن بعد المثبتة على الأرض لقياس المقاطع الرأسية للرياح، ولا يشمل أجهزة LiDAR الماسحة أو المواجهة للأمام. تحدد الحملة متطلبات المعايرة والتحقق وتقييم عدم اليقين. لا يعني ذكر معيار أو إرشادات MEASNET اعتماد المختبر أو عضوية الشركة أو اعتماد كل حملة.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "يتعلق IEC 61400-50-2 بأجهزة الاستشعار عن بعد المثبتة على الأ…"
+     }
+    ],
+    "blockName": "حدد التطبيق ونطاق التحقق."
+   },
+   {
+    "blockType": "cta",
+    "useDefault": true
+   }
+  ]
+ },
+ {
+  "collection": "pages",
+  "slug": "quality",
+  "title": "الجودة ومعايير قياس الرياح",
+  "meta": {
+   "title": "الجودة ومعايير قياس الرياح | EnviroMET",
+   "description": "أنظمة إدارة ISO وإطار القياس المناسب لكل حملة."
+  },
+  "layout": [
+   {
+    "blockType": "pageIntro",
+    "eyebrow": "EnviroMET",
+    "heading": "جودة موثقة.\nمتطلبات واضحة.",
+    "lede": "نفرق بين أنظمة الإدارة المؤسسية ومتطلبات القياس الخاصة بالمشروع."
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap narrow",
+    "items": [
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "أنظمة الإدارة",
+      "className": null,
+      "elementId": null,
+      "blockName": "أنظمة الإدارة"
+     },
+     {
+      "blockType": "itemList",
+      "ordered": null,
+      "items": [
+       {
+        "text": "<bdi>ISO 9001:2015</bdi> — إدارة الجودة"
+       },
+       {
+        "text": "<bdi>ISO 14001:2015</bdi> — الإدارة البيئية"
+       },
+       {
+        "text": "<bdi>ISO 45001:2018</bdi> — الصحة والسلامة المهنية"
+       },
+       {
+        "text": "<bdi>ISO/IEC 27001:2022</bdi> — أمن المعلومات"
+       },
+       {
+        "text": "<bdi>ISO 50001:2018</bdi> — إدارة الطاقة"
+       }
+      ],
+      "elementId": null,
+      "style": "check-list",
+      "blockName": "ISO 9001:2015 — إدارة الجودة ISO 14001:2015 — الإدارة البيئي…"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "تخص شهادات أنظمة الإدارة الممارسات المؤسسية للكيان القانوني الوارد في الشهادات، ولا تعتمد تلقائياً الأجهزة أو البيانات أو نتائج التمويل.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "تخص شهادات أنظمة الإدارة الممارسات المؤسسية للكيان القانوني …"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "متطلبات قياس الرياح",
+      "className": null,
+      "elementId": null,
+      "blockName": "متطلبات قياس الرياح"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "<bdi>IEC 61400-50-1</bdi> للقياسات المثبتة على الأبراج، و<bdi>IEC 61400-50-2</bdi> للاستشعار عن بعد من الأرض، و<bdi>IEC 61400-12-1</bdi> لتقييم أداء القدرة لتوربينات الرياح.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "IEC 61400-50-1 للقياسات المثبتة على الأبراج، و IEC 61400-50-…"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "تحدد الحملة متطلبات التطبيق والمعايرة والتحقق والسجلات. وتؤخذ إرشادات MEASNET في الاعتبار عند انطباقها ضمن نطاق التقييم.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "تحدد الحملة متطلبات التطبيق والمعايرة والتحقق والسجلات. وتؤخ…"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "سجل القياس",
+      "className": null,
+      "elementId": null,
+      "blockName": "سجل القياس"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "يدعم توثيق التركيب والإعدادات والمعايرة والصيانة وفحوص الجودة تفسير البيانات ومراجعتها. ويجب الاتفاق على المسؤوليات والتسليمات قبل التنفيذ.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "يدعم توثيق التركيب والإعدادات والمعايرة والصيانة وفحوص الجود…"
+     }
+    ],
+    "blockName": "أنظمة الإدارة"
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "pale",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "حدد التطبيق ونطاق التحقق.",
+      "className": null,
+      "elementId": null,
+      "blockName": "حدد التطبيق ونطاق التحقق."
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "يتعلق IEC 61400-50-2 بأجهزة الاستشعار عن بعد المثبتة على الأرض لقياس المقاطع الرأسية للرياح، ولا يشمل أجهزة LiDAR الماسحة أو المواجهة للأمام. تحدد الحملة متطلبات المعايرة والتحقق وتقييم عدم اليقين. لا يعني ذكر معيار أو إرشادات MEASNET اعتماد المختبر أو عضوية الشركة أو اعتماد كل حملة.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "يتعلق IEC 61400-50-2 بأجهزة الاستشعار عن بعد المثبتة على الأ…"
+     }
+    ],
+    "blockName": "حدد التطبيق ونطاق التحقق."
+   },
+   {
+    "blockType": "cta",
+    "useDefault": true
+   }
+  ]
+ },
+ {
+  "collection": "pages",
+  "slug": "for-procurement",
+  "title": "دعم فرق المشتريات",
+  "meta": {
+   "title": "دعم فرق المشتريات | EnviroMET",
+   "description": "قارن نطاق المعدات والتنفيذ والسجلات والصيانة على أساس واحد قبل طلب العرض."
+  },
+  "layout": [
+   {
+    "blockType": "pageIntro",
+    "eyebrow": "فرق المشتريات",
+    "heading": "نطاق واضح.\nمقارنة أدق للعروض.",
+    "lede": "قارن المعدات ومسؤوليات التنفيذ والمخرجات والدعم التشغيلي معاً لتقييم عروض الموردين على أساس متسق."
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap split",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "article",
+      "className": null,
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "ابدأ بموجز موحد للمشروع.",
+        "className": null,
+        "elementId": null,
+        "blockName": "ابدأ بموجز موحد للمشروع."
+       },
+       {
+        "blockType": "itemList",
+        "ordered": null,
+        "items": [
+         {
+          "text": "حدد الموقع وهدف القياس والمتغيرات والارتفاعات والمدة."
+         },
+         {
+          "text": "وضح مسؤوليات الوصول والتصاريح والطاقة والاتصالات."
+         },
+         {
+          "text": "اتفق على المعايرة والتركيب والتحقق والصيانة والتسليم."
+         },
+         {
+          "text": "حدد صيغ البيانات والتقارير وإجراءات الجودة والاستثناءات."
+         }
+        ],
+        "elementId": null,
+        "style": "check-list",
+        "blockName": "حدد الموقع وهدف القياس والمتغيرات والارتفاعات والمدة. وضح مس…"
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "أدلة تدعم قرار المشتريات.",
+        "className": null,
+        "elementId": null,
+        "blockName": "أدلة تدعم قرار المشتريات."
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "راجع مراجع المشاريع والنطاق الفني وشهادات أنظمة الإدارة. تحدد المعايير الفنية المنطبقة لكل حملة؛ ولا تكفي شهادة نظام الإدارة وحدها لإثبات جودة بيانات الحملة.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "راجع مراجع المشاريع والنطاق الفني وشهادات أنظمة الإدارة. تحد…"
+       }
+      ],
+      "blockName": "ابدأ بموجز موحد للمشروع."
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "aside",
+      "className": "detail-box",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemHeading",
+        "level": "h3",
+        "text": "جهز موجز مشروعك.",
+        "className": null,
+        "elementId": null,
+        "blockName": "جهز موجز مشروعك."
+       },
+       {
+        "blockType": "itemLink",
+        "label": "ناقش حملتك ↗",
+        "url": "/ar/contact?role=procurement",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "button",
+        "blockName": "ناقش حملتك ↗"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "نبذة الشركة ↗",
+        "url": "/ar/about",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "text-link",
+        "blockName": "نبذة الشركة ↗"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "الجودة والمعايير ↗",
+        "url": "/ar/quality",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "text-link",
+        "blockName": "الجودة والمعايير ↗"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "مراجع المشاريع — الإنجليزية ↗",
+        "url": "/projects",
+        "newTab": null,
+        "elementId": null,
+        "attrs": {
+         "lang": "en"
+        },
+        "style": "text-link",
+        "blockName": "مراجع المشاريع — الإنجليزية ↗"
+       }
+      ],
+      "blockName": "جهز موجز مشروعك."
+     }
+    ],
+    "blockName": "ابدأ بموجز موحد للمشروع."
+   }
+  ]
+ },
+ {
+  "collection": "services",
+  "slug": "wind",
+  "title": "قياس وتقييم موارد الرياح",
+  "meta": {
+   "title": "قياس وتقييم موارد الرياح | EnviroMET",
+   "description": "أبراج القياس وLiDAR وتخطيط الحملات لدعم التقييم الفني."
+  },
+  "layout": [
+   {
+    "blockType": "pageIntro",
+    "eyebrow": "EnviroMET",
+    "heading": "قياس وتقييم موارد الرياح",
+    "lede": "أبراج القياس وLiDAR وتخطيط الحملات لدعم التقييم الفني."
+   },
+   {
+    "blockType": "section",
+    "anchorId": "wind-coverage",
+    "attrs": null,
+    "sectionClass": "section coverage-highlight",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "تقييم موارد طاقة الرياح على نطاق واسع",
+      "elementId": null,
+      "attrs": null,
+      "style": "eyebrow",
+      "blockName": "تقييم موارد طاقة الرياح على نطاق واسع"
+     },
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "<span>850,000</span><small>كم<sup>2</sup></small>",
+      "className": null,
+      "elementId": null,
+      "blockName": "850,000 كم 2"
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "نطاق حملة تقييم موارد طاقة الرياح.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "نطاق حملة تقييم موارد طاقة الرياح."
+     },
+     {
+      "blockType": "itemLink",
+      "label": "ناقش حملتك ↗",
+      "url": "/ar/contact?service=wind",
+      "newTab": null,
+      "elementId": null,
+      "attrs": null,
+      "style": "text-link",
+      "blockName": "ناقش حملتك ↗"
+     }
+    ],
+    "blockName": "تقييم موارد طاقة الرياح على نطاق واسع"
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap seo-article-layout",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "article",
+      "className": null,
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "ابدأ بالقرار المطلوب",
+          "className": null,
+          "elementId": null,
+          "blockName": "ابدأ بالقرار المطلوب"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "حدد ما إذا كانت الحملة لفحص موقع أو لتقييم الموارد أو لمراجعة الأداء. يؤثر الهدف في مواقع القياس والارتفاعات والأجهزة والسجلات المطلوبة.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "حدد ما إذا كانت الحملة لفحص موقع أو لتقييم الموارد أو لمراجع…"
+         }
+        ],
+        "blockName": "ابدأ بالقرار المطلوب"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "تكامل ميداني كامل",
+          "className": null,
+          "elementId": null,
+          "blockName": "تكامل ميداني كامل"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "يشمل النطاق تخطيط الحملة وتركيب الأبراج ودمج الحساسات، أو نشر LiDAR مع الطاقة والاتصالات والصيانة. وتحدد متطلبات الموقع والتقييم طريقة القياس المناسبة.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "يشمل النطاق تخطيط الحملة وتركيب الأبراج ودمج الحساسات، أو نش…"
+         }
+        ],
+        "blockName": "تكامل ميداني كامل"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "بيانات يمكن مراجعتها",
+          "className": null,
+          "elementId": null,
+          "blockName": "بيانات يمكن مراجعتها"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "تدعم سجلات التركيب والمعايرة وإعدادات المسجل والصيانة وفحوص جودة البيانات فهم القياسات. لا يضمن اسم جهاز أو ذكر معيار وحده قبول البيانات لأغراض التمويل.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "تدعم سجلات التركيب والمعايرة وإعدادات المسجل والصيانة وفحوص …"
+         }
+        ],
+        "blockName": "بيانات يمكن مراجعتها"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "المعايير والمراجع",
+          "className": null,
+          "elementId": null,
+          "blockName": "المعايير والمراجع"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "يرتبط IEC 61400-50-1 بالقياسات على الأبراج وIEC 61400-50-2 بالاستشعار عن بعد من الأرض. يوثق الملف المرجعي للشركة برنامجاً يشمل 410 أبراج بارتفاع 120 متراً ضمن تقييم الرياح في المملكة.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "يرتبط IEC 61400-50-1 بالقياسات على الأبراج وIEC 61400-50-2 ب…"
+         }
+        ],
+        "blockName": "المعايير والمراجع"
+       }
+      ],
+      "blockName": "ابدأ بالقرار المطلوب"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "aside",
+      "className": "seo-guide-aside",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemImage",
+        "image": {
+         "$media": "assets/mast.jpg",
+         "alt": "قياس وتقييم موارد الرياح — مشهد تطبيقي"
+        },
+        "alt": "قياس وتقييم موارد الرياح — مشهد تطبيقي",
+        "blockName": "قياس وتقييم موارد الرياح — مشهد تطبيقي"
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h3",
+        "text": "متطلبات الحملة",
+        "className": null,
+        "elementId": null,
+        "blockName": "متطلبات الحملة"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "شارك الدولة والموقع ومرحلة المشروع والارتفاعات أو الملاحظات المطلوبة.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "شارك الدولة والموقع ومرحلة المشروع والارتفاعات أو الملاحظات …"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "ناقش حملتك ↗",
+        "url": "/ar/contact",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "button",
+        "blockName": "ناقش حملتك ↗"
+       }
+      ],
+      "blockName": "متطلبات الحملة"
+     }
+    ],
+    "blockName": "ابدأ بالقرار المطلوب"
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "pale",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "حدد التطبيق ونطاق التحقق.",
+      "className": null,
+      "elementId": null,
+      "blockName": "حدد التطبيق ونطاق التحقق."
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "يتعلق IEC 61400-50-2 بأجهزة الاستشعار عن بعد المثبتة على الأرض لقياس المقاطع الرأسية للرياح، ولا يشمل أجهزة LiDAR الماسحة أو المواجهة للأمام. تحدد الحملة متطلبات المعايرة والتحقق وتقييم عدم اليقين. لا يعني ذكر معيار أو إرشادات MEASNET اعتماد المختبر أو عضوية الشركة أو اعتماد كل حملة.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "يتعلق IEC 61400-50-2 بأجهزة الاستشعار عن بعد المثبتة على الأ…"
+     }
+    ],
+    "blockName": "حدد التطبيق ونطاق التحقق."
+   },
+   {
+    "blockType": "cta",
+    "useDefault": true
+   }
+  ]
+ },
+ {
+  "collection": "services",
+  "slug": "solar",
+  "title": "قياس وتقييم الموارد الشمسية",
+  "meta": {
+   "title": "قياس وتقييم الموارد الشمسية | EnviroMET",
+   "description": "محطات قياس تربط ظروف الموقع بمتطلبات تقييم المورد الشمسي."
+  },
+  "layout": [
+   {
+    "blockType": "pageIntro",
+    "eyebrow": "EnviroMET",
+    "heading": "قياس وتقييم الموارد الشمسية",
+    "lede": "محطات قياس تربط ظروف الموقع بمتطلبات تقييم المورد الشمسي."
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap seo-article-layout",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "article",
+      "className": null,
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "حدد الملاحظات المطلوبة",
+          "className": null,
+          "elementId": null,
+          "blockName": "حدد الملاحظات المطلوبة"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "تختلف متطلبات توصيف المورد الشمسي عن مراقبة محطة قائمة. حدد كميات الإشعاع والظروف الجوية المطلوبة مع فريق التقييم قبل اختيار الحساسات.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "تختلف متطلبات توصيف المورد الشمسي عن مراقبة محطة قائمة. حدد …"
+         }
+        ],
+        "blockName": "حدد الملاحظات المطلوبة"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "الموقع والعناية بالأجهزة",
+          "className": null,
+          "elementId": null,
+          "blockName": "الموقع والعناية بالأجهزة"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "تؤثر ظروف التعرض والعوائق والتسوية والمحاذاة ونظافة الحساسات في تفسير البيانات. يجب تخطيط الوصول والصيانة مع الطاقة والاتصالات.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "تؤثر ظروف التعرض والعوائق والتسوية والمحاذاة ونظافة الحساسات…"
+         }
+        ],
+        "blockName": "الموقع والعناية بالأجهزة"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "توثيق ومراجعة البيانات",
+          "className": null,
+          "elementId": null,
+          "blockName": "توثيق ومراجعة البيانات"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "احتفظ بمعلومات الأجهزة والمعايرة والإعدادات والتغييرات وسجلات الخدمة. ويحدد الاتفاق تنسيق البيانات وفحوص الجودة ونطاق التقييم.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "احتفظ بمعلومات الأجهزة والمعايرة والإعدادات والتغييرات وسجلا…"
+         }
+        ],
+        "blockName": "توثيق ومراجعة البيانات"
+       },
+       {
+        "blockType": "itemGroup2",
+        "tag": "section",
+        "className": null,
+        "elementId": null,
+        "url": null,
+        "attrs": null,
+        "items": [
+         {
+          "blockType": "itemHeading",
+          "level": "h2",
+          "text": "دعم EnviroMET",
+          "className": null,
+          "elementId": null,
+          "blockName": "دعم EnviroMET"
+         },
+         {
+          "blockType": "itemText",
+          "tag": "p",
+          "text": "ندعم تجهيز محطات القياس وتركيبها وصيانتها وتقييم الموارد. تتضمن المراجع برنامج صيانة لشبكة حساسات شمسية. تحدد ظروف الموقع والهدف النطاق المناسب للحملة.",
+          "elementId": null,
+          "attrs": null,
+          "blockName": "ندعم تجهيز محطات القياس وتركيبها وصيانتها وتقييم الموارد. تت…"
+         }
+        ],
+        "blockName": "دعم EnviroMET"
+       }
+      ],
+      "blockName": "حدد الملاحظات المطلوبة"
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "aside",
+      "className": "seo-guide-aside",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemImage",
+        "image": {
+         "$media": "assets/solar_station.webp",
+         "alt": "قياس وتقييم الموارد الشمسية — مشهد تطبيقي"
+        },
+        "alt": "قياس وتقييم الموارد الشمسية — مشهد تطبيقي",
+        "blockName": "قياس وتقييم الموارد الشمسية — مشهد تطبيقي"
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h3",
+        "text": "متطلبات الحملة",
+        "className": null,
+        "elementId": null,
+        "blockName": "متطلبات الحملة"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "شارك الدولة والموقع ومرحلة المشروع والارتفاعات أو الملاحظات المطلوبة.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "شارك الدولة والموقع ومرحلة المشروع والارتفاعات أو الملاحظات …"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "ناقش حملتك ↗",
+        "url": "/ar/contact",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "button",
+        "blockName": "ناقش حملتك ↗"
+       }
+      ],
+      "blockName": "متطلبات الحملة"
+     }
+    ],
+    "blockName": "حدد الملاحظات المطلوبة"
+   },
+   {
+    "blockType": "section",
+    "anchorId": null,
+    "attrs": null,
+    "background": "pale",
+    "layout": "wrap",
+    "items": [
+     {
+      "blockType": "itemHeading",
+      "level": "h2",
+      "text": "تقييم الموارد ومراقبة أداء المحطة.",
+      "className": null,
+      "elementId": null,
+      "blockName": "تقييم الموارد ومراقبة أداء المحطة."
+     },
+     {
+      "blockType": "itemText",
+      "tag": "p",
+      "text": "حدد مركبات الإشعاع الشمسي المطلوبة والمعايرة والموقع والتنظيف ومراجعة البيانات. يتعلق ISO 9060:2018 بتصنيف ومواصفات أجهزة قياس الإشعاع الشمسي، بينما يتعلق IEC 61724-1:2021 بمراقبة أداء الأنظمة الكهروضوئية، وليس اعتماداً عاماً لحملات تقييم الموارد قبل التطوير.",
+      "elementId": null,
+      "attrs": null,
+      "blockName": "حدد مركبات الإشعاع الشمسي المطلوبة والمعايرة والموقع والتنظي…"
+     }
+    ],
+    "blockName": "تقييم الموارد ومراقبة أداء المحطة."
+   },
+   {
+    "blockType": "cta",
+    "useDefault": true
+   }
+  ]
+ }
+]

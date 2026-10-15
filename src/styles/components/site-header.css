@@ -1,0 +1,505 @@
+/*
+ * Site header
+ * Markup: src/components/layout/Header.tsx (server) + HeaderNav.client.tsx.
+ * Own class names (.sh-*, .sf-*) so the original site's nav/footer rules don't apply.
+ * Written with Tailwind: theme tokens + @apply; values without an exact utility stay as CSS.
+ */
+
+.sh,
+.sf {
+  --c-ink: var(--color-ink-deep);
+  --c-blue: var(--color-brand-blue);
+  --c-sky: var(--color-brand-sky);
+  --c-green: var(--color-brand-green-dark);
+  --c-green-dark: var(--color-brand-green-deep);
+  --c-leaf: var(--color-brand-green);
+  --c-line: var(--color-line);
+  --c-pale: var(--color-pale);
+  --c-muted: var(--color-muted-blue);
+  --f-ui: 'Poppins', 'Noto Sans Arabic', system-ui, sans-serif;
+}
+
+html[dir='rtl'] .sh,
+html[dir='rtl'] .sf {
+  --f-ui: 'Noto Sans Arabic', 'Poppins', system-ui, sans-serif;
+}
+
+/* ================= Header ================= */
+
+.site-header.sh {
+  @apply sticky top-0 z-50;
+  background: #fff;
+  border-bottom: 1px solid var(--c-line);
+  backdrop-filter: none;
+}
+
+.sh-shell {
+  @apply relative flex items-center gap-7;
+  max-width: 1376px;
+  @apply h-21 my-0 mx-auto py-0 px-8;
+}
+
+.sh-brand {
+  @apply block shrink-0 w-47;
+}
+
+.sh-brand img {
+  @apply block w-full h-auto;
+}
+
+.sh-toggle {
+  @apply hidden;
+}
+
+.sh-panel {
+  @apply flex flex-1 items-center justify-end gap-5 h-full;
+}
+
+.sh .sh-nav {
+  @apply static flex flex-row items-stretch gap-0 h-full p-0;
+  background: none;
+  box-shadow: none;
+}
+
+/* Every top-level item shares one box, one baseline and one size */
+.sh-link,
+.sh-trigger {
+  @apply relative inline-flex items-center;
+  gap: 7px;
+  @apply h-full m-0;
+  padding: 0 13px;
+  border: 0;
+  background: none;
+  color: var(--c-ink);
+  font-family: var(--f-ui);
+  font-size: 15px;
+  @apply font-medium;
+  line-height: 1;
+  @apply whitespace-nowrap;
+  text-decoration: none;
+  @apply cursor-pointer;
+}
+
+html[dir='rtl'] .sh-link,
+html[dir='rtl'] .sh-trigger {
+  font-size: 16px;
+}
+
+/*
+ * Hover, open menu and current page share one soft "pill" drawn behind the label.
+ * Current page = green tint; hover / open menu = neutral pale blue.
+ */
+.sh-link,
+.sh-trigger {
+  isolation: isolate;
+}
+
+.sh-link::after,
+.sh-trigger::after {
+  content: '';
+  @apply absolute;
+  z-index: -1;
+  inset-inline: 3px;
+  top: 50%;
+  @apply h-10 -mt-5 rounded-lg;
+  background: transparent;
+}
+
+.sh-link:hover,
+.sh-trigger:hover,
+.sh-trigger[aria-expanded='true'] {
+  color: var(--c-ink);
+}
+
+.sh-link:hover::after,
+.sh-trigger:hover::after,
+.sh-trigger[aria-expanded='true']::after {
+  background: var(--c-pale);
+}
+
+.sh-link[aria-current='page'],
+.sh-trigger[data-current] {
+  color: var(--c-green-dark);
+}
+
+.sh-link[aria-current='page']::after,
+.sh-trigger[data-current]::after {
+  background: #e5f3e9;
+}
+
+.sh-chevron {
+  width: 7px;
+  height: 7px;
+  margin-top: -3px;
+  border-right: 1.6px solid currentColor;
+  border-bottom: 1.6px solid currentColor;
+  transform: rotate(45deg);
+  transition:
+    transform 160ms ease,
+    margin 160ms ease;
+}
+
+.sh-trigger[aria-expanded='true'] .sh-chevron {
+  @apply mt-1;
+  transform: rotate(-135deg);
+}
+
+/* ---- Dropdown menus ---- */
+
+.sh-group {
+  @apply flex;
+}
+
+.sh-group[data-cols='1'],
+.sh-group[data-cols='2'] {
+  @apply relative;
+}
+
+.sh-menu {
+  @apply absolute;
+  top: 100%;
+  @apply z-60;
+  margin-top: 1px;
+  background: #fff;
+  border-top: 2px solid var(--c-leaf);
+  box-shadow: 0 22px 44px rgba(21, 54, 69, 0.16);
+}
+
+.sh-menu[hidden] {
+  @apply hidden;
+}
+
+.sh-group[data-cols='1'] .sh-menu {
+  @apply start-0 w-75 pt-4 px-3 pb-3.5;
+}
+
+.sh-group:not([data-cols='1']) .sh-menu {
+  inset-inline: 32px;
+  @apply pt-7 px-7 pb-6;
+}
+
+/* Two columns: a 620px panel ending under its trigger */
+.sh-group[data-cols='2'] .sh-menu {
+  inset-inline: auto 0;
+  @apply w-155 pt-5.5 px-4 pb-4.5;
+}
+
+.sh-group:not([data-cols='1']) .sh-menu:not([hidden]) {
+  @apply grid;
+  gap: 8px 36px;
+}
+
+.sh-group[data-cols='2'] .sh-menu {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.sh-group[data-cols='3'] .sh-menu {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sh-menu-heading {
+  @apply mt-0 mx-0 mb-1.5 py-0 px-3;
+  font-family: var(--f-ui);
+  font-size: 13px;
+  @apply font-semibold;
+  color: var(--c-muted);
+}
+
+.sh-menu ul {
+  list-style: none;
+  @apply m-0 p-0;
+}
+
+.sh-menu a {
+  @apply block;
+  padding: 9px 12px;
+  @apply rounded-sm;
+  font-family: var(--f-ui);
+  font-size: 14.5px;
+  @apply font-medium;
+  line-height: 1.4;
+  color: var(--c-ink);
+  text-decoration: none;
+}
+
+.sh-menu a:hover {
+  background: var(--c-pale);
+  color: var(--c-ink);
+}
+
+.sh-menu a[aria-current='page'] {
+  color: var(--c-green);
+  box-shadow: inset 3px 0 0 var(--c-green);
+}
+
+html[dir='rtl'] .sh-menu a[aria-current='page'] {
+  box-shadow: inset -3px 0 0 var(--c-green);
+}
+
+/* ---- Search, language, call to action ---- */
+
+.sh-tools {
+  @apply flex items-center gap-1 h-9 ps-4.5;
+  border-inline-start: 1px solid var(--c-line);
+}
+
+.sh-search,
+.sh-lang {
+  @apply inline-flex items-center justify-center gap-2 h-10;
+  border: 0;
+  @apply rounded-sm;
+  background: none;
+  color: var(--c-blue);
+  font-family: var(--f-ui);
+  font-size: 15px;
+  @apply font-medium;
+  text-decoration: none;
+  @apply whitespace-nowrap cursor-pointer;
+}
+
+.sh-search {
+  @apply w-10 p-0;
+}
+
+.sh-search-label {
+  @apply absolute;
+  width: 1px;
+  height: 1px;
+  @apply overflow-hidden;
+  clip: rect(0 0 0 0);
+  @apply whitespace-nowrap;
+}
+
+.sh-lang {
+  @apply py-0 px-2.5;
+}
+
+.sh-lang[lang='ar'] {
+  font-family: 'Noto Sans Arabic', var(--f-ui);
+  font-size: 16px;
+}
+
+.sh-lang[lang='en'] {
+  font-family: 'Poppins', var(--f-ui);
+}
+
+.sh-search:hover,
+.sh-lang:hover {
+  background: var(--c-pale);
+  color: var(--c-ink);
+}
+
+.sh-cta {
+  @apply inline-flex items-center h-11.5 ms-2.5 py-0 px-5;
+  background: var(--c-green);
+  @apply text-white;
+  font-family: var(--f-ui);
+  font-size: 15px;
+  @apply font-semibold whitespace-nowrap;
+  text-decoration: none;
+}
+
+.sh-cta:hover,
+.sh-cta[aria-current='page'] {
+  background: var(--c-green-dark);
+  @apply text-white;
+}
+
+.sh a:focus-visible,
+.sh button:focus-visible {
+  outline: 2px solid var(--c-sky);
+  outline-offset: -2px;
+}
+
+/* Tighter desktop */
+@media (max-width: 1280px) {
+  .sh-shell {
+    @apply gap-5 py-0 px-6;
+  }
+  .sh-brand {
+    @apply w-42;
+  }
+  .sh-link,
+  .sh-trigger {
+    padding: 0 9px;
+    font-size: 14.5px;
+  }
+  .sh-link::after,
+  .sh-trigger::after {
+    inset-inline: 1px;
+  }
+  .sh-tools {
+    @apply ps-3;
+  }
+  .sh-cta {
+    @apply py-0 px-4;
+    font-size: 14.5px;
+  }
+  .sh-group:not([data-cols='1']) .sh-menu {
+    inset-inline: 24px;
+  }
+}
+
+/* ---- Mobile / tablet: menu button + drop-down panel ---- */
+
+@media (max-width: 1100px) {
+  .sh-shell {
+    @apply h-18 py-0 px-5;
+  }
+
+  .sh-brand {
+    @apply w-41;
+  }
+
+  .sh-toggle {
+    @apply inline-flex items-center justify-center w-11 h-11 ms-auto p-0;
+    border: 1px solid var(--c-line);
+    @apply rounded-sm;
+    background: #fff;
+    color: var(--c-ink);
+    @apply cursor-pointer;
+  }
+
+  .sh-toggle-bars,
+  .sh-toggle-bars::before,
+  .sh-toggle-bars::after {
+    @apply block w-4.5 h-0.5;
+    border-radius: 1px;
+    background: currentColor;
+    transition:
+      transform 180ms ease,
+      background 180ms ease;
+  }
+
+  .sh-toggle-bars {
+    @apply relative;
+  }
+
+  .sh-toggle-bars::before,
+  .sh-toggle-bars::after {
+    content: '';
+    @apply absolute left-0;
+  }
+
+  .sh-toggle-bars::before {
+    transform: translateY(-6px);
+  }
+  .sh-toggle-bars::after {
+    transform: translateY(6px);
+  }
+
+  .sh-toggle[aria-expanded='true'] .sh-toggle-bars {
+    background: transparent;
+  }
+  .sh-toggle[aria-expanded='true'] .sh-toggle-bars::before {
+    transform: rotate(45deg);
+  }
+  .sh-toggle[aria-expanded='true'] .sh-toggle-bars::after {
+    transform: rotate(-45deg);
+  }
+
+  .sh-panel {
+    @apply hidden absolute;
+    top: 100%;
+    @apply left-0 right-0 h-auto;
+    max-height: calc(100dvh - 72px);
+    overflow-y: auto;
+    @apply flex-col items-stretch gap-0;
+    margin-top: 1px;
+    @apply pt-1 px-5 pb-6;
+    background: #fff;
+    box-shadow: 0 24px 40px rgba(21, 54, 69, 0.16);
+  }
+
+  .sh-panel.is-open {
+    @apply flex;
+  }
+
+  .sh .sh-nav {
+    @apply flex-col h-auto;
+  }
+
+  .sh-link,
+  .sh-trigger {
+    @apply justify-between w-full h-auto min-h-13.5 py-0 px-0.5;
+    border-bottom: 1px solid var(--c-line);
+    font-size: 16px;
+  }
+
+  .sh-link::after,
+  .sh-trigger::after {
+    @apply hidden;
+  }
+
+  .sh-link[aria-current='page'],
+  .sh-trigger[data-current] {
+    @apply font-semibold ps-3.5;
+    background: #f1f8f3;
+    box-shadow: inset 3px 0 0 var(--c-green);
+  }
+
+  html[dir='rtl'] .sh-link[aria-current='page'],
+  html[dir='rtl'] .sh-trigger[data-current] {
+    box-shadow: inset -3px 0 0 var(--c-green);
+  }
+
+  .sh-group,
+  .sh-group[data-cols='1'],
+  .sh-group[data-cols='2'] {
+    @apply static flex-col;
+  }
+
+  .sh-group .sh-menu,
+  .sh-group[data-cols='1'] .sh-menu,
+  .sh-group[data-cols='2'] .sh-menu,
+  .sh-group:not([data-cols='1']) .sh-menu {
+    @apply static w-auto m-0 pt-2.5 px-0 pb-3.5;
+    border-top: 0;
+    border-bottom: 1px solid var(--c-line);
+    box-shadow: none;
+  }
+
+  .sh-group:not([data-cols='1']) .sh-menu:not([hidden]) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 16px;
+  }
+
+  .sh-menu-heading {
+    @apply py-0 px-2.5;
+  }
+  .sh-menu a {
+    padding: 9px 10px;
+    font-size: 15px;
+  }
+
+  .sh-tools {
+    @apply flex-wrap gap-2.5 h-auto pt-4.5 px-0 pb-0;
+    border: 0;
+  }
+
+  .sh-search {
+    @apply w-auto py-0 px-3.5;
+    border: 1px solid var(--c-line);
+  }
+
+  .sh-search-label {
+    @apply static w-auto h-auto overflow-visible;
+    clip: auto;
+  }
+
+  .sh-lang {
+    border: 1px solid var(--c-line);
+    @apply py-0 px-3.5;
+  }
+
+  .sh-cta {
+    order: -1;
+    flex-basis: 100%;
+    @apply justify-center h-12.5 mt-0 mx-0 mb-1;
+  }
+}
+
+@media (max-width: 560px) {
+  .sh-group:not([data-cols='1']) .sh-menu:not([hidden]) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

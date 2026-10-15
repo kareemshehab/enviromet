@@ -1,0 +1,3242 @@
+[
+ {
+  "slug": "air",
+  "title": "Air quality monitoring",
+  "category": "Environmental services",
+  "lede": "Understand conditions over time.",
+  "heroImage": {
+   "$media": "assets/air.webp",
+   "alt": "Air quality monitoring service application"
+  },
+  "meta": {
+   "title": "Air Quality Monitoring Services | EnviroMET Saudi Arabia",
+   "description": "Monitoring, collection and reporting help project teams evaluate air quality conditions around a site or facility."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "air",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Understand conditions over time.",
+  "solutionIntro": "Monitoring, collection and reporting help project teams evaluate air quality conditions around a site or facility.",
+  "scopeItems": [
+   {
+    "title": "Ambient air quality observations"
+   },
+   {
+    "title": "Temporary monitoring campaigns"
+   },
+   {
+    "title": "Data review and reporting"
+   },
+   {
+    "title": "Dispersion study support"
+   }
+  ],
+  "standardsNote": "Monitoring scope follows the project objectives and applicable assessment requirements.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Monitoring, collection and reporting help project teams evaluate air quality conditions around a site or facility."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Ambient air quality observations; Temporary monitoring campaigns; Data review and reporting; Dispersion study support"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Monitoring scope follows the project objectives and applicable assessment requirements."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/maintenance",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/emissions",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Emissions & boundary noise ↗",
+    "url": "/emissions",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Hydrology & water quality ↗",
+    "url": "/water",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Environmental & social support ↗",
+    "url": "/compliance",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Define the programme purpose, site boundary, methods and jurisdiction. Confirm applicable requirements, data-quality checks and reporting interfaces during scope development rather than assuming one method applies to every facility.",
+   "audience": "Facility and environmental project teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to air quality monitoring."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/environmental-monitoring-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 80,
+  "summary": "Monitoring, collection and reporting help project teams evaluate air quality conditions around a site or facility.",
+  "cardImage": {
+   "$media": "assets/air.webp",
+   "alt": "Air quality monitoring equipment or assessment use case"
+  },
+  "cardImageAlt": "Air quality monitoring equipment or assessment use case"
+ },
+ {
+  "slug": "compliance",
+  "title": "Environmental & social support",
+  "category": "Environmental services",
+  "lede": "Support responsible project development.",
+  "heroImage": {
+   "$media": "assets/air.webp",
+   "alt": "Environmental & social support service application"
+  },
+  "meta": {
+   "title": "Environmental & social support | EnviroMET",
+   "description": "Environmental and social review helps teams identify risks and prepare for applicable permitting and due diligence requirements."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "compliance",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Support responsible project development.",
+  "solutionIntro": "Environmental and social review helps teams identify risks and prepare for applicable permitting and due diligence requirements.",
+  "scopeItems": [
+   {
+    "title": "Environmental and social due diligence"
+   },
+   {
+    "title": "Environmental risk advice"
+   },
+   {
+    "title": "Permitting support"
+   },
+   {
+    "title": "Assessment support for project stakeholders"
+   }
+  ],
+  "standardsNote": "Applicable requirements depend on the project, jurisdiction and financing context.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Environmental and social review helps teams identify risks and prepare for applicable permitting and due diligence requirements."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Environmental and social due diligence; Environmental risk advice; Permitting support; Assessment support for project stakeholders"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Applicable requirements depend on the project, jurisdiction and financing context."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/water",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/power",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Air quality monitoring ↗",
+    "url": "/air",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Emissions & boundary noise ↗",
+    "url": "/emissions",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Hydrology & water quality ↗",
+    "url": "/water",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Define the programme purpose, site boundary, methods and jurisdiction. Confirm applicable requirements, data-quality checks and reporting interfaces during scope development rather than assuming one method applies to every facility.",
+   "audience": "Facility and environmental project teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to environmental & social support."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/environmental-monitoring-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 110,
+  "summary": "Environmental and social review helps teams identify risks and prepare for applicable permitting and due diligence requirements.",
+  "cardImage": {
+   "$media": "assets/air.webp",
+   "alt": "Environmental & social support equipment or assessment use case"
+  },
+  "cardImageAlt": "Environmental & social support equipment or assessment use case"
+ },
+ {
+  "slug": "construction",
+  "title": "Construction & commissioning supervision",
+  "category": "Engineering advisory",
+  "lede": "From design intent to commissioning readiness.",
+  "heroImage": {
+   "$media": "assets/owners.webp",
+   "alt": "Construction & commissioning supervision service application"
+  },
+  "meta": {
+   "title": "Construction & commissioning supervision | EnviroMET",
+   "description": "Site oversight supports the review of civil, mechanical and electrical works, construction quality and commissioning documentation."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "construction",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "From design intent to commissioning readiness.",
+  "solutionIntro": "Site oversight supports the review of civil, mechanical and electrical works, construction quality and commissioning documentation.",
+  "scopeItems": [
+   {
+    "title": "Site inspections and quality documentation"
+   },
+   {
+    "title": "Contractor schedules and progress review"
+   },
+   {
+    "title": "Factory acceptance testing and site inspection support"
+   },
+   {
+    "title": "Commissioning, snagging and handover review"
+   }
+  ],
+  "standardsNote": "The agreed scope defines oversight responsibilities, acceptance criteria and contractual requirements.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Site oversight supports the review of civil, mechanical and electrical works, construction quality and commissioning documentation."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Site inspections and quality documentation; Contractor schedules and progress review; Factory acceptance testing and site inspection support; Commissioning, snagging and handover review"
+    },
+    {
+     "label": "Technical basis",
+     "value": "The agreed scope defines oversight responsibilities, acceptance criteria and contractual requirements."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/grid",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/testing",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Identify the project stage, available technical documents and the decisions the review must inform. Agree review boundaries, interfaces, assumptions and the reporting audience before the assignment begins.",
+   "audience": "Owners, developers and investment stakeholders.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to construction & commissioning supervision."
+    }
+   ],
+   "guideLink": null
+  },
+  "extraSections": [],
+  "sortOrder": 140,
+  "summary": "Site oversight supports the review of civil, mechanical and electrical works, construction quality and commissioning documentation.",
+  "cardImage": {
+   "$media": "assets/owners.webp",
+   "alt": "Construction & commissioning supervision equipment or assessment use case"
+  },
+  "cardImageAlt": "Construction & commissioning supervision equipment or assessment use case"
+ },
+ {
+  "slug": "decommissioning",
+  "title": "Decommissioning & station removal",
+  "category": "Measurement & monitoring",
+  "lede": "Close the campaign with a coordinated field plan.",
+  "heroImage": {
+   "$media": "assets/mast.jpg",
+   "alt": "Decommissioning & station removal service application"
+  },
+  "meta": {
+   "title": "Decommissioning & station removal | EnviroMET",
+   "description": "End-of-campaign support covers station removal, equipment handling and the completion of campaign records."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "decommissioning",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Close the campaign with a coordinated field plan.",
+  "solutionIntro": "End-of-campaign support covers station removal, equipment handling and the completion of campaign records.",
+  "scopeItems": [
+   {
+    "title": "Campaign close-out planning"
+   },
+   {
+    "title": "Measurement equipment and mast removal"
+   },
+   {
+    "title": "Equipment handling and logistics"
+   },
+   {
+    "title": "Installation and maintenance record handover"
+   }
+  ],
+  "standardsNote": "Site arrangements and removal responsibilities are agreed before field activity.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "End-of-campaign support covers station removal, equipment handling and the completion of campaign records."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Campaign close-out planning; Measurement equipment and mast removal; Equipment handling and logistics; Installation and maintenance record handover"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Site arrangements and removal responsibilities are agreed before field activity."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/dispersion",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/lender",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Confirm the equipment, observation requirements, recording and communications arrangements, site access and maintenance responsibilities. Identify the records and data handover needed to interpret the campaign over time.",
+   "audience": "Measurement campaign and operating teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to decommissioning & station removal."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/campaign-maintenance-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 200,
+  "summary": "End-of-campaign support covers station removal, equipment handling and the completion of campaign records.",
+  "cardImage": {
+   "$media": "assets/mast.jpg",
+   "alt": "Decommissioning & station removal equipment or assessment use case"
+  },
+  "cardImageAlt": "Decommissioning & station removal equipment or assessment use case"
+ },
+ {
+  "slug": "diligence",
+  "title": "Independent engineering & due diligence",
+  "category": "Engineering advisory",
+  "lede": "Make technical risks visible before the next decision.",
+  "heroImage": {
+   "$media": "assets/feasibility.webp",
+   "alt": "Independent engineering & due diligence service application"
+  },
+  "meta": {
+   "title": "Independent engineering & due diligence | EnviroMET",
+   "description": "Independent review brings resource assumptions, design, contracts and delivery risks into a documented technical assessment."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "diligence",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Make technical risks visible before the next decision.",
+  "solutionIntro": "Independent review brings resource assumptions, design, contracts and delivery risks into a documented technical assessment.",
+  "scopeItems": [
+   {
+    "title": "Resource measurement and yield assessment review"
+   },
+   {
+    "title": "Design, contract and equipment suitability review"
+   },
+   {
+    "title": "Grid, permitting and environmental risk review"
+   },
+   {
+    "title": "Site visits and acceptance test witnessing"
+   }
+  ],
+  "standardsNote": "Deliverables and review boundaries are defined against the project stage and the client’s requirements.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Independent review brings resource assumptions, design, contracts and delivery risks into a documented technical assessment."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Resource measurement and yield assessment review; Design, contract and equipment suitability review; Grid, permitting and environmental risk review; Site visits and acceptance test witnessing"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Deliverables and review boundaries are defined against the project stage and the client’s requirements."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/engineering-advisory",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/feasibility",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Owner’s engineering ↗",
+    "url": "/engineering-advisory",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Site screening & feasibility ↗",
+    "url": "/feasibility",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Identify the project stage, available technical documents and the decisions the review must inform. Agree review boundaries, interfaces, assumptions and the reporting audience before the assignment begins.",
+   "audience": "Owners, developers and investment stakeholders.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to independent engineering & due diligence."
+    }
+   ],
+   "guideLink": null
+  },
+  "extraSections": [],
+  "sortOrder": 40,
+  "summary": "Independent review brings resource assumptions, design, contracts and delivery risks into a documented technical assessment.",
+  "cardImage": {
+   "$media": "assets/feasibility.webp",
+   "alt": "Independent engineering & due diligence equipment or assessment use case"
+  },
+  "cardImageAlt": "Independent engineering & due diligence equipment or assessment use case"
+ },
+ {
+  "slug": "dispersion",
+  "title": "Air dispersion studies",
+  "category": "Environmental services",
+  "lede": "Understand how emissions may affect surrounding conditions.",
+  "heroImage": {
+   "$media": "assets/air.webp",
+   "alt": "Air dispersion studies service application"
+  },
+  "meta": {
+   "title": "Air dispersion studies | EnviroMET",
+   "description": "AERMOD-based dispersion studies support assessment of concentration and deposition around emission sources."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "dispersion",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Understand how emissions may affect surrounding conditions.",
+  "solutionIntro": "AERMOD-based dispersion studies support assessment of concentration and deposition around emission sources.",
+  "scopeItems": [
+   {
+    "title": "Study boundary and input requirement definition"
+   },
+   {
+    "title": "Meteorological and source information review"
+   },
+   {
+    "title": "Dispersion modelling and scenario assessment"
+   },
+   {
+    "title": "Documented results and limitations"
+   }
+  ],
+  "standardsNote": "The model, assumptions and applicable assessment requirements are established for the site.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "AERMOD-based dispersion studies support assessment of concentration and deposition around emission sources."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Study boundary and input requirement definition; Meteorological and source information review; Dispersion modelling and scenario assessment; Documented results and limitations"
+    },
+    {
+     "label": "Technical basis",
+     "value": "The model, assumptions and applicable assessment requirements are established for the site."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/data",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/decommissioning",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Define the programme purpose, site boundary, methods and jurisdiction. Confirm applicable requirements, data-quality checks and reporting interfaces during scope development rather than assuming one method applies to every facility.",
+   "audience": "Facility and environmental project teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to air dispersion studies."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/environmental-monitoring-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 190,
+  "summary": "AERMOD-based dispersion studies support assessment of concentration and deposition around emission sources.",
+  "cardImage": {
+   "$media": "assets/air.webp",
+   "alt": "Air dispersion studies equipment or assessment use case"
+  },
+  "cardImageAlt": "Air dispersion studies equipment or assessment use case"
+ },
+ {
+  "slug": "emissions",
+  "title": "Emissions & boundary noise",
+  "category": "Environmental services",
+  "lede": "Turn environmental questions into measurements.",
+  "heroImage": {
+   "$media": "assets/air.webp",
+   "alt": "Emissions & boundary noise service application"
+  },
+  "meta": {
+   "title": "Emissions Testing & Boundary Noise | EnviroMET",
+   "description": "Field assessment and reporting support emissions and boundary noise reviews at operating facilities."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "emissions",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Turn environmental questions into measurements.",
+  "solutionIntro": "Field assessment and reporting support emissions and boundary noise reviews at operating facilities.",
+  "scopeItems": [
+   {
+    "title": "Stack testing and pollutant sampling"
+   },
+   {
+    "title": "Boundary noise monitoring"
+   },
+   {
+    "title": "CEMS/PEMS quality assurance support"
+   },
+   {
+    "title": "Relative accuracy testing and reporting"
+   }
+  ],
+  "standardsNote": "Testing methods and applicable requirements are confirmed during scope development.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Field assessment and reporting support emissions and boundary noise reviews at operating facilities."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Stack testing and pollutant sampling; Boundary noise monitoring; CEMS/PEMS quality assurance support; Relative accuracy testing and reporting"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Testing methods and applicable requirements are confirmed during scope development."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/air",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/water",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Air quality monitoring ↗",
+    "url": "/air",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Hydrology & water quality ↗",
+    "url": "/water",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Environmental & social support ↗",
+    "url": "/compliance",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Define the programme purpose, site boundary, methods and jurisdiction. Confirm applicable requirements, data-quality checks and reporting interfaces during scope development rather than assuming one method applies to every facility.",
+   "audience": "Facility and environmental project teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to emissions & boundary noise."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/environmental-monitoring-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 90,
+  "summary": "Field assessment and reporting support emissions and boundary noise reviews at operating facilities.",
+  "cardImage": {
+   "$media": "assets/air.webp",
+   "alt": "Emissions & boundary noise equipment or assessment use case"
+  },
+  "cardImageAlt": "Emissions & boundary noise equipment or assessment use case"
+ },
+ {
+  "slug": "engineering-advisory",
+  "title": "Owner’s engineering",
+  "category": "Engineering advisory",
+  "lede": "A clear technical view from design to delivery.",
+  "heroImage": {
+   "$media": "assets/owners.webp",
+   "alt": "Owner’s engineering service application"
+  },
+  "meta": {
+   "title": "Owner’s Engineering for Energy Projects | EnviroMET",
+   "description": "Technical reviews and project oversight help owners evaluate decisions, quality concerns and commissioning readiness."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "engineering",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "A clear technical view from design to delivery.",
+  "solutionIntro": "Technical reviews and project oversight help owners evaluate decisions, quality concerns and commissioning readiness.",
+  "scopeItems": [
+   {
+    "title": "Specifications, design and document reviews"
+   },
+   {
+    "title": "Tender and contractor evaluation support"
+   },
+   {
+    "title": "Construction quality and progress monitoring"
+   },
+   {
+    "title": "Commissioning supervision and performance review"
+   }
+  ],
+  "standardsNote": "Scope can support renewable energy, thermal energy and associated infrastructure projects.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Technical reviews and project oversight help owners evaluate decisions, quality concerns and commissioning readiness."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Specifications, design and document reviews; Tender and contractor evaluation support; Construction quality and progress monitoring; Commissioning supervision and performance review"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Scope can support renewable energy, thermal energy and associated infrastructure projects."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/solar",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/diligence",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Independent engineering & due diligence ↗",
+    "url": "/diligence",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Site screening & feasibility ↗",
+    "url": "/feasibility",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Identify the project stage, available technical documents and the decisions the review must inform. Agree review boundaries, interfaces, assumptions and the reporting audience before the assignment begins.",
+   "audience": "Owners, developers and investment stakeholders.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to owner’s engineering."
+    }
+   ],
+   "guideLink": null
+  },
+  "extraSections": [],
+  "sortOrder": 30,
+  "summary": "Technical reviews and project oversight help owners evaluate decisions, quality concerns and commissioning readiness.",
+  "cardImage": {
+   "$media": "assets/owners.webp",
+   "alt": "Owner’s engineering equipment or assessment use case"
+  },
+  "cardImageAlt": "Owner’s engineering equipment or assessment use case"
+ },
+ {
+  "slug": "feasibility",
+  "title": "Site screening & feasibility",
+  "category": "Engineering advisory",
+  "lede": "Focus development on the questions that matter.",
+  "heroImage": {
+   "$media": "assets/feasibility.webp",
+   "alt": "Site screening & feasibility service application"
+  },
+  "meta": {
+   "title": "Site screening & feasibility | EnviroMET",
+   "description": "Compare resource conditions, engineering constraints and project assumptions before advancing the design."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "feasibility",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Focus development on the questions that matter.",
+  "solutionIntro": "Compare resource conditions, engineering constraints and project assumptions before advancing the design.",
+  "scopeItems": [
+   {
+    "title": "Site screening and selection"
+   },
+   {
+    "title": "Conceptual and preliminary plant design"
+   },
+   {
+    "title": "Grid integration and infrastructure assessment"
+   },
+   {
+    "title": "Economic assessment and technical risk identification"
+   }
+  ],
+  "standardsNote": "Early assessments identify topics requiring further field investigation or engineering work.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Compare resource conditions, engineering constraints and project assumptions before advancing the design."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Site screening and selection; Conceptual and preliminary plant design; Grid integration and infrastructure assessment; Economic assessment and technical risk identification"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Early assessments identify topics requiring further field investigation or engineering work."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/diligence",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/meteorology",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Owner’s engineering ↗",
+    "url": "/engineering-advisory",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Independent engineering & due diligence ↗",
+    "url": "/diligence",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Identify the project stage, available technical documents and the decisions the review must inform. Agree review boundaries, interfaces, assumptions and the reporting audience before the assignment begins.",
+   "audience": "Owners, developers and investment stakeholders.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to site screening & feasibility."
+    }
+   ],
+   "guideLink": null
+  },
+  "extraSections": [],
+  "sortOrder": 50,
+  "summary": "Compare resource conditions, engineering constraints and project assumptions before advancing the design.",
+  "cardImage": {
+   "$media": "assets/feasibility.webp",
+   "alt": "Site screening & feasibility equipment or assessment use case"
+  },
+  "cardImageAlt": "Site screening & feasibility equipment or assessment use case"
+ },
+ {
+  "slug": "grid",
+  "title": "Grid integration & interconnection",
+  "category": "Engineering advisory",
+  "lede": "Connect the design with the grid requirements.",
+  "heroImage": {
+   "$media": "assets/feasibility.webp",
+   "alt": "Grid integration & interconnection service application"
+  },
+  "meta": {
+   "title": "Grid integration & interconnection | EnviroMET",
+   "description": "Grid studies and interconnection review connect plant requirements with network interfaces and development constraints."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "grid",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Connect the design with the grid requirements.",
+  "solutionIntro": "Grid studies and interconnection review connect plant requirements with network interfaces and development constraints.",
+  "scopeItems": [
+   {
+    "title": "Grid interconnection studies"
+   },
+   {
+    "title": "Grid-code requirements and compliance review"
+   },
+   {
+    "title": "Connection paths and substation requirements"
+   },
+   {
+    "title": "Infrastructure and balance-of-plant evaluation"
+   }
+  ],
+  "standardsNote": "The study boundaries and applicable grid requirements are defined for the project and network interface.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Grid studies and interconnection review connect plant requirements with network interfaces and development constraints."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Grid interconnection studies; Grid-code requirements and compliance review; Connection paths and substation requirements; Infrastructure and balance-of-plant evaluation"
+    },
+    {
+     "label": "Technical basis",
+     "value": "The study boundaries and applicable grid requirements are defined for the project and network interface."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/power",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/construction",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Identify the project stage, available technical documents and the decisions the review must inform. Agree review boundaries, interfaces, assumptions and the reporting audience before the assignment begins.",
+   "audience": "Owners, developers and investment stakeholders.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to grid integration & interconnection."
+    }
+   ],
+   "guideLink": null
+  },
+  "extraSections": [],
+  "sortOrder": 130,
+  "summary": "Grid studies and interconnection review connect plant requirements with network interfaces and development constraints.",
+  "cardImage": {
+   "$media": "assets/feasibility.webp",
+   "alt": "Grid integration & interconnection equipment or assessment use case"
+  },
+  "cardImageAlt": "Grid integration & interconnection equipment or assessment use case"
+ },
+ {
+  "slug": "lender",
+  "title": "Lender’s engineering",
+  "category": "Engineering advisory",
+  "lede": "An independent technical view for investment review.",
+  "heroImage": {
+   "$media": "assets/feasibility.webp",
+   "alt": "Lender’s engineering service application"
+  },
+  "meta": {
+   "title": "Lender’s engineering | EnviroMET",
+   "description": "Lender and independent engineering connects resource assumptions, contracts, equipment and project delivery risks with stakeholder requirements."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "lender",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "An independent technical view for investment review.",
+  "solutionIntro": "Lender and independent engineering connects resource assumptions, contracts, equipment and project delivery risks with stakeholder requirements.",
+  "scopeItems": [
+   {
+    "title": "Technical, financial and environmental due diligence"
+   },
+   {
+    "title": "PPA, EPC, interconnection and O&M contract review"
+   },
+   {
+    "title": "Engineering design, grid and permitting review"
+   },
+   {
+    "title": "Construction monitoring and acceptance test witnessing"
+   }
+  ],
+  "standardsNote": "The agreed mandate defines review responsibilities and reporting boundaries; no financing outcome is guaranteed.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Lender and independent engineering connects resource assumptions, contracts, equipment and project delivery risks with stakeholder requirements."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Technical, financial and environmental due diligence; PPA, EPC, interconnection and O&M contract review; Engineering design, grid and permitting review; Construction monitoring and acceptance test witnessing"
+    },
+    {
+     "label": "Technical basis",
+     "value": "The agreed mandate defines review responsibilities and reporting boundaries; no financing outcome is guaranteed."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/decommissioning",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/wind",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Identify the project stage, available technical documents and the decisions the review must inform. Agree review boundaries, interfaces, assumptions and the reporting audience before the assignment begins.",
+   "audience": "Owners, developers and investment stakeholders.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to lender’s engineering."
+    }
+   ],
+   "guideLink": null
+  },
+  "extraSections": [],
+  "sortOrder": 210,
+  "summary": "Lender and independent engineering connects resource assumptions, contracts, equipment and project delivery risks with stakeholder requirements.",
+  "cardImage": {
+   "$media": "assets/feasibility.webp",
+   "alt": "Lender’s engineering equipment or assessment use case"
+  },
+  "cardImageAlt": "Lender’s engineering equipment or assessment use case"
+ },
+ {
+  "slug": "performance",
+  "title": "Asset performance monitoring",
+  "category": "Measurement & monitoring",
+  "lede": "Understand how the asset is operating.",
+  "heroImage": {
+   "$media": "assets/cabinet.webp",
+   "alt": "Asset performance monitoring service application"
+  },
+  "meta": {
+   "title": "Asset performance monitoring | EnviroMET",
+   "description": "Independent performance monitoring supports the evaluation of plant parameters, operator performance and maintenance needs."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "performance",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Understand how the asset is operating.",
+  "solutionIntro": "Independent performance monitoring supports the evaluation of plant parameters, operator performance and maintenance needs.",
+  "scopeItems": [
+   {
+    "title": "Plant monitoring software integration"
+   },
+   {
+    "title": "Remote performance monitoring"
+   },
+   {
+    "title": "Assessment of maintenance needs"
+   },
+   {
+    "title": "Plant and operator performance evaluation"
+   }
+  ],
+  "standardsNote": "The scope defines the parameters, interfaces and assessment objectives for the asset.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Independent performance monitoring supports the evaluation of plant parameters, operator performance and maintenance needs."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Plant monitoring software integration; Remote performance monitoring; Assessment of maintenance needs; Plant and operator performance evaluation"
+    },
+    {
+     "label": "Technical basis",
+     "value": "The scope defines the parameters, interfaces and assessment objectives for the asset."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/power-curve",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/data",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Confirm the equipment, observation requirements, recording and communications arrangements, site access and maintenance responsibilities. Identify the records and data handover needed to interpret the campaign over time.",
+   "audience": "Measurement campaign and operating teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to asset performance monitoring."
+    }
+   ],
+   "guideLink": null
+  },
+  "extraSections": [],
+  "sortOrder": 170,
+  "summary": "Independent performance monitoring supports the evaluation of plant parameters, operator performance and maintenance needs.",
+  "cardImage": {
+   "$media": "assets/cabinet.webp",
+   "alt": "Asset performance monitoring equipment or assessment use case"
+  },
+  "cardImageAlt": "Asset performance monitoring equipment or assessment use case"
+ },
+ {
+  "slug": "power",
+  "title": "Remote field power & integration",
+  "category": "Measurement & monitoring",
+  "lede": "Make remote measurement a complete system.",
+  "heroImage": {
+   "$media": "assets/enclosure.webp",
+   "alt": "Remote field power & integration service application"
+  },
+  "meta": {
+   "title": "Remote field power & integration | EnviroMET",
+   "description": "Instrumentation, enclosures, solar power, batteries and communications are integrated around campaign operating needs."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "power",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Make remote measurement a complete system.",
+  "solutionIntro": "Instrumentation, enclosures, solar power, batteries and communications are integrated around campaign operating needs.",
+  "scopeItems": [
+   {
+    "title": "Off-grid solar and battery integration"
+   },
+   {
+    "title": "Field enclosure and cabinet integration"
+   },
+   {
+    "title": "Communications and remote monitoring"
+   },
+   {
+    "title": "Equipment load and site condition review"
+   }
+  ],
+  "standardsNote": "Power configuration considers the instrument load, communications demand and operating environment.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Instrumentation, enclosures, solar power, batteries and communications are integrated around campaign operating needs."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Off-grid solar and battery integration; Field enclosure and cabinet integration; Communications and remote monitoring; Equipment load and site condition review"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Power configuration considers the instrument load, communications demand and operating environment."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/compliance",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/grid",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Wind resource assessment ↗",
+    "url": "/wind",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Solar resource assessment ↗",
+    "url": "/solar",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Confirm the equipment, observation requirements, recording and communications arrangements, site access and maintenance responsibilities. Identify the records and data handover needed to interpret the campaign over time.",
+   "audience": "Measurement campaign and operating teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to remote field power & integration."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/lidar-deployment-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 120,
+  "summary": "Instrumentation, enclosures, solar power, batteries and communications are integrated around campaign operating needs.",
+  "cardImage": {
+   "$media": "assets/enclosure.webp",
+   "alt": "Remote field power & integration equipment or assessment use case"
+  },
+  "cardImageAlt": "Remote field power & integration equipment or assessment use case"
+ },
+ {
+  "slug": "water",
+  "title": "Hydrology & water quality",
+  "category": "Environmental services",
+  "lede": "Understand water conditions and site risks.",
+  "heroImage": {
+   "$media": "assets/water.webp",
+   "alt": "Hydrology & water quality service application"
+  },
+  "meta": {
+   "title": "Hydrology & Water Quality Monitoring | EnviroMET",
+   "description": "Surface-water studies and water quality monitoring connect observations with project planning and environmental assessment."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "water",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Understand water conditions and site risks.",
+  "solutionIntro": "Surface-water studies and water quality monitoring connect observations with project planning and environmental assessment.",
+  "scopeItems": [
+   {
+    "title": "Surface-water and channel assessment"
+   },
+   {
+    "title": "Historic trends and mitigation planning"
+   },
+   {
+    "title": "Water-supply investigations"
+   },
+   {
+    "title": "Water quality sampling, monitoring and reporting"
+   }
+  ],
+  "standardsNote": "Study boundaries, sampling locations and analysis requirements are defined for each site.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Surface-water studies and water quality monitoring connect observations with project planning and environmental assessment."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Surface-water and channel assessment; Historic trends and mitigation planning; Water-supply investigations; Water quality sampling, monitoring and reporting"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Study boundaries, sampling locations and analysis requirements are defined for each site."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/emissions",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/compliance",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Air quality monitoring ↗",
+    "url": "/air",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Emissions & boundary noise ↗",
+    "url": "/emissions",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Environmental & social support ↗",
+    "url": "/compliance",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Define the programme purpose, site boundary, methods and jurisdiction. Confirm applicable requirements, data-quality checks and reporting interfaces during scope development rather than assuming one method applies to every facility.",
+   "audience": "Facility and environmental project teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to hydrology & water quality."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/environmental-monitoring-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 100,
+  "summary": "Surface-water studies and water quality monitoring connect observations with project planning and environmental assessment.",
+  "cardImage": {
+   "$media": "assets/water.webp",
+   "alt": "Hydrology & water quality equipment or assessment use case"
+  },
+  "cardImageAlt": "Hydrology & water quality equipment or assessment use case"
+ },
+ {
+  "slug": "meteorology",
+  "title": "Meteorological measurement",
+  "category": "Measurement & monitoring",
+  "lede": "Bring sensors, power and data together.",
+  "heroImage": {
+   "$media": "assets/mast.jpg",
+   "alt": "Meteorological measurement service application"
+  },
+  "meta": {
+   "title": "Meteorological Stations & Measurement | EnviroMET",
+   "description": "Supply, integration and field delivery of meteorological stations, met masts and measurement networks."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "meteorology",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Bring sensors, power and data together.",
+  "solutionIntro": "Supply, integration and field delivery of meteorological stations, met masts and measurement networks.",
+  "scopeItems": [
+   {
+    "title": "Sensor and data logger integration"
+   },
+   {
+    "title": "Brackets, mountings and field cabinets"
+   },
+   {
+    "title": "Testing, commissioning and training"
+   },
+   {
+    "title": "Data collection, storage and analysis"
+   }
+  ],
+  "standardsNote": "Measurement system configuration is matched to the required observations and the deployment environment.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Supply, integration and field delivery of meteorological stations, met masts and measurement networks."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Sensor and data logger integration; Brackets, mountings and field cabinets; Testing, commissioning and training; Data collection, storage and analysis"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Measurement system configuration is matched to the required observations and the deployment environment."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/feasibility",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/maintenance",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Wind resource assessment ↗",
+    "url": "/wind",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Solar resource assessment ↗",
+    "url": "/solar",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "evidence": {
+   "eyebrow": "RELATED PROJECT EVIDENCE",
+   "heading": "See the scope in practice.",
+   "projects": [
+    {
+     "$project": "project-airport-monitoring"
+    },
+    {
+     "$project": "project-electricity-weather"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Confirm the equipment, observation requirements, recording and communications arrangements, site access and maintenance responsibilities. Identify the records and data handover needed to interpret the campaign over time.",
+   "audience": "Measurement campaign and operating teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to meteorological measurement."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/wind-measurement-campaign-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 60,
+  "summary": "Supply, integration and field delivery of meteorological stations, met masts and measurement networks.",
+  "cardImage": {
+   "$media": "assets/mast.jpg",
+   "alt": "Meteorological measurement equipment or assessment use case"
+  },
+  "cardImageAlt": "Meteorological measurement equipment or assessment use case"
+ },
+ {
+  "slug": "power-curve",
+  "title": "Wind turbine power-curve measurement",
+  "category": "Renewable energy",
+  "lede": "Measure the relationship between wind and power.",
+  "heroImage": {
+   "$media": "assets/references/performance-mast.png",
+   "alt": "Wind turbine power-curve measurement service application"
+  },
+  "meta": {
+   "title": "Wind turbine power-curve measurement | EnviroMET",
+   "description": "Power-curve campaigns combine reference measurements, site calibration and reporting around turbine performance evaluation."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "power-curve",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Measure the relationship between wind and power.",
+  "solutionIntro": "Power-curve campaigns combine reference measurements, site calibration and reporting around turbine performance evaluation.",
+  "scopeItems": [
+   {
+    "title": "Calibration and reference mast supply and installation"
+   },
+   {
+    "title": "Operation, maintenance and decommissioning"
+   },
+   {
+    "title": "Site calibration and campaign consultation"
+   },
+   {
+    "title": "Power-curve measurement reporting"
+   }
+  ],
+  "standardsNote": "IEC 61400-12-1 informs power-performance measurement. The campaign establishes applicable requirements and instrument calibration records.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Power-curve campaigns combine reference measurements, site calibration and reporting around turbine performance evaluation."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Calibration and reference mast supply and installation; Operation, maintenance and decommissioning; Site calibration and campaign consultation; Power-curve measurement reporting"
+    },
+    {
+     "label": "Technical basis",
+     "value": "IEC 61400-12-1 informs power-performance measurement. The campaign establishes applicable requirements and instrument calibration records."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/testing",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/performance",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "evidence": {
+   "eyebrow": "RELATED PROJECT EVIDENCE",
+   "heading": "See the scope in practice.",
+   "projects": [
+    {
+     "$project": "project-performance-masts"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Define the decision the resource observations must support, including observation variables, instrument siting, site conditions and assessor-specified requirements. Agree how installation records, instrument information, data checks and the intended assessment will be connected.",
+   "audience": "Development and assessment teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to wind turbine power-curve measurement."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/wind-measurement-campaign-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 160,
+  "summary": "Power-curve campaigns combine reference measurements, site calibration and reporting around turbine performance evaluation.",
+  "cardImage": {
+   "$media": "assets/references/performance-mast.png",
+   "alt": "Wind turbine power-curve measurement equipment or assessment use case"
+  },
+  "cardImageAlt": "Wind turbine power-curve measurement equipment or assessment use case"
+ },
+ {
+  "slug": "testing",
+  "title": "Plant performance testing",
+  "category": "Engineering advisory",
+  "lede": "Evaluate performance against the requirements.",
+  "heroImage": {
+   "$media": "assets/owners.webp",
+   "alt": "Plant performance testing service application"
+  },
+  "meta": {
+   "title": "Plant performance testing | EnviroMET",
+   "description": "Performance and acceptance test witnessing helps owners assess the plant against agreed protocols and contractual obligations."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "testing",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Evaluate performance against the requirements.",
+  "solutionIntro": "Performance and acceptance test witnessing helps owners assess the plant against agreed protocols and contractual obligations.",
+  "scopeItems": [
+   {
+    "title": "Performance test protocol review"
+   },
+   {
+    "title": "PPA and contract requirement review"
+   },
+   {
+    "title": "Witnessing performance and acceptance tests"
+   },
+   {
+    "title": "Reporting observations and outstanding issues"
+   }
+  ],
+  "standardsNote": "Protocols are established against the relevant plant, contract and applicable standards.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Performance and acceptance test witnessing helps owners assess the plant against agreed protocols and contractual obligations."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Performance test protocol review; PPA and contract requirement review; Witnessing performance and acceptance tests; Reporting observations and outstanding issues"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Protocols are established against the relevant plant, contract and applicable standards."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/construction",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/power-curve",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "evidence": {
+   "eyebrow": "RELATED PROJECT EVIDENCE",
+   "heading": "See the scope in practice.",
+   "projects": [
+    {
+     "$project": "project-performance-masts"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Identify the project stage, available technical documents and the decisions the review must inform. Agree review boundaries, interfaces, assumptions and the reporting audience before the assignment begins.",
+   "audience": "Owners, developers and investment stakeholders.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to plant performance testing."
+    }
+   ],
+   "guideLink": null
+  },
+  "extraSections": [],
+  "sortOrder": 150,
+  "summary": "Performance and acceptance test witnessing helps owners assess the plant against agreed protocols and contractual obligations.",
+  "cardImage": {
+   "$media": "assets/owners.webp",
+   "alt": "Plant performance testing equipment or assessment use case"
+  },
+  "cardImageAlt": "Plant performance testing equipment or assessment use case"
+ },
+ {
+  "slug": "data",
+  "title": "Measurement data & campaign reporting",
+  "category": "Measurement & monitoring",
+  "lede": "Turn observations into usable information.",
+  "heroImage": {
+   "$media": "assets/references/airport-data.png",
+   "alt": "Measurement data & campaign reporting service application"
+  },
+  "meta": {
+   "title": "Measurement data & campaign reporting | EnviroMET",
+   "description": "Data collection, analysis, storage and quality review connect field observations with resource and technical reporting."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "data",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Turn observations into usable information.",
+  "solutionIntro": "Data collection, analysis, storage and quality review connect field observations with resource and technical reporting.",
+  "scopeItems": [
+   {
+    "title": "Continuous data collection and monitoring"
+   },
+   {
+    "title": "Data analysis and quality checks"
+   },
+   {
+    "title": "Installation and campaign documentation"
+   },
+   {
+    "title": "Storage, reporting and data interpretation"
+   }
+  ],
+  "standardsNote": "The company profiles report routine resource-campaign data recovery above 95%; this is reported experience, not a guarantee for each deployment.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Data collection, analysis, storage and quality review connect field observations with resource and technical reporting."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Continuous data collection and monitoring; Data analysis and quality checks; Installation and campaign documentation; Storage, reporting and data interpretation"
+    },
+    {
+     "label": "Technical basis",
+     "value": "The company profiles report routine resource-campaign data recovery above 95%; this is reported experience, not a guarantee for each deployment."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/performance",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/dispersion",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "evidence": {
+   "eyebrow": "RELATED PROJECT EVIDENCE",
+   "heading": "See the scope in practice.",
+   "projects": [
+    {
+     "$project": "project-kingdom-wind"
+    },
+    {
+     "$project": "project-desert-wind-resource"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Confirm the equipment, observation requirements, recording and communications arrangements, site access and maintenance responsibilities. Identify the records and data handover needed to interpret the campaign over time.",
+   "audience": "Measurement campaign and operating teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to measurement data & campaign reporting."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/wind-measurement-campaign-guide",
+    "appearance": "text"
+   }
+  },
+  "technicalBasis": {
+   "eyebrow": "TECHNICAL BASIS",
+   "heading": "Distinguish recovery from validated data availability.",
+   "body": "Data recovery describes retrieved records; validated data availability describes records retained after agreed quality checks. Define the denominator, recording interval, exclusions and quality flags when reporting either metric. Retain raw data, traceable corrections, calibration and maintenance records, timestamp conventions and uncertainty information. The profile-reported recovery above 95% is historical experience, not a guaranteed validated availability for every channel or campaign.",
+   "link": {
+    "type": "custom",
+    "label": "Review measurement standards ↗",
+    "url": "/quality",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 180,
+  "summary": "Data collection, analysis, storage and quality review connect field observations with resource and technical reporting.",
+  "cardImage": {
+   "$media": "assets/references/airport-data.png",
+   "alt": "Measurement data & campaign reporting equipment or assessment use case"
+  },
+  "cardImageAlt": "Measurement data & campaign reporting equipment or assessment use case"
+ },
+ {
+  "slug": "solar",
+  "title": "Solar resource assessment",
+  "category": "Renewable energy",
+  "lede": "Build the assessment on site observations.",
+  "heroImage": {
+   "$media": "assets/solar_station.webp",
+   "alt": "Solar resource assessment service application"
+  },
+  "meta": {
+   "title": "Solar Resource Assessment & Measurement | EnviroMET",
+   "description": "Solar measurement stations and campaign support provide a documented basis for understanding irradiance and weather conditions."
+  },
+  "showBusinessCase": false,
+  "enquiryKey": "solar",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Build the assessment on site observations.",
+  "solutionIntro": "Solar measurement stations and campaign support provide a documented basis for understanding irradiance and weather conditions.",
+  "scopeItems": [
+   {
+    "title": "Solar station configuration and installation"
+   },
+   {
+    "title": "Pyranometers, pyrheliometers and tracking systems"
+   },
+   {
+    "title": "Instrument care and recalibration coordination"
+   },
+   {
+    "title": "Resource and energy yield assessment"
+   }
+  ],
+  "standardsNote": "The station, instruments and maintenance plan are selected to match the assessment objectives and site conditions.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Solar measurement stations and campaign support provide a documented basis for understanding irradiance and weather conditions."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Solar station configuration and installation; Pyranometers, pyrheliometers and tracking systems; Instrument care and recalibration coordination; Resource and energy yield assessment"
+    },
+    {
+     "label": "Technical basis",
+     "value": "The station, instruments and maintenance plan are selected to match the assessment objectives and site conditions."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/wind",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/engineering-advisory",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Wind resource assessment ↗",
+    "url": "/wind",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Operation & maintenance ↗",
+    "url": "/maintenance",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "evidence": {
+   "eyebrow": "RELATED PROJECT EVIDENCE",
+   "heading": "See the scope in practice.",
+   "projects": [
+    {
+     "$project": "project-mast-solar-maintenance"
+    },
+    {
+     "$project": "project-solar-network"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Define the decision the resource observations must support, including observation variables, instrument siting, site conditions and assessor-specified requirements. Agree how installation records, instrument information, data checks and the intended assessment will be connected.",
+   "audience": "Development and assessment teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to solar resource assessment."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/solar-measurement-guide",
+    "appearance": "text"
+   }
+  },
+  "technicalBasis": {
+   "eyebrow": "TECHNICAL BASIS",
+   "heading": "Resource measurements and PV monitoring serve different purposes.",
+   "body": "For resource assessment, define global horizontal irradiance (GHI), direct normal irradiance (DNI) and diffuse horizontal irradiance (DHI) as required by the project. ISO 9060:2018 describes classification and specifications for relevant solar-radiation instruments. IEC 61724-1:2021 addresses PV-system performance monitoring; it is not a blanket certification for a pre-development solar resource campaign. Agree sensor calibration, siting, cleaning, acquisition and QA/QC requirements for the intended use.",
+   "link": {
+    "type": "custom",
+    "label": "Review measurement standards ↗",
+    "url": "/quality",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [],
+  "sortOrder": 20,
+  "summary": "Solar measurement stations and campaign support provide a documented basis for understanding irradiance and weather conditions.",
+  "cardImage": {
+   "$media": "assets/solar_station.webp",
+   "alt": "Solar resource assessment equipment or assessment use case"
+  },
+  "cardImageAlt": "Solar resource assessment equipment or assessment use case"
+ },
+ {
+  "slug": "maintenance",
+  "title": "Operation & maintenance",
+  "category": "Measurement & monitoring",
+  "lede": "Protect continuity beyond installation.",
+  "heroImage": {
+   "$media": "assets/cabinet.webp",
+   "alt": "Operation & maintenance service application"
+  },
+  "meta": {
+   "title": "Met Mast & LiDAR Operation and Maintenance | EnviroMET",
+   "description": "Remote monitoring and field maintenance support the operating needs of met mast, LiDAR and meteorological campaigns."
+  },
+  "showBusinessCase": true,
+  "enquiryKey": "maintenance",
+  "eyebrow": "THE SOLUTION",
+  "solutionHeading": "Protect continuity beyond installation.",
+  "solutionIntro": "Remote monitoring and field maintenance support the operating needs of met mast, LiDAR and meteorological campaigns.",
+  "scopeItems": [
+   {
+    "title": "Preventive inspections and troubleshooting"
+   },
+   {
+    "title": "Equipment repair and replacement"
+   },
+   {
+    "title": "Sensor recalibration coordination"
+   },
+   {
+    "title": "Remote monitoring and legacy-system integration"
+   }
+  ],
+  "standardsNote": "Maintenance frequency and response arrangements are agreed for the equipment, site access and campaign requirements.",
+  "deliverTitle": "Set the campaign up for review.",
+  "deliverText": "The agreed scope identifies equipment configuration, field activities, records and reporting needs. Share your site, timing and assessment objectives so the team can define the right deliverables.",
+  "procurement": {
+   "eyebrow": "PROCUREMENT CLARITY",
+   "heading": "A scope your team can compare.",
+   "caption": "Agree the scope before requesting a quotation",
+   "rows": [
+    {
+     "label": "Objective",
+     "value": "Remote monitoring and field maintenance support the operating needs of met mast, LiDAR and meteorological campaigns."
+    },
+    {
+     "label": "Delivery scope",
+     "value": "Preventive inspections and troubleshooting; Equipment repair and replacement; Sensor recalibration coordination; Remote monitoring and legacy-system integration"
+    },
+    {
+     "label": "Technical basis",
+     "value": "Maintenance frequency and response arrangements are agreed for the equipment, site access and campaign requirements."
+    },
+    {
+     "label": "Quotation inputs",
+     "value": "Site and country, project stage, objective, dates, equipment preferences and available specifications."
+    },
+    {
+     "label": "Handover basis",
+     "value": "Agree the applicable configuration, installation, maintenance, data and reporting records before deployment."
+    }
+   ],
+   "link": {
+    "type": "custom",
+    "label": "Download and complete your project brief ↗",
+    "url": "/campaign-brief",
+    "appearance": "text"
+   }
+  },
+  "previousLink": {
+   "type": "custom",
+   "label": "← Previous solution",
+   "url": "/meteorology",
+   "appearance": "plain"
+  },
+  "nextLink": {
+   "type": "custom",
+   "label": "Next solution →",
+   "url": "/air",
+   "appearance": "plain"
+  },
+  "relatedSolutions": [
+   {
+    "type": "custom",
+    "label": "Wind resource assessment ↗",
+    "url": "/wind",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Solar resource assessment ↗",
+    "url": "/solar",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Meteorological measurement ↗",
+    "url": "/meteorology",
+    "appearance": "plain"
+   },
+   {
+    "type": "custom",
+    "label": "Remote field power & integration ↗",
+    "url": "/power",
+    "appearance": "plain"
+   }
+  ],
+  "enquiryBox": {
+   "heading": "Discuss your requirements.",
+   "text": "Site location, project stage, measurement objectives and timing.",
+   "buttonLabel": "Request a scoped quotation ↗",
+   "evidenceTitle": "Evidence for your review",
+   "evidenceLinks": [
+    {
+     "type": "custom",
+     "label": "Documented use cases ↗",
+     "url": "/projects",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Measurement standards & ISO systems ↗",
+     "url": "/quality",
+     "appearance": "plain"
+    },
+    {
+     "type": "custom",
+     "label": "Explore company capabilities ↗",
+     "url": "/about",
+     "appearance": "plain"
+    }
+   ]
+  },
+  "evidence": {
+   "eyebrow": "RELATED PROJECT EVIDENCE",
+   "heading": "See the scope in practice.",
+   "projects": [
+    {
+     "$project": "project-three-lidars"
+    },
+    {
+     "$project": "project-mast-solar-maintenance"
+    }
+   ]
+  },
+  "brief": {
+   "eyebrow": "BUILT AROUND YOUR REQUIREMENTS",
+   "heading": "From scope to reviewable deliverables.",
+   "body": "Confirm the equipment, observation requirements, recording and communications arrangements, site access and maintenance responsibilities. Identify the records and data handover needed to interpret the campaign over time.",
+   "audience": "Measurement campaign and operating teams.",
+   "note": "The agreed assignment defines which activities and deliverables are included.",
+   "faqs": [
+    {
+     "question": "What should we send with an enquiry?",
+     "answer": "Share the site or facility, country, project stage, objective, available specifications and expected timing. The team can then discuss equipment, field activities or technical-review needs relevant to operation & maintenance."
+    }
+   ],
+   "guideLink": {
+    "type": "custom",
+    "label": "Read the related planning guide ↗",
+    "url": "/lidar-deployment-guide",
+    "appearance": "text"
+   }
+  },
+  "extraSections": [
+   {
+    "blockType": "section",
+    "anchorId": "safe-field-work",
+    "attrs": null,
+    "background": "none",
+    "layout": "wrap split",
+    "items": [
+     {
+      "blockType": "itemGroup1",
+      "tag": "div",
+      "className": null,
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "SAFETY IN THE FIELD",
+        "elementId": null,
+        "attrs": null,
+        "style": "eyebrow",
+        "blockName": "SAFETY IN THE FIELD"
+       },
+       {
+        "blockType": "itemHeading",
+        "level": "h2",
+        "text": "Plan the work.\nControl the exposure.",
+        "className": null,
+        "elementId": null,
+        "blockName": "Plan the work. Control the exposure."
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "Met mast activities require site-specific planning for work at height, lifting, weather, remote access and emergency arrangements. The project scope establishes responsibilities and the records needed before work begins.",
+        "elementId": null,
+        "attrs": null,
+        "blockName": "Met mast activities require site-specific planning for work …"
+       },
+       {
+        "blockType": "itemLink",
+        "label": "Explore management systems ↗",
+        "url": "/quality",
+        "newTab": null,
+        "elementId": null,
+        "attrs": null,
+        "style": "text-link",
+        "blockName": "Explore management systems ↗"
+       }
+      ],
+      "blockName": "Plan the work. Control the exposure."
+     },
+     {
+      "blockType": "itemGroup1",
+      "tag": "aside",
+      "className": "refine-planning-proof",
+      "elementId": null,
+      "url": null,
+      "attrs": null,
+      "items": [
+       {
+        "blockType": "itemHeading",
+        "level": "h3",
+        "text": "Confirm before mobilisation.",
+        "className": null,
+        "elementId": null,
+        "blockName": "Confirm before mobilisation."
+       },
+       {
+        "blockType": "itemList",
+        "ordered": null,
+        "items": [
+         {
+          "text": "Risk assessment, method statement and site permissions"
+         },
+         {
+          "text": "Competence and authorisation for the assigned work"
+         },
+         {
+          "text": "PPE, access equipment and inspection requirements"
+         },
+         {
+          "text": "Weather limits, rescue plan and emergency communications"
+         }
+        ],
+        "elementId": null,
+        "style": "check-list",
+        "blockName": "Risk assessment, method statement and site permissions Compe…"
+       },
+       {
+        "blockType": "itemText",
+        "tag": "p",
+        "text": "ISO 45001 concerns the occupational health and safety management system. Individual training, site permissions and task controls require their own evidence.",
+        "elementId": null,
+        "attrs": null,
+        "style": "small-note",
+        "blockName": "ISO 45001 concerns the occupational health and safety manage…"
+       }
+      ],
+      "blockName": "Confirm before mobilisation."
+     }
+    ],
+    "blockName": "Safety in the field"
+   }
+  ],
+  "sortOrder": 70,
+  "summary": "Remote monitoring and field maintenance support the operating needs of met mast, LiDAR and meteorological campaigns.",
+  "cardImage": {
+   "$media": "assets/cabinet.webp",
+   "alt": "Operation & maintenance equipment or assessment use case"
+  },
+  "cardImageAlt": "Operation & maintenance equipment or assessment use case"
+ }
+]

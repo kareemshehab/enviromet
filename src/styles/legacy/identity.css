@@ -1,0 +1,80 @@
+/*
+ * Original site: logo and brand-identity adjustments.
+ *
+ * Converted for Tailwind CSS v4: brand colours use the theme tokens (theme.css) and declarations
+ * with an exact Tailwind equivalent are written with @apply. Class names are unchanged because
+ * CMS content uses them. Verified identical in computed style on every page (EN + AR, 3 widths).
+ */
+
+.coverage-highlight {
+  border-block: 1px solid var(--color-line);
+  background: var(--color-mist);
+}
+.coverage-highlight h2 {
+  @apply flex items-baseline flex-wrap gap-3 my-4.5 mx-0 text-brand-blue;
+}
+.coverage-highlight h2 > span {
+  font-size: clamp(54px, 10vw, 124px);
+  @apply font-semibold;
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+.coverage-highlight h2 > small {
+  font-size: clamp(25px, 5vw, 58px);
+  @apply font-medium;
+}
+.coverage-highlight sup {
+  font-size: 0.6em;
+}
+.coverage-highlight p:not(.eyebrow) {
+  font-size: clamp(20px, 3vw, 34px);
+  @apply font-medium text-ink-navy;
+  max-width: 880px;
+  line-height: 1.5;
+}
+.intro-evidence strong span {
+  max-width: 300px;
+  line-height: 1.5;
+}
+.reference-profile-intro figure img {
+  aspect-ratio: 3/2;
+  @apply h-auto object-contain w-full;
+}
+.customer-logo-grid .logo-only {
+  background: white;
+  border: 1px solid var(--color-line);
+  @apply flex flex-col justify-center items-center gap-5 p-7.5;
+  min-height: 175px;
+  @apply box-border;
+}
+.customer-logo-grid .logo-only img {
+  max-width: 100%;
+  @apply w-auto h-auto;
+  max-height: 105px;
+  @apply object-contain;
+}
+.customer-logo-grid .logo-only img.joint-logo {
+  max-height: 70px;
+}
+.customer-logo-grid {
+  @apply items-stretch;
+}
+@media (max-width: 600px) {
+  .customer-logo-grid .logo-only {
+    @apply p-5;
+    min-height: 145px;
+  }
+  .coverage-highlight h2 {
+    @apply gap-2;
+  }
+  .intro-evidence strong span {
+    font-size: 14px;
+  }
+  .reference-profile-intro figure img {
+    aspect-ratio: 3/2;
+  }
+}
+
+#wind-coverage {
+  scroll-margin-top: 120px;
+}

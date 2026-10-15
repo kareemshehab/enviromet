@@ -1,0 +1,25 @@
+/*
+ * Small fixes added during the CMS migration.
+ *
+ * Converted for Tailwind CSS v4: brand colours use the theme tokens (theme.css) and declarations
+ * with an exact Tailwind equivalent are written with @apply. Class names are unchanged because
+ * CMS content uses them. Verified identical in computed style on every page (EN + AR, 3 widths).
+ */
+
+#nav > a.nav-cta {
+  background: var(--color-brand-green-dark);
+  @apply text-white rounded-sm;
+  padding: 12px 17px;
+  @apply font-semibold;
+}
+
+/*
+ * Page title bar fix (approved): styles.css designs .page-intro as a dark-blue banner
+ * with white text, but ux.css later replaced only the background with pale blue,
+ * which left the white headings almost invisible. Restore the intended dark banner.
+ */
+.page-intro {
+  background:
+    linear-gradient(90deg, #206687f5, #206687dd),
+    url('/assets/energy-hero.webp') center/cover;
+}

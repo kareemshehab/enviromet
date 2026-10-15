@@ -1,0 +1,24 @@
+'use strict';
+function campaignCosts(v){
+ const keys=['months','sites','aSetup','aMonthly','aVisits','aVisitCost','bSetup','bMonthly','bVisits','bVisitCost'];
+ if(keys.some(k=>!Number.isFinite(v[k])||v[k]<0)||!Number.isInteger(v.months)||!Number.isInteger(v.sites)||!Number.isInteger(v.aVisits)||!Number.isInteger(v.bVisits)||v.months<1||v.months>120||v.sites<1||v.sites>1000||v.aVisits>1000||v.bVisits>1000||keys.filter(k=>!['months','sites','aVisits','bVisits'].includes(k)).some(k=>v[k]>1e8))throw Error('Use valid campaign inputs.');
+ const a=v.sites*(v.aSetup+v.months*v.aMonthly+v.aVisits*v.aVisitCost),b=v.sites*(v.bSetup+v.months*v.bMonthly+v.bVisits*v.bVisitCost),saving=a-b,investment=v.sites*(v.bSetup-v.aSetup),monthlySaving=v.sites*(v.aMonthly-v.bMonthly);
+ return {a,b,saving,percent:a>0?saving/a*100:null,investment,roi:investment>0?saving/investment*100:null,payback:investment>0&&monthlySaving>0?investment/monthlySaving:null};
+}
+if(typeof module!=='undefined')module.exports=campaignCosts;
+if(typeof document!=='undefined')(()=>{
+ const form=document.querySelector('[data-cro-calculator]');if(!form)return;
+ const results=document.getElementById('calculator-results'),status=document.getElementById('calculator-status'),feedback=document.getElementById('calculator-feedback');let summary='';
+ const show=(id,text)=>document.getElementById(id).textContent=text;
+ const money=(value,currency)=>new Intl.NumberFormat('en-SA',{style:'currency',currency,maximumFractionDigits:0}).format(value);
+ function edit(){form.hidden=false;results.hidden=true;status.textContent='Step 1 of 2 · Define your scenarios';form.querySelector('input').focus();}
+ document.querySelector('[data-edit-scenario]').addEventListener('click',edit);
+ document.querySelector('[data-cro-example]').addEventListener('click',()=>{const vals={months:24,sites:1,aSetup:60000,aMonthly:3500,aVisits:8,aVisitCost:2500,bSetup:85000,bMonthly:1800,bVisits:4,bVisitCost:2500};Object.entries(vals).forEach(([k,v])=>form.elements[k].value=v);status.textContent='Illustrative example loaded. Review each assumption, then calculate.';});
+ form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const data=Object.fromEntries(new FormData(form)),currency=data.currency;Object.keys(data).filter(k=>k!=='currency').forEach(k=>data[k]=Number(data[k]));let r;try{r=campaignCosts(data)}catch(err){status.textContent=err.message;return;}
+ show('result-basis',data.sites+' site(s) · '+data.months+' months · '+currency+' · User-entered scenario');show('cost-a',money(r.a,currency));show('cost-b',money(r.b,currency));show('cost-saving',money(r.saving,currency));show('saving-percent',r.percent===null?'Baseline is zero; percentage is undefined.':r.percent.toFixed(1)+'% of Option A cost'+(r.saving<0?' · Option B costs more.':''));show('additional-investment',r.investment>0?money(r.investment,currency):'No additional setup investment in Option B.');show('simple-roi',r.roi===null?'Not applicable without additional setup investment.':r.roi.toFixed(1)+'% across the campaign');show('simple-payback',r.payback===null?'Not applicable: requires additional setup investment and positive monthly operating savings.':r.payback.toFixed(1)+' months'+(r.payback>data.months?' · Beyond the selected campaign duration.':'')+' · Based on monthly operating savings only.');
+ summary='EnviroMET campaign cost scenario\nCurrency: '+currency+'\nSites: '+data.sites+'\nDuration: '+data.months+' months\n'+['a','b'].map(k=>'Option '+k.toUpperCase()+' per site: setup '+data[k+'Setup']+', monthly '+data[k+'Monthly']+', visits '+data[k+'Visits']+', visit cost '+data[k+'VisitCost']).join('\n')+'\nOption A total: '+money(r.a,currency)+'\nOption B total: '+money(r.b,currency)+'\nNet saving: '+money(r.saving,currency)+'\nSimple ROI: '+document.getElementById('simple-roi').textContent+'\nPayback: '+document.getElementById('simple-payback').textContent+'\nUser assumptions only; excludes tax, financing, discounting, inflation and unplanned outages. Equivalent scope must be confirmed.';
+ form.hidden=true;results.hidden=false;results.focus();feedback.textContent='Review or download the comparison, then discuss your requirements.';
+ });
+ document.querySelector('[data-share-scenario]').addEventListener('click',()=>{try{sessionStorage.setItem('enviromet-campaign-scenario',summary)}catch{ /* Download remains available if storage is disabled. */ }});
+ document.querySelector('[data-download-scenario]').addEventListener('click',()=>{const blob=new Blob([summary],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='EnviroMET_Campaign_Comparison.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);feedback.textContent='Comparison downloaded with your assumptions and calculation basis.';});
+})();

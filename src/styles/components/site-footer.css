@@ -1,0 +1,212 @@
+/*
+ * Site footer
+ * Markup: src/components/layout/Footer.tsx.
+ * Own class names (.sh-*, .sf-*) so the original site's nav/footer rules don't apply.
+ * Written with Tailwind: theme tokens + @apply; values without an exact utility stay as CSS.
+ */
+
+footer.sf {
+  @apply pt-0 px-0 pb-7;
+  background: #133b4d;
+  color: #c4d7df;
+  font-family: var(--f-ui);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* The green → blue line under the logo's wordmark */
+.sf-rule {
+  @apply h-1;
+  background: linear-gradient(90deg, var(--c-leaf), var(--c-sky));
+}
+
+html[dir='rtl'] .sf-rule {
+  background: linear-gradient(270deg, var(--c-leaf), var(--c-sky));
+}
+
+footer.sf .sf-wrap {
+  max-width: 1312px;
+  @apply my-0 mx-auto py-0 px-8;
+}
+
+footer.sf .sf-top {
+  @apply grid;
+  grid-template-columns: minmax(230px, 0.9fr) minmax(0, 2.6fr);
+  @apply gap-16 pt-16 pb-14;
+}
+
+.sf-logo {
+  @apply inline-block m-0;
+  background: none;
+  @apply p-0 w-auto;
+}
+
+.sf-logo img {
+  @apply block w-49 h-auto;
+}
+
+.sf .sf-tagline {
+  max-width: 34ch;
+  @apply mt-5.5 mx-0 mb-0 text-white;
+  font-size: 17px;
+  @apply font-medium;
+  line-height: 1.5;
+}
+
+html[dir='rtl'] .sf .sf-tagline {
+  line-height: 1.8;
+}
+
+.sf-cols {
+  @apply grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) minmax(0, 1.1fr);
+  @apply gap-10;
+}
+
+.sf .sf-heading {
+  @apply mt-0 mx-0 mb-4;
+  color: #8fb4c4;
+  font-family: var(--f-ui);
+  font-size: 13.5px;
+  @apply font-semibold;
+  letter-spacing: 0;
+}
+
+.sf ul {
+  list-style: none;
+  @apply m-0 p-0;
+}
+
+.sf li {
+  margin: 0 0 11px;
+  break-inside: avoid;
+}
+
+.sf-col[data-many] ul {
+  columns: 2;
+  @apply gap-x-6;
+}
+
+.sf a {
+  @apply inline m-0;
+  color: #e6f0f4;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sf a:hover {
+  @apply text-white;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sf a.sf-social {
+  @apply inline-block mt-5;
+  color: #a6dbb5;
+}
+
+.sf a.sf-email {
+  @apply inline-block text-white;
+  font-size: 17px;
+  @apply font-medium;
+  overflow-wrap: anywhere;
+}
+
+.sf .sf-locations {
+  @apply mt-3 mx-0 mb-5;
+  color: #c4d7df;
+  font-size: 14px;
+}
+
+.sf a.sf-enquiry {
+  @apply inline-flex items-center h-10.5 py-0 px-4;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  @apply text-white font-medium;
+}
+
+.sf a.sf-enquiry:hover {
+  @apply border-white;
+  background: rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+}
+
+footer.sf .sf-bottom {
+  @apply flex flex-wrap items-center;
+  gap: 10px 28px;
+  @apply pt-5.5;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  color: #94b1be;
+  font-size: 13px;
+}
+
+.sf .sf-copy {
+  @apply m-0;
+  font-size: 13px;
+}
+
+.sf-legal {
+  @apply flex flex-wrap;
+  gap: 6px 24px;
+}
+
+.sf-legal li {
+  @apply m-0;
+}
+
+.sf-bottom a {
+  font-size: 13px;
+  color: #c4d7df;
+}
+
+.sf a.sf-totop {
+  @apply ms-auto;
+}
+
+.sf a:focus-visible {
+  outline: 2px solid #a6dbb5;
+  outline-offset: 3px;
+}
+
+@media (max-width: 1000px) {
+  footer.sf .sf-top {
+    grid-template-columns: minmax(0, 1fr);
+    @apply gap-11 pt-13 pb-11;
+  }
+}
+
+@media (max-width: 760px) {
+  footer.sf .sf-wrap {
+    @apply pl-5.5 pr-5.5;
+  }
+  .sf-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 24px;
+  }
+  .sf-col[data-many] {
+    grid-column: 1 / -1;
+  }
+  .sf-contact {
+    grid-column: 1 / -1;
+  }
+  .sf a.sf-totop {
+    @apply ms-0;
+  }
+  footer.sf .sf-bottom {
+    @apply flex-col items-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .sf-cols {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sh-chevron,
+  .sh-toggle-bars,
+  .sh-toggle-bars::before,
+  .sh-toggle-bars::after {
+    transition: none;
+  }
+}

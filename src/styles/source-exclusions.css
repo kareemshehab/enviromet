@@ -1,0 +1,7 @@
+/*
+ * Class names the original design uses with its own meaning. Tailwind would otherwise generate
+ * a utility with the same name (e.g. `.rounded { border-radius: .25rem }`) that overrides it.
+ * Found by compiling every class used on the site against Tailwind; re-check when adding CSS.
+ * (These three can't be used as utilities or with @apply; variants such as `hover:rounded-lg` are fine.)
+ */
+@source not inline('filter outline rounded');

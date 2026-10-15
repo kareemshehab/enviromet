@@ -1,0 +1,153 @@
+/*
+ * Original site: cost calculator and business-case strip.
+ *
+ * Converted for Tailwind CSS v4: brand colours use the theme tokens (theme.css) and declarations
+ * with an exact Tailwind equivalent are written with @apply. Class names are unchanged because
+ * CMS content uses them. Verified identical in computed style on every page (EN + AR, 3 widths).
+ */
+
+.cro-layout {
+  @apply grid;
+  grid-template-columns: minmax(0, 2fr) minmax(250px, 1fr);
+  @apply gap-12.5;
+  align-items: start;
+}
+.cro-layout .detail-box {
+  @apply sticky top-27.5;
+}
+.cro-layout h2 {
+  font-size: 30px;
+}
+.cro-layout fieldset {
+  border: 1px solid var(--color-line-strong);
+  @apply p-5.5;
+  margin: 25px 0;
+  @apply rounded-sm;
+}
+.cro-layout legend {
+  font-size: 16px;
+  @apply font-semibold text-ink-navy py-0 px-2;
+}
+.cro-inputs {
+  @apply grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 22px;
+}
+.cro-inputs label {
+  font-size: 13px;
+  @apply flex flex-col gap-2;
+}
+.cro-inputs input,
+.cro-inputs select {
+  font: inherit;
+  background: white;
+  border: 1px solid #748b96;
+  border-radius: 3px;
+  @apply min-h-12 w-full p-2.5 text-ink-navy box-border;
+}
+.cro-results {
+  @apply grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  @apply gap-4.5 my-6 mx-0;
+}
+.cro-results article {
+  border-top: 3px solid var(--color-brand-green);
+  background: var(--color-pale);
+  @apply p-5;
+  overflow-wrap: anywhere;
+}
+.cro-results h3 {
+  font-size: 14px;
+  @apply font-medium;
+}
+.cro-results strong {
+  font-size: 24px;
+  @apply text-ink-navy;
+}
+.cro-results p {
+  font-size: 12px;
+}
+.cro-trust {
+  @apply flex flex-wrap;
+  gap: 12px 30px;
+  @apply mt-7;
+  border-top: 1px solid var(--color-line-strong);
+  padding-top: 15px;
+}
+.cro-trust a {
+  font-size: 13px;
+  @apply min-h-11 flex items-center;
+}
+.cro-next {
+  background: var(--color-pale);
+}
+.cro-next h2 {
+  font-size: 38px;
+}
+.cro-summary {
+  @apply p-4;
+  background: var(--color-pale);
+  border-inline-start: 3px solid var(--color-brand-green);
+  font-size: 13px;
+}
+.cro-process h2 {
+  font-size: 23px;
+}
+.cro-process ol {
+  @apply ps-5.5;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.cro-process li {
+  @apply mb-3;
+}
+.cro-scenario-context {
+  @apply p-4.5;
+  border: 1px solid var(--color-line-strong);
+  @apply my-5 mx-0;
+  font-size: 13px;
+}
+.cro-scenario-context pre {
+  white-space: pre-wrap;
+  font: inherit;
+  max-height: 190px;
+  @apply overflow-auto;
+}
+#calculator-results:focus {
+  outline: 2px solid var(--color-brand-blue);
+  outline-offset: 8px;
+}
+#campaign-calculator :focus-visible {
+  outline: 3px solid var(--color-brand-blue);
+  outline-offset: 3px;
+}
+@media (max-width: 900px) {
+  .cro-layout {
+    grid-template-columns: 1fr;
+    @apply gap-8;
+  }
+  .cro-layout .detail-box {
+    @apply static;
+  }
+}
+@media (max-width: 600px) {
+  .cro-inputs,
+  .cro-results {
+    grid-template-columns: 1fr;
+  }
+  .cro-layout fieldset {
+    padding: 17px;
+  }
+  .cro-next h2 {
+    font-size: 29px;
+  }
+  .cro-layout h2 {
+    font-size: 26px;
+  }
+  .cro-layout .actions {
+    @apply items-stretch flex-col;
+  }
+  .cro-results strong {
+    font-size: 27px;
+  }
+}

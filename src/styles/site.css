@@ -1,0 +1,41 @@
+/*
+ * Website stylesheet: compiled by Tailwind CSS v4 (see postcss.config.mjs) and bundled by
+ * Next.js into one minified, cached file. Imported by the (frontend) and (arabic) layouts.
+ *
+ * Layers (later wins):  theme → components → utilities
+ *   theme       design tokens (theme.css) + Tailwind's default scale
+ *   components  the site's component styles, in their original cascade order
+ *   utilities   Tailwind utility classes used directly in JSX (override component styles)
+ *
+ * Tailwind's preflight (CSS reset) is intentionally not loaded: base.css carries the
+ * site's own reset, so pages render exactly as the original design.
+ */
+@layer theme, components, utilities;
+
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities) source(none);
+@import './theme.css';
+
+/*
+ * Utility classes are generated only from code (never from CMS content), and never for
+ * class names the original design already uses (e.g. "rounded", "filter").
+ */
+@source '../components';
+@source '../blocks';
+@source '../app';
+@import './source-exclusions.css';
+
+/* Original site, in its original order */
+@import './legacy/fonts.css' layer(components);
+@import './legacy/base.css' layer(components);
+@import './legacy/ux.css' layer(components);
+@import './legacy/seo.css' layer(components);
+@import './legacy/b2b.css' layer(components);
+@import './legacy/cro.css' layer(components);
+@import './legacy/identity.css' layer(components);
+@import './legacy/refinements.css' layer(components);
+@import './legacy/cms.css' layer(components);
+
+/* Header and footer */
+@import './components/site-header.css' layer(components);
+@import './components/site-footer.css' layer(components);

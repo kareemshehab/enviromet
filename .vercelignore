@@ -1,0 +1,16 @@
+node_modules
+.next
+media
+*.db
+*.db-shm
+*.db-wal
+*.log
+.env
+deploy.env
+deploy-result.txt
+start-enviromet.bat
+deploy-vercel.bat
+.deploy-tools
+.env*.local
+
+upgrade.done
