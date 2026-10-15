@@ -185,8 +185,117 @@ export async function addArabic(payload: Payload) {
       done.push(`template: ${t.title}`)
     }
 
+  done.push(...(await linkToArabicPages(payload)))
+
   payload.logger.info(`  arabic: ${done.length} added${done.length ? ` (${done.slice(0, 4).join(', ')}${done.length > 4 ? ', …' : ''})` : ''}`)
   if (missing.size)
     payload.logger.warn(`  arabic: ${missing.size} texts had no translation and stay in English, e.g. ${[...missing.keys()].slice(0, 3).map((s) => JSON.stringify(s.slice(0, 60))).join(', ')}`)
   return { added: done, untranslated: [...missing.keys()] }
+}
+
+/**
+ * Arabic content that still links to English pages (e.g. the Arabic pages written before the
+ * translation): point those links to the Arabic version, only when that version exists.
+ * Only links change; text, layout and the header's language switch are left as they are.
+ */
+export async function linkToArabicPages(payload: Payload) {
+  const find = (collection: 'pages' | 'services' | 'projects' | 'shared-sections') =>
+    payload.find({ collection, locale: 'ar', fallbackLocale: false, depth: 0, limit: 1000, pagination: false }).then((r) => r.docs as Json[])
+  const [pages, services, projects, shared] = await Promise.all([find('pages'), find('services'), find('projects'), find('shared-sections')])
+
+  const arabic = new Set<string>()
+  for (const p of pages) if (p.layout?.length) arabic.add(p.slug)
+  for (const d of [...services, ...projects]) if (d.customLayout?.length) arabic.add(d.slug)
+
+  const toArabic = (u: string) => {
+    const target = arabicUrl(u)
+    if (target === u) return u
+    const slug = u.split(/[?#]/)[0].replace(/^\/|\/$/g, '') || 'home'
+    return arabic.has(slug) ? target : u
+  }
+  /** "Project references — English ↗" → "Project references ↗": the link no longer leads to English. */
+  const NOTES: [RegExp, string][] = [
+    [/\s*—\s*تفاصيل بالإنجليزية\./g, '.'],
+    [/\s*—\s*(?:الإنجليزية|English)(?=\s*↗|\s*$|\s*<\/a>)/g, ''],
+    [/^Use cases$/, 'حالات الاستخدام'],
+    [/^صفحات التفاصيل الفنية بالإنجليزية، مع صفحات عربية للخدمات الرئيسية\.$/, 'لكل خدمة صفحة تفاصيل فنية خاصة بها.'],
+    [/^صفحات التفاصيل الفنية بالإنجليزية، مع صفحات عربية للخدمات ال…$/, 'لكل خدمة صفحة تفاصيل فنية خاصة بها.'],
+  ]
+  const dropNote = (s: string) => NOTES.reduce((t, [re, to]) => t.replace(re, to), s)
+  const leadsToEnglish = (s: string) => [...s.matchAll(/href="([^"]*)"/g)].some(([, u]) => arabicUrl(u) !== u)
+
+  let changed = false
+  const rewrite = (v: Json, key?: string): Json => {
+    if (Array.isArray(v)) return v.map((x) => rewrite(x, key))
+    if (v && typeof v === 'object') {
+      if (v.lang === 'en' || /language-switch/.test(v.className ?? '')) return v // the "English" switch stays English
+      const out: Json = Object.fromEntries(Object.entries(v).map(([k, x]) => [k, rewrite(x, k)]))
+      const linkIsArabic = typeof out.url === 'string' && out.url.startsWith('/ar')
+      for (const k of ['label', 'blockName', 'text'] as const) {
+        if (typeof out[k] !== 'string') continue
+        const html = out[k].includes('href="')
+        if (k === 'label' && !linkIsArabic) continue
+        if (html && leadsToEnglish(out[k])) continue
+        const clean = dropNote(out[k])
+        if (clean !== out[k]) {
+          out[k] = clean
+          changed = true
+        }
+      }
+      return out
+    }
+    if (typeof v !== 'string') return v
+    const out =
+      key === 'url' || key === 'href'
+        ? toArabic(v)
+        : v.includes('href="')
+          ? v.replace(/href="([^"]*)"/g, (_m, u) => `href="${toArabic(u)}"`)
+          : v
+    if (out !== v) changed = true
+    return out
+  }
+  const fixed = (value: Json) => {
+    changed = false
+    const out = rewrite(value)
+    return changed ? out : null
+  }
+
+  const done: string[] = []
+  const ctx = { disableRevalidate: true }
+  for (const p of pages) {
+    const layout = p.layout?.length && fixed(p.layout)
+    if (layout) {
+      await payload.update({ collection: 'pages', id: p.id, locale: 'ar', data: { layout }, context: ctx })
+      done.push(`links: /ar/${p.slug === 'home' ? '' : p.slug}`)
+    }
+  }
+  for (const [collection, docs] of [['services', services], ['projects', projects]] as const)
+    for (const d of docs) {
+      const customLayout = d.customLayout?.length && fixed(d.customLayout)
+      if (customLayout) {
+        await payload.update({ collection, id: d.id, locale: 'ar', data: { customLayout }, context: ctx })
+        done.push(`links: /ar/${d.slug}`)
+      }
+    }
+  for (const s of shared) {
+    const layout = s.layout?.length && fixed(s.layout)
+    if (layout) {
+      await payload.update({ collection: 'shared-sections', id: s.id, locale: 'ar', data: { layout }, context: ctx })
+      done.push(`links: shared section ${s.title}`)
+    }
+  }
+  const globals = { header: ['navItems', 'cta'], footer: ['columns', 'contactColumn', 'bottomLinks'] } as const
+  for (const [slug, fields] of Object.entries(globals) as [keyof typeof globals, readonly string[]][]) {
+    const g = (await payload.findGlobal({ slug, locale: 'ar', fallbackLocale: false, depth: 0 })) as Json
+    const data: Json = {}
+    for (const f of fields) {
+      const v = g[f] && fixed(g[f])
+      if (v) data[f] = v
+    }
+    if (Object.keys(data).length) {
+      await payload.updateGlobal({ slug, locale: 'ar', data, context: ctx })
+      done.push(`links: ${slug}`)
+    }
+  }
+  return done
 }
