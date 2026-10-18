@@ -2128,6 +2128,9 @@ export interface Page {
      * Browser tab / search title. Defaults to the page title.
      */
     title?: string | null;
+    /**
+     * Write a unique summary of this page in the selected language. Describe its topic and value; avoid copying another page’s description.
+     */
     description?: string | null;
     /**
      * Social sharing image
@@ -6384,6 +6387,9 @@ export interface Service {
      * Browser tab / search title. Defaults to the page title.
      */
     title?: string | null;
+    /**
+     * Write a unique summary of this page in the selected language. Describe its topic and value; avoid copying another page’s description.
+     */
     description?: string | null;
     /**
      * Social sharing image
@@ -8423,6 +8429,9 @@ export interface Project {
      * Browser tab / search title. Defaults to the page title.
      */
     title?: string | null;
+    /**
+     * Write a unique summary of this page in the selected language. Describe its topic and value; avoid copying another page’s description.
+     */
     description?: string | null;
     /**
      * Social sharing image

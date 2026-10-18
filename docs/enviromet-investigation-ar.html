@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مراجعة EnviroMET ودراسة Payload CMS والأسعار وSEO</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6f8;color:#1c2f40;font:17px/1.95 Tahoma,Arial,sans-serif}main{max-width:1050px;margin:36px auto;background:white;padding:42px 48px;border-radius:14px}h1{font-size:30px;line-height:1.6;margin:0 0 12px}h2{font-size:25px;margin:38px 0 14px;color:#165c78}h3{font-size:20px;margin:26px 0 8px}p{margin:10px 0}a{color:#0e6084;overflow-wrap:anywhere}nav{display:flex;flex-wrap:wrap;gap:8px 24px;margin:22px 0}table{border-collapse:collapse;width:100%;margin:18px 0;font-size:15px}th,td{padding:13px;text-align:right;border:1px solid #d5dfe5;vertical-align:top}th{background:#eaf2f6}tr:nth-child(even){background:#fafcfd}.note{background:#edf6fa;border-right:4px solid #2780a1;padding:17px 20px;margin:20px 0}.muted{color:#566a79;font-size:14px}.price{font-weight:bold;white-space:nowrap}code{direction:ltr;unicode-bidi:isolate;display:inline-block;font:14px/1.7 Consolas,monospace;background:#edf1f4;padding:1px 5px;border-radius:4px}li{margin:9px 0}.table-wrap{overflow-x:auto}.formula{direction:ltr;text-align:left;line-height:1.9;background:#f4f7f9;padding:16px;font:15px/1.9 Consolas,monospace;overflow-wrap:anywhere}section{scroll-margin-top:20px}@media(max-width:650px){main{padding:25px 18px;margin:0;border-radius:0}h1{font-size:25px}table{min-width:570px}}@media print{body{background:white;font-size:12pt}main{margin:0;padding:0;max-width:none}nav{display:none}h2,h3{break-after:avoid}tr,.note{break-inside:avoid}a{color:#174f68}table{font-size:10pt}.table-wrap{overflow:visible}h2{margin-top:24px}}
+</style>
+</head>
+<body><main>
+<h1>مراجعة EnviroMET ودراسة إدارة المواقع والتكلفة وتحسين الظهور في البحث</h1>
+<p class="muted">تاريخ البحث 18 أكتوبر 2026 · الأسعار بالدولار الأمريكي شهريًا ما لم يُذكر غير ذلك · المصادر الرسمية مرفقة بجانب المعلومات</p>
+<p>التقرير يشرح الوضع الموجود في كود المشروع، وإمكانية إدارة أكثر من موقع من Payload CMS واحد، وتكلفة تشغيل Next.js مع Vercel وSupabase. ويشرح أيضًا تحسينات SEO المنفذة محليًا وما يلزم عند إطلاق الموقع.</p>
+<div class="note"><strong>النتيجة المقترحة:</strong> الاستمرار بالبنية الحالية لموقع EnviroMET، مع Vercel Pro وSupabase Pro كبداية للإنتاج بميزانية أساسية تقديرية <bdi class="price">45 USD / month</bdi> لمطور واحد وقاعدة Micro واحدة. إدارة عدة مواقع من CMS واحد ممكنة، لكنها تحتاج مرحلة تطوير وترحيل مستقلة. تحسينات SEO موجودة في الكود وتحتاج نشرًا بالإعدادات الصحيحة لتؤثر على الموقع العام.</div>
+<nav aria-label="محتويات التقرير"><a href="#project">المشروع الحالي</a><a href="#payload">إدارة عدة مواقع</a><a href="#pricing">مقارنة الأسعار</a><a href="#seo">تحسينات SEO</a><a href="#next">خطوات الإطلاق</a></nav>
+
+<section id="project"><h2>المشروع الحالي</h2>
+<p>حسب <code>package.json</code> المشروع يستخدم Next.js <bdi>16.3.3</bdi> وReact <bdi>19.2.6</bdi> وPayload CMS <bdi>3.90.2</bdi>. واجهة الموقع ولوحة الإدارة وواجهات API تعمل من نفس التطبيق. البيانات محليًا في SQLite، وفي الإنتاج يستخدم إعداد Payload قاعدة PostgreSQL عندما يكون <code>DATABASE_URI</code> مضبوطًا.</p>
+<p>المحتوى موزع على Pages وServices وProjects، مع Media وShared Sections وPage Templates وEnquiries وUsers. الإعدادات العامة موجودة في Header وFooter وSite Settings وSolution Template. الموقع يدعم الإنجليزية والعربية؛ المسار العربي يبدأ بـ<code>/ar</code>.</p>
+<p>الصور والفيديوهات في إعداد الإنتاج تُرفع إلى Vercel Blob، وليس إلى Supabase Storage. Supabase هنا يوفر قاعدة البيانات؛ تسجيل دخول محرري CMS يتم عبر Payload. لذلك حصص مستخدمي Supabase Auth ليست عدد زوار الموقع في هذه البنية.</p>
+<p class="muted">هذه مراجعة للكود وبيانات الاستيراد في النسخة المحلية. لا تثبت حالة المحتوى أو الاستهلاك أو إعدادات الحسابات المنشورة على الإنترنت.</p></section>
+
+<section id="payload"><h2>إدارة أكثر من موقع من Payload CMS واحد</h2>
+<p><strong>نعم، هذا ممكن.</strong> إضافة <code>@payloadcms/plugin-multi-tenant</code> الرسمية تضيف ربط المستندات بموقع أو Tenant، واختيار الموقع داخل لوحة الإدارة، وفلاتر للمحتوى والعلاقات. ويمكن جعل Collection تتصرف كإعدادات عامة بسجل لكل موقع باستخدام <code>isGlobal</code>. يجب إنشاء Collection للمواقع وتحديد حقولها بنفسنا. <a href="https://payloadcms.com/docs/plugins/multi-tenant">توثيق الإضافة الرسمي</a>.</p>
+<p>مثال مبسط: موقع EnviroMET وموقع علامة أخرى لهما مدير عام واحد؛ محرر EnviroMET يرى محتوى موقعه فقط. كل موقع له دومين وهوية وصفحات وإعدادات SEO مستقلة، بينما يمكن إعادة استخدام مكونات العرض في الكود.</p>
+<p><strong>دعم اللغات مختلف عن دعم المواقع.</strong> العربية والإنجليزية الموجودتان الآن ترجمتان لنفس الموقع، ولا توفران عزلًا بين علامتين أو شركتين. الإضافة ليست مثبتة حاليًا، ولا توجد مجموعة Sites أو Tenants.</p>
+<h3>الخيارات المناسبة</h3>
+<div class="table-wrap"><table><thead><tr><th>الخيار</th><th>متى يناسبنا</th><th>المقابل</th></tr></thead><tbody>
+<tr><td>CMS واحد وقاعدة واحدة مع Multi Tenant</td><td>مواقع تشترك في فريق الإدارة ومكونات المحتوى</td><td>إدارة مركزية وتكلفة أقل، مع ضرورة اختبار العزل والصلاحيات وتأثير الأحمال المشتركة</td></tr>
+<tr><td>CMS واحد وواجهات مواقع مستقلة</td><td>لكل موقع تصميم أو دورة نشر مختلفة</td><td>مرونة أعلى للواجهات، مع عمل إضافي للمصادقة وواجهات البيانات وإعادة التحديث</td></tr>
+<tr><td>نسخة CMS وقاعدة مستقلة لكل موقع</td><td>عملاء يتطلبون عزلًا تشغيليًا ونسخًا احتياطية مستقلة</td><td>عزل أوضح، مع تكلفة وتشغيل وترقيات متكررة؛ لا يحقق إدارة المحتوى من CMS واحد</td></tr>
+</tbody></table></div>
+<h3>التغييرات المطلوبة في هذا المشروع</h3>
+<ol>
+<li>إضافة Sites أو Tenants بحقوق محددة وحقول الاسم والدومين واللغات والهوية، وتثبيت إصدار متوافق من الإضافة مع إصدار Payload المستخدم. الوثائق الحالية قد تتضمن خصائص أحدث؛ نختبر التوافق قبل الترحيل.</li>
+<li>ربط Pages وServices وProjects وMedia وEnquiries وShared Sections وPage Templates بالموقع المناسب. مشاركة بعض القوالب بين المواقع تكون قرارًا صريحًا.</li>
+<li>تحويل Header وFooter وSite Settings وSolution Template من Globals عامة إلى Collections بإعدادات سجل لكل موقع، بدل مشاركة شعار وتنقل وإعدادات كل المواقع.</li>
+<li>تعديل <code>slugField</code>: حاليًا الـslug فريد على مستوى Collection بالكامل. نحتاج فهرسًا مركبًا للموقع والـslug، مع الحفاظ على قواعد تضارب الصفحات والخدمات والمشاريع داخل الموقع نفسه.</li>
+<li>تعديل <code>src/lib/data.ts</code> وكل الاستعلامات ليشمل الطلب الموقع الحالي، وربط الدومين المسجل بالموقع بشكل موثوق. لا يكفي اختيار الموقع في واجهة الإدارة. Payload Local API يتجاوز قواعد الوصول افتراضيًا؛ عند استخدام صلاحيات المستخدم نمرر الطلب والمستخدم و<code>overrideAccess: false</code>، ومع العرض العام نحدد الموقع وحالة النشر صراحة. <a href="https://payloadcms.com/docs/local-api/overview">توثيق Local API</a>.</li>
+<li>فصل مفاتيح الكاش وإعادة التحديث والـpreview وروابط Media والـcanonical والـsitemap لكل موقع؛ قيمة <code>serverURL</code> الواحدة حاليًا لن تكفي لكل الدومينات.</li>
+<li>ترحيل المحتوى الحالي إلى موقع EnviroMET افتراضيًا بعد نسخة احتياطية، ثم اختبار موقعين لهما نفس slug وصور ومحررين مختلفين، والتحقق من منع القراءة والتعديل والربط عبر المواقع، بما يشمل REST وGraphQL وLocal API.</li>
+</ol>
+<p><strong>التوصية:</strong> لو الهدف مواقع قريبة في الهيكل وتحت نفس الإدارة، ابدأ بتجربة موقعين باستخدام الإضافة الرسمية. لو كل عميل يحتاج عزل بيانات واستعادة مستقلة، نناقش النسخ المنفصلة. هذه المرحلة بحث فقط؛ لم يُغيَّر نموذج البيانات إلى Multi Tenant.</p></section>
+
+<section id="pricing"><h2>مقارنة أسعار Vercel وSupabase</h2>
+<p>الخدمتان تكملان بعضهما في هذا المشروع: Vercel يشغل Next.js وPayload ووظائف السيرفر، وSupabase يستضيف PostgreSQL. الاشتراك في واحدة لا يغطي تكلفة الأخرى.</p>
+<h3>خطط Vercel</h3>
+<div class="table-wrap"><table><thead><tr><th>الخطة</th><th>السعر الأساسي</th><th>ملاءمتها للمشروع</th></tr></thead><tbody>
+<tr><td>Hobby</td><td><bdi>0 USD</bdi></td><td>للاستخدام الشخصي غير التجاري؛ ليست الاختيار المناسب لموقع شركة EnviroMET</td></tr>
+<tr><td>Pro</td><td><bdi>20 USD</bdi></td><td>تشمل مقعد نشر واحد ورصيد استخدام بنية تحتية بقيمة 20 دولارًا شهريًا</td></tr>
+<tr><td>Enterprise</td><td>عرض سعر</td><td>عند الحاجة إلى متطلبات مؤسسية واتفاقيات خدمة ودعم متقدم</td></tr>
+</tbody></table></div>
+<p>كل مقعد إضافي بصلاحية Owner أو Member يضيف <bdi>20 USD</bdi> شهريًا؛ مقاعد المشاهدة مجانية. محرر المحتوى الذي يدخل لوحة Payload فقط لا يحتاج مقعد Vercel لمجرد تحرير المحتوى. الاستهلاك فوق رصيد Pro يُحسب إضافيًا، فلا تعتبر 20 دولارًا سقف الفاتورة. المصادر: <a href="https://vercel.com/pricing">الأسعار</a>، <a href="https://vercel.com/docs/plans/pro-plan">تفاصيل Pro</a>، <a href="https://vercel.com/docs/plans/hobby">قيود Hobby</a>.</p>
+<h3>خطط Supabase</h3>
+<div class="table-wrap"><table><thead><tr><th>الخطة</th><th>السعر الأساسي</th><th>أبرز الحدود المناسبة للمقارنة</th></tr></thead><tbody>
+<tr><td>Free</td><td><bdi>0 USD</bdi></td><td>قاعدة 500 MB لكل مشروع، وخروج بيانات 5 GB، وتخزين ملفات 1 GB. حتى مشروعين نشطين؛ قد تتوقف المشاريع بعد أسبوع خمول، ولا توجد نسخ احتياطية تلقائية ضمن المجاني</td></tr>
+<tr><td>Pro</td><td>من <bdi>25 USD</bdi></td><td>قرص قاعدة 8 GB لكل مشروع، وخروج بيانات 250 GB، وتخزين ملفات 100 GB، ونسخ يومية محفوظة 7 أيام. رصيد Compute بقيمة 10 دولارات يغطي Micro واحدة</td></tr>
+<tr><td>Team</td><td>من <bdi>599 USD</bdi></td><td>ميزات حوكمة وصلاحيات ودعم مؤسسي؛ ليست البداية المطلوبة هنا</td></tr>
+<tr><td>Enterprise</td><td>عرض سعر</td><td>متطلبات وتشغيل على مستوى مؤسسي كبير</td></tr>
+</tbody></table></div>
+<p>الحصص العامة مثل خروج البيانات تُدار على مستوى المنظمة، بينما قرص القاعدة لكل مشروع؛ لا نضرب كل الحصص تلقائيًا في عدد المواقع. بعض الزيادات: قرص القاعدة <bdi>0.125 USD / GB</bdi>، وخروج البيانات غير المخزنة بالكاش <bdi>0.09 USD / GB</bdi>، وخروج الكاش <bdi>0.03 USD / GB</bdi>. المصادر: <a href="https://supabase.com/pricing">الأسعار والحدود</a> و<a href="https://supabase.com/docs/guides/platform/billing-on-supabase">طريقة الفوترة</a>.</p>
+<h3>كيف تتحسب التكلفة الفعلية</h3>
+<p>اشتراك Supabase على مستوى المنظمة، مع تكلفة Compute لكل مشروع. Micro تقارب 10 دولارات شهريًا، وSmall تقارب 15 دولارًا، والحساب حسب ساعات التشغيل. رصيد 10 دولارات للمنظمة المدفوعة، وليس رصيدًا جديدًا لكل قاعدة. <a href="https://supabase.com/docs/guides/platform/compute-and-disk">شرح Compute</a>.</p>
+<div class="formula" lang="en">Vercel Pro estimate = 20 + 20 × additional paid seats + max(0, metered infrastructure − 20)<br>Supabase Pro estimate = 25 + max(0, total compute − 10) + overages + add-ons</div>
+<div class="table-wrap"><table><thead><tr><th>سيناريو تقديري</th><th>Vercel</th><th>Supabase</th><th>الإجمالي الأساسي</th></tr></thead><tbody>
+<tr><td>موقع واحد، مطور نشر واحد، قاعدة Micro</td><td><bdi>20</bdi></td><td><bdi>25</bdi></td><td><bdi>45 USD</bdi></td></tr>
+<tr><td>نفس السيناريو مع مطور نشر إضافي</td><td><bdi>40</bdi></td><td><bdi>25</bdi></td><td><bdi>65 USD</bdi></td></tr>
+<tr><td>موقعان يشتركان في CMS وقاعدة Micro واحدة</td><td><bdi>20</bdi></td><td><bdi>25</bdi></td><td><bdi>45 USD</bdi></td></tr>
+<tr><td>موقعان بقاعدتي Micro في منظمة واحدة ومطور واحد</td><td><bdi>20</bdi></td><td><bdi>35</bdi></td><td><bdi>55 USD</bdi></td></tr>
+<tr><td>موقع واحد وقاعدة Small بدل Micro</td><td><bdi>20</bdi></td><td><bdi>30</bdi></td><td><bdi>50 USD</bdi></td></tr>
+</tbody></table></div>
+<p class="muted">هذه حسابات بداية، تفترض شهر تشغيل كاملًا واستهلاك Vercel داخل الرصيد، وعدم تجاوز الحصص أو إضافة خدمات. لا تتضمن الضرائب أو الدومين أو البريد أو الزيادات أو خدمات مدفوعة أخرى. مشاركة قاعدة واحدة بين موقعين تحتاج اختبار حمل؛ انخفاض الاشتراك لا يضمن كفاية Micro.</p>
+<h3>تكلفة الملفات مهمة في هذا المشروع</h3>
+<p>Vercel Blob في Pro يُحسب حسب الاستخدام ويستهلك من رصيد Vercel، ثم تُحاسب الزيادة. الأسعار الأساسية المعروضة: تخزين <bdi>0.023 USD / GB-month</bdi>، وعمليات بسيطة <bdi>0.40 USD / million</bdi>، وعمليات متقدمة <bdi>5 USD / million</bdi>. توصيل الملفات له حساب مرتبط بالـCDN والمنطقة. مثال: تخزين 10 GB يقارب <bdi>0.23 USD</bdi> قبل العمليات والتوصيل وتأثير الرصيد. الحصص المجانية الظاهرة لـHobby ليست حصة Pro مجانية إضافية. <a href="https://vercel.com/docs/vercel-blob/usage-and-pricing">تسعير Blob</a>.</p>
+<p>حصة Supabase Storage لا تُستخدم حاليًا، لذلك لا تخصمها من فاتورة Blob. تكلفة PostgreSQL تتأثر بحجم المحتوى وإصداراته وطلبات CMS وخروج البيانات إلى Vercel، وليس بعدد الزيارات فقط. نحتاج قياسات تشغيل فعلية لتقدير تكلفة الجمهور والفيديوهات بدقة.</p>
+<p>ابدأ بتنبيهات الميزانية في <a href="https://vercel.com/docs/spend-management">Vercel Spend Management</a> وراجع <a href="https://supabase.com/docs/guides/platform/cost-control">Supabase Spend Cap</a>. حد الإنفاق في Supabase لا يغطي كل البنود، مثل Compute وبعض الإضافات. لم يتم شراء أو تغيير أي اشتراك.</p></section>
+
+<section id="seo"><h2>مراجعة SEO والتحسينات المنفذة</h2>
+<p><strong>أهم مشكلة:</strong> كان الكود يضع <code>noindex</code> على اللغتين ويمنع الزحف للموقع كله. وهذا يمنع الظهور الطبيعي للمحتوى في محركات البحث عند الإطلاق، حتى مع وجود عناوين وأوصاف جيدة.</p>
+<div class="table-wrap"><table><thead><tr><th>الموضوع</th><th>قبل التعديل</th><th>بعد التعديل المحلي</th></tr></thead><tbody>
+<tr><td>الفهرسة والزحف</td><td>إغلاق دائم في التخطيطات وrobots</td><td>الإنتاج ذو العنوان العام قابل للفهرسة ما لم يُضبط SEARCH_ENGINE_INDEXING=false؛ التطوير ومعاينات Vercel والمسودات تبقى noindex</td></tr>
+<tr><td>canonical</td><td>موجود لكل صفحة لكن يعتمد على عنوان قد يحتوي شرطة نهائية</td><td>توحيد أصل الدومين والتأكد من HTTP أو HTTPS، مع canonical مستقل لكل لغة</td></tr>
+<tr><td>hreflang</td><td>لا توجد روابط بديلة للغات</td><td>روابط en وar للنسخ المنشورة ذات المحتوى فقط، وx-default للنسخة الإنجليزية الموجودة</td></tr>
+<tr><td>sitemap</td><td>قائمة محدودة وبدون تاريخ تحديث؛ يمكن إخفاء فشل القراءة كقائمة فارغة</td><td>قراءة الصفحات على دفعات، مع lastModified وروابط اللغات، وإعادة تحديث عند النشر والحذف وتحديث دوري كل ساعة</td></tr>
+<tr><td>المشاريع</td><td>حل الصفحة يعتمد على أول 200 مشروع</td><td>البحث المباشر بالـslug حتى لا يدرج sitemap مشروعًا يعجز مسار الصفحة عن إيجاده بسبب هذا الحد</td></tr>
+<tr><td>المشاركة الاجتماعية</td><td>Open Graph وTwitter موجودان</td><td>الإبقاء عليهما وإضافة وصف الصورة وأبعادها عند توفر البيانات</td></tr>
+<tr><td>البيانات المنظمة</td><td>غير موجودة في قوالب الموقع</td><td>Organization وWebSite وWebPage ومسار Breadcrumb للصفحات الداخلية، باستخدام بيانات CMS مع حماية إخراج JSON</td></tr>
+</tbody></table></div>
+<p>الإعدادات الموجودة أصلًا جيدة كبداية: عنوان ووصف وصورة لكل مستند، إعدادات SEO عامة، روابط قديمة يعاد توجيهها بشكل دائم، <code>lang</code> وRTL للعربية، وصور تدعم الأبعاد وsrcset والتحميل الكسول. لم أغيّر تصميم الموقع أو أضف مخطط مراجعات أو تقييمات غير موجودة.</p>
+<p>روابط hreflang يجب أن تشير لترجمات موجودة وتعود لبعضها؛ لا يصح ربط كل صفحة عربية برئيسية إنجليزية كأنها ترجمتها. <a href="https://developers.google.com/search/docs/specialty/international/localized-versions">إرشادات Google للغات</a>. تنفيذ metadata وsitemap يعتمد على آليات Next.js الرسمية: <a href="https://nextjs.org/docs/app/api-reference/functions/generate-metadata">Metadata</a> و<a href="https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap">Sitemap</a>.</p>
+<p><strong>نتائج التحقق المحلي:</strong> نجح فحص TypeScript والـlint واختبارات قواعد SEO وبناء الإنتاج. فحص HTTP مرّ على 153 رابطًا في قاعدة تجريبية منفصلة: 152 صفحة من المحتوى المبدئي وصفحة اختبار. تم التحقق من canonical واللغات ووسوم المشاركة وJSON-LD؛ كل صفحة لها H1 واحد. المسودة غير متاحة للعامة، وتفتح في المعاينة مع noindex؛ الترجمة غير الموجودة ترجع 404 ولا تُدرج في sitemap. تم أيضًا فحص إعادة توجيه رابط قديم وحماية فهرسة admin وAPI بالهيدر.</p>
+<p><strong>تم تصحيح الأوصاف المكررة:</strong> صفحات <code>use-case-environmental-campaign</code> و<code>use-case-remote-network</code> و<code>use-case-solar-campaign</code> و<code>use-case-technical-review</code> و<code>use-case-water-assessment</code> و<code>use-case-wind-campaign</code> أصبحت لها أوصاف مختلفة بالعربية والإنجليزية، تعكس موضوع كل صفحة. التصحيح موجود في بيانات الاستيراد والترجمة، وتوجد معالجة للمحتوى الحالي عند عرضه إذا كان لا يزال يحمل النص القديم. أي وصف مخصص يكتبه المحرر يحتفظ بالأولوية.</p>
+<p>مسار ترقية المحتوى المعتاد <code>npm run upgrade</code> أو <code>deploy-vercel.bat</code> يحفظ الأوصاف المصححة في سجلات CMS المنشورة التي لا توجد عليها مسودات معلقة. يتجنب التحديث نشر مسودة أو تغيير وصف مخصص. رفع الكود وحده لا يشغّل تحديث قاعدة البيانات؛ المعالجة في واجهة الموقع تضمن التصحيح الظاهر عند نشر الكود.</p>
+<p>التغيير تقني في الكود. مراجعة الكلمات المفتاحية، وصياغة أوصاف مميزة لكل خدمة، والتأكد من جودة الترجمات، وتحسين الصور بناءً على قياسات Core Web Vitals، تظل عملًا تحريريًا وقياسيًا لاحقًا. Structured Data تساعد محركات البحث على فهم المحتوى ولا تضمن نتيجة غنية أو ترتيبًا معينًا. لم تُجرَ قياسات Lighthouse أو Core Web Vitals على موقع منشور.</p>
+</section>
+
+<section id="next"><h2>خطوات الإطلاق والتحقق</h2>
+<ol>
+<li>ضبط <code>NEXT_PUBLIC_SERVER_URL</code> على الدومين النهائي باستخدام HTTPS، مع التأكد من توجيه www وغير www إلى نسخة واحدة.</li>
+<li>إبقاء <code>SEARCH_ENGINE_INDEXING=false</code> أثناء التجهيز، وضبطه على <code>true</code> في بيئة الإنتاج وقت الإطلاق، ثم إعادة البناء والنشر. ملف <code>.env.example</code> يحتفظ بوضع التجهيز صراحة.</li>
+<li>التحقق من robots وsitemap وcanonical وhreflang والبيانات المنظمة في الصفحات الإنجليزية والعربية المنشورة، وتجربة صفحة غير موجودة للتأكد من حالة 404.</li>
+<li>تعبئة SEO لكل صفحة مهمة من لوحة Payload، ومراجعة العنوان والوصف وصورة المشاركة. الإعدادات العامة بديل احتياطي عند ترك الحقول فارغة.</li>
+<li>إضافة الدومين إلى Google Search Console وإرسال sitemap، ثم فحص الفهرسة والأداء ونتائج البحث بعد النشر.</li>
+<li>قرار Multi Website يأتي في مرحلة مستقلة بعد تحديد عدد المواقع وطبيعة عزل العملاء والدومينات وصلاحيات المحررين. البحث الحالي يوضح المسار المطلوب قبل التنفيذ.</li>
+</ol>
+<p class="muted">تفاصيل التنفيذ ونتائج فحوص النسخة المحلية موجودة في <code>docs/seo.md</code> داخل المشروع. لم يتم نشر الموقع أو تعديل بيانات الإنتاج أو تغيير خطط الخدمات ضمن هذا العمل.</p>
+</section>
+</main></body></html>

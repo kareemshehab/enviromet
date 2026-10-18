@@ -1135,5 +1135,11 @@
  "ZX Lidars": "ZX Lidars",
  "ZX300 LiDARs · three-site campaign": "أجهزة ZX300 LiDAR · حملة في ثلاثة مواقع",
  "← Previous solution": "→ الحل السابق",
- "← Previous use case": "→ حالة الاستخدام السابقة"
+ "← Previous use case": "→ حالة الاستخدام السابقة",
+ "Explore facility monitoring with EnviroMET: define the scope, collect environmental observations and prepare reporting to guide review and next actions.": "تعرّف على مثال لمراقبة البيئة حول منشأة، من تحديد نطاق الرصد وجمع الملاحظات إلى إعداد التقارير لدعم تقييم الظروف البيئية والخطوات التالية.",
+ "Explore a remote measurement network combining solar and battery power, enclosures, communications and maintenance to support field campaign operations.": "استكشف مثالًا لشبكة قياس في موقع ناءٍ تجمع الطاقة الشمسية والبطاريات وصناديق الحماية والاتصالات والصيانة لتلبية احتياجات تشغيل الحملات الميدانية.",
+ "Explore a solar resource campaign with station configuration, cleaning and calibration planning, and site observations to review resource and yield assumptions.": "استكشف مثالًا لحملة تقييم المورد الشمسي تشمل تجهيز محطة القياس والتخطيط للتنظيف والمعايرة وجمع ملاحظات الموقع لمراجعة افتراضات المورد والإنتاج.",
+ "See how EnviroMET reviews project resources, engineering decisions and relevant risks, with documented findings to support the next project decision.": "تعرّف على مثال لمراجعة موارد المشروع وقراراته الهندسية والمخاطر المرتبطة به ضمن نطاق متفق عليه، مع توثيق النتائج لدعم اتخاذ القرار التالي.",
+ "Explore water assessment near a development, with site observations, sampling and hydrological analysis to inform risk reviews and further investigation.": "استكشف مثالًا لتقييم ظروف المياه قرب مشروع تطوير، من تخطيط ملاحظات الموقع وأخذ العينات إلى التحليل الهيدرولوجي لدعم مراجعة المخاطر والاستقصاء.",
+ "See how EnviroMET plans a remote wind measurement campaign, combining met masts or LiDAR, field power and communications to assess resource uncertainty.": "تعرّف على مثال لحملة قياس رياح في موقع ناءٍ، مع تحديد ارتفاعات القياس ودمج برج أرصاد أو ليدار بالطاقة والاتصالات لمراجعة المورد وعدم اليقين."
 }

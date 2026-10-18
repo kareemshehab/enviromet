@@ -18,6 +18,7 @@ import config from '@payload-config'
 import { findSharedSections, pageTemplates, placeShared, solutionShared, stripSharedText, withoutIds, type LayoutSource } from './shared'
 import { solutionParts } from '../globals/solutionParts'
 import { addArabic } from './arabic'
+import { upgradeUseCaseSEO } from './seo'
 
 const ctx = { disableRevalidate: true }
 type Locale = 'en' | 'ar'
@@ -154,6 +155,7 @@ try {
   await upgradeSolutionTemplate(payload)
   await upgradeTemplates(payload)
   await addArabic(payload) // Arabic version of every page that only exists in English
+  await upgradeUseCaseSEO(payload)
   // Local SQLite: run the schema push until it reports no work left (see settle.ts).
   if (!process.env.DATABASE_URI?.startsWith('postgres'))
     for (let i = 0; i < 3; i++) {

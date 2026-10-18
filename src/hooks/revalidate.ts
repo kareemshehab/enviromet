@@ -1,4 +1,8 @@
-import type { CollectionAfterChangeHook, CollectionAfterDeleteHook, GlobalAfterChangeHook } from 'payload'
+import type {
+  CollectionAfterChangeHook,
+  CollectionAfterDeleteHook,
+  GlobalAfterChangeHook,
+} from 'payload'
 import { revalidatePath } from 'next/cache'
 
 /**
@@ -17,12 +21,15 @@ const safeRevalidate = (path: string, type?: 'layout' | 'page') => {
 }
 
 export const pathForSlug = (slug?: string | null) => (!slug || slug === 'home' ? '/' : `/${slug}`)
-const arabicPathForSlug = (slug?: string | null) => (!slug || slug === 'home' ? '/ar' : `/ar/${slug}`)
+const arabicPathForSlug = (slug?: string | null) =>
+  !slug || slug === 'home' ? '/ar' : `/ar/${slug}`
 
 /** A document can be shown in English (/x) and Arabic (/ar/x): refresh both. */
 const revalidateSlug = (slug?: string | null) => {
+  // Publishing a translation also changes hreflang on its counterpart.
   safeRevalidate(pathForSlug(slug))
   safeRevalidate(arabicPathForSlug(slug))
+  safeRevalidate('/sitemap.xml')
 }
 
 export const revalidateDocument: CollectionAfterChangeHook = ({ doc, previousDoc, req }) => {
@@ -40,13 +47,22 @@ export const revalidateDocumentDelete: CollectionAfterDeleteHook = ({ doc, req }
 }
 
 /** Shared content (projects, media, header, footer, settings) can appear on any page. */
-export const revalidateEverything: CollectionAfterChangeHook & GlobalAfterChangeHook = ({ doc, req }) => {
-  if (!req.context?.disableRevalidate) safeRevalidate('/', 'layout')
+export const revalidateEverything: CollectionAfterChangeHook & GlobalAfterChangeHook = ({
+  doc,
+  req,
+}) => {
+  if (!req.context?.disableRevalidate) {
+    safeRevalidate('/', 'layout')
+    safeRevalidate('/sitemap.xml')
+  }
   return doc
 }
 
 export const revalidateEverythingDelete: CollectionAfterDeleteHook = ({ doc, req }) => {
-  if (!req.context?.disableRevalidate) safeRevalidate('/', 'layout')
+  if (!req.context?.disableRevalidate) {
+    safeRevalidate('/', 'layout')
+    safeRevalidate('/sitemap.xml')
+  }
   return doc
 }
 
@@ -57,7 +73,9 @@ export const revalidateEverythingDelete: CollectionAfterDeleteHook = ({ doc, req
 export const revalidateMenu: CollectionAfterChangeHook = ({ doc, previousDoc, req }) => {
   if (req.context?.disableRevalidate) return doc
   const placed = (d?: Record<string, unknown> | null) =>
-    d?.menuColumn && d._status === 'published' ? [d.menuColumn, d.menuLabel, d.title, d.slug].join('|') : ''
+    d?.menuColumn && d._status === 'published'
+      ? [d.menuColumn, d.menuLabel, d.title, d.slug].join('|')
+      : ''
   if (placed(doc) !== placed(previousDoc)) safeRevalidate('/', 'layout')
   return doc
 }

@@ -9831,7 +9831,7 @@
   "scripts": [],
   "meta": {
    "title": "Environmental monitoring around a facility | EnviroMET",
-   "description": "An anonymous application of EnviroMET services."
+   "description": "Explore facility monitoring with EnviroMET: define the scope, collect environmental observations and prepare reporting to guide review and next actions."
   },
   "layout": [
    {
@@ -10022,7 +10022,7 @@
   "scripts": [],
   "meta": {
    "title": "Remote measurement network | EnviroMET",
-   "description": "An anonymous application of EnviroMET services."
+   "description": "Explore a remote measurement network combining solar and battery power, enclosures, communications and maintenance to support field campaign operations."
   },
   "layout": [
    {
@@ -10213,7 +10213,7 @@
   "scripts": [],
   "meta": {
    "title": "Solar resource campaign | EnviroMET",
-   "description": "An anonymous application of EnviroMET services."
+   "description": "Explore a solar resource campaign with station configuration, cleaning and calibration planning, and site observations to review resource and yield assumptions."
   },
   "layout": [
    {
@@ -10404,7 +10404,7 @@
   "scripts": [],
   "meta": {
    "title": "Technical project review | EnviroMET",
-   "description": "An anonymous application of EnviroMET services."
+   "description": "See how EnviroMET reviews project resources, engineering decisions and relevant risks, with documented findings to support the next project decision."
   },
   "layout": [
    {
@@ -10595,7 +10595,7 @@
   "scripts": [],
   "meta": {
    "title": "Water conditions near a development | EnviroMET",
-   "description": "An anonymous application of EnviroMET services."
+   "description": "Explore water assessment near a development, with site observations, sampling and hydrological analysis to inform risk reviews and further investigation."
   },
   "layout": [
    {
@@ -10786,7 +10786,7 @@
   "scripts": [],
   "meta": {
    "title": "Wind campaign at a remote site | EnviroMET",
-   "description": "An anonymous application of EnviroMET services."
+   "description": "See how EnviroMET plans a remote wind measurement campaign, combining met masts or LiDAR, field power and communications to assess resource uncertainty."
   },
   "layout": [
    {

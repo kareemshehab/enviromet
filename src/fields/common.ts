@@ -80,9 +80,26 @@ export const metaFields: Field = {
   type: 'group',
   localized: true,
   fields: [
-    { name: 'title', type: 'text', admin: { description: 'Browser tab / search title. Defaults to the page title.' } },
-    { name: 'description', type: 'textarea', admin: { rows: 3 } },
-    { name: 'image', type: 'upload', relationTo: 'media', admin: { description: 'Social sharing image' } },
+    {
+      name: 'title',
+      type: 'text',
+      admin: { description: 'Browser tab / search title. Defaults to the page title.' },
+    },
+    {
+      name: 'description',
+      type: 'textarea',
+      admin: {
+        rows: 3,
+        description:
+          'Write a unique summary of this page in the selected language. Describe its topic and value; avoid copying another page’s description.',
+      },
+    },
+    {
+      name: 'image',
+      type: 'upload',
+      relationTo: 'media',
+      admin: { description: 'Social sharing image' },
+    },
   ],
 }
 

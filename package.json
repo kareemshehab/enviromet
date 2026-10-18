@@ -15,6 +15,7 @@
     "seed": "node --no-deprecation --import tsx src/seed/index.ts",
     "dev:clean": "rimraf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
     "typecheck": "tsc --noEmit",
+    "test:seo": "node --import tsx --test tests/seo.test.ts",
     "upgrade": "node --no-deprecation --import tsx src/seed/upgrade.ts",
     "migrate": "node --no-deprecation --import tsx src/seed/migrate.ts"
   },

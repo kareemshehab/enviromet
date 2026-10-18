@@ -31,6 +31,12 @@ const nextConfig: NextConfig = {
   async redirects() {
     return legacyRedirects.map((r) => ({ ...r, permanent: true }))
   },
+  async headers() {
+    return ['/admin/:path*', '/api/:path*'].map((source) => ({
+      source,
+      headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+    }))
+  },
   images: {
     localPatterns: [
       {

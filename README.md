@@ -192,8 +192,16 @@ any warnings.
 - **Secrets:** set long random `PAYLOAD_SECRET` and `PREVIEW_SECRET`, and set `NEXT_PUBLIC_SERVER_URL` to the real domain.
 - **Enquiry alerts:** add an email adapter (e.g. `@payloadcms/email-nodemailer`) and an `afterChange`
   hook on Enquiries to notify sales. Add a captcha or rate limit to the public form.
-- **SEO:** the site is `noindex` and `robots.txt` disallows crawling, same as the original preview.
-  Change this in `src/app/robots.ts` and the two layouts at launch.
+- **SEO:** set `NEXT_PUBLIC_SERVER_URL` to the final HTTPS domain and set
+  `SEARCH_ENGINE_INDEXING=true` in production at launch, then rebuild/redeploy.
+  Public production deployments are indexable by default unless the value is `false`;
+  `.env.example` explicitly keeps indexing off until launch. Development, localhost and
+  Vercel preview deployments always stay `noindex`. Draft previews are also `noindex`.
+  Titles, descriptions and social images are editable in each document's **SEO** tab;
+  shared fallbacks are under **Site settings → SEO defaults**. Canonicals, existing EN/AR
+  alternates, JSON-LD and the published-content sitemap are generated automatically.
+  After deploying, verify `/robots.txt` and `/sitemap.xml`, then submit the sitemap in
+  Google Search Console. See [SEO implementation notes](docs/seo.md) for verification.
 
 ## Scripts
 
