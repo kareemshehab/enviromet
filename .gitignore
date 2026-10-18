@@ -74,3 +74,4 @@ upgrade.done
 src/seed/translations/work/
 
 __pycache__/
+.env*

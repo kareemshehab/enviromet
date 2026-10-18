@@ -49,6 +49,10 @@ receive `X-Robots-Tag: noindex, nofollow`. This does not replace authentication.
   exists. It skips unpublished records and pending drafts, preserves the other
   SEO fields, and can safely run repeatedly. Guidance in the CMS description
   field now asks editors to write a unique summary per page and language.
+- Vercel production builds also run the same targeted update through
+  `scripts/publish-seo.ts`, using the existing protected production credentials.
+  It verifies the result before the website build continues. Local and preview
+  builds skip this step; it does not create tables, reseed content or touch users.
 
 No CMS schema migration or account-plan change is required. The only content
 rewrite is the six use-case descriptions in each language. The Arabic report is
@@ -91,8 +95,8 @@ The initial audit found identical descriptions on six use-case pages in each lan
 `use-case-water-assessment`, `use-case-wind-campaign`. All twelve descriptions are
 now distinct. The compatibility resolver fixes the visible metadata even when
 the CMS still stores the old placeholder. Database persistence occurs when the
-upgrade workflow is run against the intended database; a Git push alone does not
-run that database workflow.
+upgrade workflow is run against the intended database or a production build runs
+on Vercel. A Git push alone does not publish when Vercel is not linked to GitHub.
 
 ## Reproducing the isolated HTTP check
 
