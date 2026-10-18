@@ -75,3 +75,7 @@ src/seed/translations/work/
 
 __pycache__/
 .env*
+
+# Research deliverables are local files, not repository content.
+/docs/enviromet-investigation-ar.html
+/docs/EnviroMET_Research_Summary_AR.pdf

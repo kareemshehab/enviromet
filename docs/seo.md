@@ -55,8 +55,7 @@ receive `X-Robots-Tag: noindex, nofollow`. This does not replace authentication.
   builds skip this step; it does not create tables, reseed content or touch users.
 
 No CMS schema migration or account-plan change is required. The only content
-rewrite is the six use-case descriptions in each language. The Arabic report is
-`docs/enviromet-investigation-ar.html` and is also delivered on the Desktop.
+rewrite is the six use-case descriptions in each language.
 
 ## Verification completed on 18 October 2026
 

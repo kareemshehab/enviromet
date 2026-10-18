@@ -14,3 +14,6 @@ deploy-vercel.bat
 .env*.local
 
 upgrade.done
+
+docs/enviromet-investigation-ar.html
+docs/EnviroMET_Research_Summary_AR.pdf
