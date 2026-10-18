@@ -25,7 +25,11 @@ npm install
 npm run dev
 ```
 
-The project ships with a ready database (`enviromet.db`) and images (`/media`).
+On the first local run, development setup creates an ignored `.env` file with random
+Payload and preview secrets. If the default local database (`enviromet.db`) does not
+exist, it imports the website content and generates `/media` automatically. This can
+take a minute. Existing databases and configured remote databases are never seeded
+automatically. Keep `.env` private; production secrets must be configured separately.
 To reset all content to the original website: `npm run seed`. It keeps users.
 
 ---

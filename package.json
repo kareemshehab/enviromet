@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build",
+    "predev": "node scripts/prepare-local.mjs",
     "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
     "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
@@ -16,6 +17,8 @@
     "dev:clean": "rimraf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
     "typecheck": "tsc --noEmit",
     "test:seo": "node --import tsx --test tests/seo.test.ts",
+    "test:local-setup": "node --test tests/local-setup.test.mjs",
+    "preupgrade": "node scripts/prepare-local.mjs",
     "upgrade": "node --no-deprecation --import tsx src/seed/upgrade.ts",
     "migrate": "node --no-deprecation --import tsx src/seed/migrate.ts"
   },
